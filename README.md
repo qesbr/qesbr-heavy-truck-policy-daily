@@ -45,12 +45,12 @@ python -m http.server 8000 --directory site-dist
 - `data/raw`、`processed`、`daily`、`weekly`、`monthly`：版本化数据。
 - `data/sources.json`：来源健康状态；`manifest.json` 和 `search-index.json` 供静态网站使用。
 
-修改网站发布路径时应同时传入 `--base-path`。默认值 `/heavy-truck-policy-daily/` 已适配目标项目型 GitHub Pages。
+修改网站发布路径时应同时传入 `--base-path`。默认值 `/qesbr-heavy-truck-policy-daily/` 已适配实际项目型 GitHub Pages。
 
 ## GitHub 部署
 
-1. 创建公开仓库 `qesbr/heavy-truck-policy-daily`，把本目录作为仓库根目录推送到 `main`。
-2. 创建私有仓库 `qesbr/heavy-truck-policy-daily-config`，复制 `private-config-template` 中的两个文件，并在 `recipients.yaml` 填写真实收件人。
+1. 创建公开仓库 `qesbr/qesbr-heavy-truck-policy-daily`，把本目录作为仓库根目录推送到 `main`。
+2. 创建私有仓库 `qesbr/qesbr-heavy-truck-policy-daily-config`，复制 `private-config-template` 中的两个文件，并在 `recipients.yaml` 填写真实收件人。
 3. 在公开仓库 Settings → Pages → Build and deployment 中选择 **GitHub Actions**。
 4. 在 Settings → Secrets and variables → Actions 配置下列 Secrets：
 
@@ -60,7 +60,7 @@ python -m http.server 8000 --directory site-dist
 | `SMTP_USERNAME` | QQ 发件邮箱 |
 | `SMTP_AUTH_CODE` | QQ SMTP 授权码 |
 | `PRIVATE_CONFIG_TOKEN` | 仅可读取私有配置仓库 Contents 的细粒度令牌 |
-| `PRIVATE_CONFIG_REPO` | `qesbr/heavy-truck-policy-daily-config` |
+| `PRIVATE_CONFIG_REPO` | `qesbr/qesbr-heavy-truck-policy-daily-config` |
 
 5. 首次在 Actions 中运行 **Manual report**，选择 `daily` 并保持 `dry_run=true`、`send_email=false`。核验数据和 Pages 后，再单独确认是否启用真实邮件。
 

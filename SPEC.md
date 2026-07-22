@@ -6,7 +6,7 @@
 
 开发并部署“政策法规日报”，监测全球重卡，重点关注纯电重卡、动力电池、充换电、排放、碳排放、智能驾驶及市场准入。每天北京时间 08:30 采集此前 24 小时可核验新增信息，使用 DeepSeek 分类、翻译和生成中文摘要，生成并发布日报；有有效内容时才允许通过 QQ SMTP 邮件发送。每周一 08:30 汇总此前 7 天，每月 1 日 08:30 汇总上个自然月，周报和月报只发布网站、永不发送邮件。
 
-目标仓库为公开的 `qesbr/heavy-truck-policy-daily` 和私有的 `qesbr/heavy-truck-policy-daily-config`，网站地址为 `https://qesbr.github.io/heavy-truck-policy-daily/`。所有 GitHub Actions 时间使用 UTC，日报 `30 0 * * *`，周报 `30 0 * * 1`，月报 `30 0 1 * *`。手动触发支持报告类型、起止日期、是否发送日报邮件及强制重建。
+实际目标仓库为公开的 `qesbr/qesbr-heavy-truck-policy-daily` 和私有的 `qesbr/qesbr-heavy-truck-policy-daily-config`，网站地址相应为 `https://qesbr.github.io/qesbr-heavy-truck-policy-daily/`。所有 GitHub Actions 时间使用 UTC，日报 `30 0 * * *`，周报 `30 0 * * 1`，月报 `30 0 1 * *`。手动触发支持报告类型、起止日期、是否发送日报邮件及强制重建。
 
 ## 监测范围与来源
 
@@ -37,4 +37,3 @@ QQ SMTP 为 `smtp.qq.com:465`。敏感信息仅从 Secrets 或环境变量读取
 ## 验收
 
 必须完成单元与集成测试、配置校验、DeepSeek 模拟和错误测试、采集失败隔离、幂等、有/无内容日报、周月报、邮件预览与安全、静态构建、Pages 子路径、桌面和移动端、链接/搜索/筛选/归档检查。最终交付必须区分本地代码完成与 GitHub 实际部署，报告测试结果、网站和两个仓库地址、Secrets 清单、首次 Actions 运行结果及已知限制。
-

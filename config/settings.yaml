@@ -5,7 +5,7 @@ request:
   timeout_seconds: 20
   retries: 2
   rate_limit_seconds: 0.5
-  user_agent: HeavyTruckPolicyDaily/0.1 (+https://qesbr.github.io/heavy-truck-policy-daily/)
+  user_agent: HeavyTruckPolicyDaily/0.1 (+https://qesbr.github.io/qesbr-heavy-truck-policy-daily/)
 deepseek:
   endpoint: https://api.deepseek.com/chat/completions
   model: deepseek-chat
@@ -13,9 +13,8 @@ deepseek:
   mock_without_key: true
 site:
   title: 政策法规日报
-  base_path: /heavy-truck-policy-daily/
+  base_path: /qesbr-heavy-truck-policy-daily/
 email:
   smtp_host: smtp.qq.com
   smtp_port: 465
   sender_name: 政策法规日报
-
