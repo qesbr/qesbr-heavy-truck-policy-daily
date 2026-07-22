@@ -4,8 +4,34 @@
   "title": "政策法规日报 · 2026-07-21",
   "period_start": "2026-07-21T00:00:00+08:00",
   "period_end": "2026-07-21T23:59:59.999999+08:00",
-  "generated_at": "2026-07-22T23:28:59.120949+08:00",
-  "summary": "暂无重要更新。",
-  "empty": true,
-  "articles": []
+  "generated_at": "2026-07-22T23:31:12.776336+08:00",
+  "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点0条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "53b686cbe85a9f9b",
+      "title_zh": "2026年第一季度美国零排放公交与卡车市场概览",
+      "title_original": "Zero-emission bus and truck market in the United States (January–March 2026) - International Council on Clean Transportation",
+      "summary_zh": "ICCT统计显示，2026年第一季度美国共登记353,173辆2b至8级中重型车辆，其中零排放车辆15,338辆，占4.3%。重型卡车共登记51,776辆，零排放重卡132辆，渗透率约0.25%；零排放重卡登记量环比下降4.3%、同比下降59.5%。零排放重卡以8级牵引车为主，Orange EV、Daimler、Paccar、Battle Motors和Volvo为主要厂商。",
+      "source_name": "国际清洁交通委员会 ICCT",
+      "source_type": "研究机构",
+      "source_url": "https://theicct.org/publication/zero-emission-bus-and-truck-market-us-q1-2026-jul26",
+      "published_at": "2026-07-21T00:00:00+08:00",
+      "collected_at": "2026-07-22T23:59:59.999999+08:00",
+      "region": "美国",
+      "primary_category": "市场",
+      "tags": [
+        "纯电重卡",
+        "市场准入"
+      ],
+      "importance_score": 72,
+      "is_highlight": false,
+      "content_hash": "1e348527ef020f71a03217deeb0f8ea9",
+      "event_id": "f30f2953bebec194",
+      "related_sources": [],
+      "content_evidence": "Race to zero: Zero-emission bus and truck market in the United States (January–March 2025) Market Spotlight Zero-emission bus and truck market in the United States (January–March 2026) Overview A total of new 353,173 Class 2b-8 medium- and heavy-duty vehicles (MHDVs) were registered between January and March 2026 in the United States, of which 15,338 (4.3%) were zero-emission. Compared to the final quarter of 2025, the total number of MHDV registrations fell by 14.5%, and the number of zero-emission MHDV registrations fell further by 43.6%. Year-on-year, the first quarter (Q1) of 2026 was also a worse period for MHDVs compared to Q1 2025, with 12.1% fewer total registrations and less than half the number of zero-emission registrations. All three segments—medium-duty trucks (MDTs), heavy-duty trucks (HDTs), and buses—experienced declines, with MDTs being the hardest hit. Starting from this quarter, our market spotlight of the U.S. MHDV market also includes Class 2b-3 trucks, vans, and b",
+      "language": "en",
+      "authority": 80
+    }
+  ]
 }
