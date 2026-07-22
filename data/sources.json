@@ -7,7 +7,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "HTTPStatusError: Client error '403 Forbidden' for url 'https://unece.org/media/transport/Vehicle-Regulations/news/recent'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    "message": "HTTPStatusError: Client error '403 Forbidden' for url 'https://unece.org/media/transport/Vehicle-Regulations/news/recent'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403；候选0条；收录0条"
   },
   {
     "id": "eu_transport",
@@ -17,7 +17,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": "2026-07-22T23:59:59.999999+08:00",
     "status": "ok",
-    "message": ""
+    "message": "候选1条；收录0条；AI失败1条"
   },
   {
     "id": "eurlex",
@@ -27,7 +27,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "未发现候选链接"
+    "message": "未发现候选链接；候选0条；收录0条"
   },
   {
     "id": "miit_vehicle",
@@ -37,7 +37,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "未发现候选链接"
+    "message": "未发现候选链接；候选0条；收录0条"
   },
   {
     "id": "mot",
@@ -47,7 +47,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": "2026-07-22T23:59:59.999999+08:00",
     "status": "ok",
-    "message": ""
+    "message": "候选4条；收录0条；AI失败4条"
   },
   {
     "id": "mee",
@@ -57,7 +57,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "未发现候选链接"
+    "message": "未发现候选链接；候选0条；收录0条"
   },
   {
     "id": "ndrc",
@@ -67,7 +67,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "30条日期不在窗口"
+    "message": "30条日期不在窗口；候选0条；收录0条"
   },
   {
     "id": "sac",
@@ -77,7 +77,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "未发现候选链接"
+    "message": "未发现候选链接；候选0条；收录0条"
   },
   {
     "id": "std_service",
@@ -87,7 +87,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": "2026-07-22T23:59:59.999999+08:00",
     "status": "ok",
-    "message": ""
+    "message": "候选0条；收录0条"
   },
   {
     "id": "cattarc",
@@ -97,7 +97,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": "2026-07-22T23:59:59.999999+08:00",
     "status": "ok",
-    "message": ""
+    "message": "候选0条；收录0条"
   },
   {
     "id": "caam",
@@ -107,7 +107,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "ConnectTimeout: timed out"
+    "message": "ConnectTimeout: timed out；候选0条；收录0条"
   },
   {
     "id": "autoinfo",
@@ -117,7 +117,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": "2026-07-22T23:59:59.999999+08:00",
     "status": "ok",
-    "message": ""
+    "message": "候选0条；收录0条"
   },
   {
     "id": "icct",
@@ -127,7 +127,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": "2026-07-22T23:59:59.999999+08:00",
     "status": "ok",
-    "message": ""
+    "message": "候选6条；收录0条；AI失败6条"
   },
   {
     "id": "cnautonews",
@@ -137,7 +137,7 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "ConnectTimeout: timed out"
+    "message": "ConnectTimeout: timed out；候选0条；收录0条"
   },
   {
     "id": "truckhome",
@@ -147,6 +147,6 @@
     "first_discovered_at": "2026-07-22T23:59:59.999999+08:00",
     "last_success_at": "2026-07-22T23:59:59.999999+08:00",
     "status": "ok",
-    "message": ""
+    "message": "候选2条；收录0条；AI失败2条"
   }
 ]
