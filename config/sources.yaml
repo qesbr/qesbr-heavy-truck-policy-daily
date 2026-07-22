@@ -3,7 +3,7 @@ sources:
   - {id: eu_transport, name: 欧盟委员会交通与运输总司, adapter: html_list, url: "https://transport.ec.europa.eu/news-events/news_en", source_type: 政府, authority: 100, region: 欧盟, enabled: true}
   - {id: eurlex, name: EUR-Lex, adapter: html_list, url: "https://eur-lex.europa.eu/oj/direct-access.html", source_type: 法规组织, authority: 100, region: 欧盟, enabled: true}
   - {id: miit_vehicle, name: 工业和信息化部装备工业一司, adapter: html_list, url: "https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: mot, name: 交通运输部, adapter: html_list, url: "https://www.mot.gov.cn/zhengcejiedu/", source_type: 政府, authority: 100, region: 中国, enabled: true}
+  - {id: mot, name: 交通运输部, adapter: html_list, url: "https://www.mot.gov.cn/gongkai/zcjd/index_25.html", source_type: 政府, authority: 100, region: 中国, enabled: true}
   - {id: mee, name: 生态环境部, adapter: html_list, url: "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/", source_type: 政府, authority: 100, region: 中国, enabled: true}
   - {id: ndrc, name: 国家发展改革委, adapter: html_list, url: "https://www.ndrc.gov.cn/xxgk/zcfb/ghxwj/", source_type: 政府, authority: 100, region: 中国, enabled: true}
   - {id: sac, name: 国家标准化管理委员会, adapter: html_list, url: "https://www.sac.gov.cn/xw/", source_type: 标准组织, authority: 100, region: 中国, enabled: true}
@@ -33,4 +33,3 @@ wechat_accounts:
   - 万维认证
   - 智驾小强
   - 中汽数据
-
