@@ -1,17 +1,17 @@
 sources:
-  - {id: unece_wp29, name: UNECE/WP.29, adapter: html_list, url: "https://unece.org/transport/vehicle-regulations", source_type: 法规组织, authority: 100, region: UNECE/WP.29, enabled: true}
-  - {id: eu_transport, name: 欧盟委员会交通与运输总司, adapter: html_list, url: "https://transport.ec.europa.eu/news-events/news_en", source_type: 政府, authority: 100, region: 欧盟, enabled: true}
-  - {id: eurlex, name: EUR-Lex, adapter: html_list, url: "https://eur-lex.europa.eu/oj/direct-access.html", source_type: 法规组织, authority: 100, region: 欧盟, enabled: true}
-  - {id: miit_vehicle, name: 工业和信息化部装备工业一司, adapter: html_list, url: "https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: mot, name: 交通运输部, adapter: html_list, url: "https://www.mot.gov.cn/gongkai/zcjd/index_25.html", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: mee, name: 生态环境部, adapter: html_list, url: "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: ndrc, name: 国家发展改革委, adapter: html_list, url: "https://www.ndrc.gov.cn/xxgk/zcfb/ghxwj/", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: sac, name: 国家标准化管理委员会, adapter: html_list, url: "https://www.sac.gov.cn/xw/", source_type: 标准组织, authority: 100, region: 中国, enabled: true}
+  - {id: unece_wp29, name: UNECE/WP.29, adapter: official_site, url: "https://unece.org/media/transport/Vehicle-Regulations/news/recent", url_patterns: ["/press/", "/media/transport/Vehicle-Regulations/"], source_type: 法规组织, authority: 100, region: UNECE/WP.29, enabled: true}
+  - {id: eu_transport, name: 欧盟委员会交通与运输总司, adapter: official_site, url: "https://transport.ec.europa.eu/news-events/news_en", url_patterns: ["/news-events/news/"], source_type: 政府, authority: 100, region: 欧盟, enabled: true}
+  - {id: eurlex, name: EUR-Lex, adapter: official_site, url: "https://eur-lex.europa.eu/oj/browse-oj.html?coll_oj=oj-l", url_patterns: ["/legal-content/", "CELEX"], source_type: 法规组织, authority: 100, region: 欧盟, enabled: true}
+  - {id: miit_vehicle, name: 工业和信息化部装备工业一司, adapter: official_site, url: "https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html", url_patterns: ["/art/20"], content_selector: ".TRS_Editor, .ccontent, article", source_type: 政府, authority: 100, region: 中国, enabled: true}
+  - {id: mot, name: 交通运输部, adapter: official_site, url: "https://www.mot.gov.cn/gongkai/zcjd/index_25.html", url_patterns: ["/t20", "/zcjd/"], source_type: 政府, authority: 100, region: 中国, enabled: true}
+  - {id: mee, name: 生态环境部, adapter: official_site, url: "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/", url_patterns: ["/t20"], content_selector: ".TRS_Editor, article", source_type: 政府, authority: 100, region: 中国, enabled: true}
+  - {id: ndrc, name: 国家发展改革委, adapter: official_site, url: "https://www.ndrc.gov.cn/xxgk/zcfb/ghxwj/", url_patterns: ["/t20"], content_selector: ".TRS_Editor, article", source_type: 政府, authority: 100, region: 中国, enabled: true}
+  - {id: sac, name: 国家标准化管理委员会, adapter: official_site, url: "https://www.sac.gov.cn/xw/", url_patterns: ["/art/20", "/xw/"], source_type: 标准组织, authority: 100, region: 中国, enabled: true}
   - {id: std_service, name: 全国标准信息公共服务平台, adapter: html_list, url: "https://std.samr.gov.cn/", source_type: 标准组织, authority: 100, region: 中国, enabled: true}
   - {id: cattarc, name: 全国汽车标准化技术委员会, adapter: html_list, url: "https://www.catarc.org.cn/", source_type: 标准组织, authority: 95, region: 中国, enabled: true}
   - {id: caam, name: 中国汽车工业协会, adapter: html_list, url: "https://www.caam.org.cn/", source_type: 行业协会, authority: 80, region: 中国, enabled: true}
   - {id: autoinfo, name: 中国汽车工业信息网, adapter: html_list, url: "https://www.autoinfo.org.cn/", source_type: 行业媒体, authority: 60, region: 中国, enabled: true}
-  - {id: icct, name: 国际清洁交通委员会 ICCT, adapter: html_list, url: "https://theicct.org/publications/", source_type: 研究机构, authority: 80, region: 全球, enabled: true}
+  - {id: icct, name: 国际清洁交通委员会 ICCT, adapter: official_site, url: "https://theicct.org/publications/", url_patterns: ["/publication/", "/wp-content/"], source_type: 研究机构, authority: 80, region: 全球, enabled: true}
   - {id: cnautonews, name: 中国汽车报, adapter: html_list, url: "https://www.cnautonews.com/", source_type: 行业媒体, authority: 60, region: 中国, enabled: true}
   - {id: truckhome, name: 卡车之家, adapter: html_list, url: "https://www.360che.com/news/", source_type: 行业媒体, authority: 55, region: 中国, enabled: true}
 wechat_accounts:

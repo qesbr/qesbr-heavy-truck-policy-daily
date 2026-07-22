@@ -11,6 +11,7 @@ class RequestConfig(BaseModel):
     timeout_seconds: int = 20
     retries: int = 2
     rate_limit_seconds: float = 0.5
+    max_candidates_per_source: int = 30
     user_agent: str
 
 
@@ -49,4 +50,3 @@ def read_yaml(path: Path) -> dict[str, Any]:
 
 def load_settings(root: Path) -> Settings:
     return Settings.model_validate(read_yaml(root / "config" / "settings.yaml"))
-

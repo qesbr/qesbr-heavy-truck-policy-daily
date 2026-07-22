@@ -15,6 +15,7 @@ dependencies = [
   "pydantic==2.10.6",
   "python-dateutil==2.9.0.post0",
   "PyYAML==6.0.2",
+  "trafilatura==2.1.0",
 ]
 
 [project.optional-dependencies]
@@ -30,4 +31,3 @@ where = ["src"]
 pythonpath = ["src"]
 testpaths = ["tests"]
 addopts = "-q"
-

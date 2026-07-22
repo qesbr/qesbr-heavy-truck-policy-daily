@@ -10,7 +10,7 @@ from zoneinfo import ZoneInfo
 
 import httpx
 
-from policy_daily.collectors import HtmlListCollector, RssCollector
+from policy_daily.collectors import HtmlListCollector, OfficialSiteCollector, RssCollector
 from policy_daily.config import load_settings, read_yaml
 from policy_daily.emailer import deliver
 from policy_daily.models import Article, Report, SourceStatus
@@ -83,6 +83,8 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
     with httpx.Client(timeout=timeout, transport=transport, headers={"User-Agent": settings.request.user_agent}, follow_redirects=True) as client:
         processor = DeepSeekProcessor(processor_config, client)
         for source in source_config["sources"]:
+            source = dict(source)
+            source.setdefault("max_candidates", settings.request.max_candidates_per_source)
             status = SourceStatus(
                 id=source["id"], name=source["name"], url=source["url"], source_type=source["source_type"],
                 first_discovered_at=end, status="disabled" if not source.get("enabled", True) else "pending",
@@ -90,7 +92,7 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
             if not source.get("enabled", True):
                 statuses.append(status)
                 continue
-            collector_cls = RssCollector if source.get("adapter") == "rss" else HtmlListCollector
+            collector_cls = {"rss": RssCollector, "official_site": OfficialSiteCollector}.get(source.get("adapter"), HtmlListCollector)
             result = collector_cls(source, client).collect(start, end)
             if result.error:
                 status.status, status.message = "error", result.error[:240]

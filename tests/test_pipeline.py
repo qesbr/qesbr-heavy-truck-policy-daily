@@ -4,6 +4,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import httpx
+from bs4 import BeautifulSoup
 
 from policy_daily.emailer import deliver, render_email
 from policy_daily.models import RawArticle
@@ -13,6 +14,7 @@ from policy_daily.site_builder import build_site
 from policy_daily.main import load_recipients
 from policy_daily.collectors.html_list import HtmlListCollector
 from policy_daily.collectors.wechat import WechatPublicCollector
+from policy_daily.collectors.official import OfficialSiteCollector, extract_meta_date
 
 
 TZ = ZoneInfo("Asia/Shanghai")
@@ -92,3 +94,22 @@ def test_collector_failure_is_isolated():
 def test_wechat_without_public_entry_is_safe():
     result = WechatPublicCollector({"name": "测试公众号"}, httpx.Client()).collect(NOW - timedelta(hours=24), NOW)
     assert result.articles == [] and "公开入口" in result.error
+
+
+def test_official_adapter_verifies_detail_metadata():
+    list_html = '<html><body><a href="/news/2026/rule.html">重型车辆排放标准正式发布</a></body></html>'
+    detail_html = '''<html><head><title>重型车辆排放标准正式发布</title>
+      <meta property="article:published_time" content="2026-07-22T08:00:00+08:00"></head>
+      <body><article><p>本标准规定重型车辆排放和市场准入要求，适用于相关生产企业，自2027年1月1日起实施。</p>
+      <p>文件明确检测程序、认证范围、实施节点和过渡安排，并公布主管机构及正式生效日期。</p>
+      <p>有关要求覆盖车辆生产、检验、登记和监督环节，原文提供完整条款与附件。</p>
+      <p>为保障政策平稳落地，主管部门设置了过渡期、信息报送、产品抽查和违规处置要求，并要求企业按照新标准完成技术改造与认证。</p>
+      <p>各地有关部门应当加强协同监管，对新生产车辆的电池安全、能耗、排放和充换电兼容性开展检查，及时公开实施情况。</p></article></body></html>'''
+    def handler(request):
+        return httpx.Response(200, text=detail_html if request.url.path.endswith("rule.html") else list_html)
+    source = {"url": "https://example.com/list", "name": "测试政府", "source_type": "政府", "region": "中国", "authority": 100, "url_patterns": ["/news/"], "min_content_chars": 100}
+    assert extract_meta_date(BeautifulSoup(detail_html, "html.parser"), TZ) == datetime(2026, 7, 22, 8, 0, tzinfo=TZ)
+    result = OfficialSiteCollector(source, httpx.Client(transport=httpx.MockTransport(handler))).collect(NOW - timedelta(hours=24), NOW)
+    assert not result.error and len(result.articles) == 1
+    assert result.articles[0].title == "重型车辆排放标准正式发布"
+    assert result.articles[0].published_at.date().isoformat() == "2026-07-22"
