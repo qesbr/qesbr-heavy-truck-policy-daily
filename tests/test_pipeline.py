@@ -70,10 +70,12 @@ def test_site_build_supports_subpath(tmp_path):
     data = tmp_path / "data"
     data.mkdir()
     (data / "manifest.json").write_text(json.dumps({"reports": []}), encoding="utf-8")
+    (data / "sources.json").write_text("[]", encoding="utf-8")
     output = tmp_path / "dist"
     build_site(root, data, output, "/qesbr-heavy-truck-policy-daily/")
     assert (output / "index.html").exists()
     assert 'qesbr-heavy-truck-policy-daily' in (output / "site-config.js").read_text(encoding="utf-8")
+    assert not (output / "data" / "sources.json").exists()
 
 
 def test_recipient_config_is_private_and_validated(tmp_path):
