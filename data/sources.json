@@ -2,90 +2,90 @@
   {
     "id": "unece_wp29",
     "name": "UNECE/WP.29",
-    "url": "https://unece.org/transport/vehicle-regulations",
+    "url": "https://unece.org/media/transport/Vehicle-Regulations/news/recent",
     "source_type": "法规组织",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "HTTPStatusError: Client error '403 Forbidden' for url 'https://unece.org/transport/vehicle-regulations'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
+    "message": "HTTPStatusError: Client error '403 Forbidden' for url 'https://unece.org/media/transport/Vehicle-Regulations/news/recent'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
   },
   {
     "id": "eu_transport",
     "name": "欧盟委员会交通与运输总司",
     "url": "https://transport.ec.europa.eu/news-events/news_en",
     "source_type": "政府",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": "2026-07-22T22:53:27.913475+08:00",
     "status": "ok",
     "message": ""
   },
   {
     "id": "eurlex",
     "name": "EUR-Lex",
-    "url": "https://eur-lex.europa.eu/oj/direct-access.html",
+    "url": "https://eur-lex.europa.eu/oj/browse-oj.html?coll_oj=oj-l",
     "source_type": "法规组织",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
-    "status": "ok",
-    "message": ""
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": null,
+    "status": "error",
+    "message": "未发现候选链接"
   },
   {
     "id": "miit_vehicle",
     "name": "工业和信息化部装备工业一司",
     "url": "https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html",
     "source_type": "政府",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
-    "status": "ok",
-    "message": ""
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": null,
+    "status": "error",
+    "message": "未发现候选链接"
   },
   {
     "id": "mot",
     "name": "交通运输部",
-    "url": "https://www.mot.gov.cn/zhengcejiedu/",
+    "url": "https://www.mot.gov.cn/gongkai/zcjd/index_25.html",
     "source_type": "政府",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
     "last_success_at": null,
     "status": "error",
-    "message": "HTTPStatusError: Client error '404 Not Found' for url 'https://www.mot.gov.cn/zhengcejiedu/'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404"
+    "message": "30条日期不在窗口"
   },
   {
     "id": "mee",
     "name": "生态环境部",
     "url": "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/",
     "source_type": "政府",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
-    "status": "ok",
-    "message": ""
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": null,
+    "status": "error",
+    "message": "未发现候选链接"
   },
   {
     "id": "ndrc",
     "name": "国家发展改革委",
     "url": "https://www.ndrc.gov.cn/xxgk/zcfb/ghxwj/",
     "source_type": "政府",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
-    "status": "ok",
-    "message": ""
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": null,
+    "status": "error",
+    "message": "30条日期不在窗口"
   },
   {
     "id": "sac",
     "name": "国家标准化管理委员会",
     "url": "https://www.sac.gov.cn/xw/",
     "source_type": "标准组织",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
-    "status": "ok",
-    "message": ""
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": null,
+    "status": "error",
+    "message": "未发现候选链接"
   },
   {
     "id": "std_service",
     "name": "全国标准信息公共服务平台",
     "url": "https://std.samr.gov.cn/",
     "source_type": "标准组织",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": "2026-07-22T22:53:27.913475+08:00",
     "status": "ok",
     "message": ""
   },
@@ -94,8 +94,8 @@
     "name": "全国汽车标准化技术委员会",
     "url": "https://www.catarc.org.cn/",
     "source_type": "标准组织",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": "2026-07-22T22:53:27.913475+08:00",
     "status": "ok",
     "message": ""
   },
@@ -104,7 +104,7 @@
     "name": "中国汽车工业协会",
     "url": "https://www.caam.org.cn/",
     "source_type": "行业协会",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
     "last_success_at": null,
     "status": "error",
     "message": "ConnectTimeout: timed out"
@@ -114,8 +114,8 @@
     "name": "中国汽车工业信息网",
     "url": "https://www.autoinfo.org.cn/",
     "source_type": "行业媒体",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": "2026-07-22T22:53:27.913475+08:00",
     "status": "ok",
     "message": ""
   },
@@ -124,8 +124,8 @@
     "name": "国际清洁交通委员会 ICCT",
     "url": "https://theicct.org/publications/",
     "source_type": "研究机构",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": "2026-07-22T22:53:27.913475+08:00",
     "status": "ok",
     "message": ""
   },
@@ -134,7 +134,7 @@
     "name": "中国汽车报",
     "url": "https://www.cnautonews.com/",
     "source_type": "行业媒体",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
     "last_success_at": null,
     "status": "error",
     "message": "ConnectTimeout: timed out"
@@ -144,8 +144,8 @@
     "name": "卡车之家",
     "url": "https://www.360che.com/news/",
     "source_type": "行业媒体",
-    "first_discovered_at": "2026-07-22T21:50:22.887249+08:00",
-    "last_success_at": "2026-07-22T21:50:22.887249+08:00",
+    "first_discovered_at": "2026-07-22T22:53:27.913475+08:00",
+    "last_success_at": "2026-07-22T22:53:27.913475+08:00",
     "status": "ok",
     "message": ""
   }
