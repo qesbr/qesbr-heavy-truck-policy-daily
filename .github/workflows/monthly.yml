@@ -1,0 +1,32 @@
+name: Monthly report
+on:
+  schedule: [{cron: "30 0 1 * *"}]
+  workflow_dispatch:
+    inputs:
+      start_date: {description: "开始日期", required: false, type: string}
+      end_date: {description: "结束日期", required: false, type: string}
+      force: {description: "强制重新生成", required: true, default: false, type: boolean}
+permissions: {contents: write}
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11", cache: pip}
+      - run: pip install -r requirements.txt
+      - env: {DEEPSEEK_API_KEY: "${{ secrets.DEEPSEEK_API_KEY }}"}
+        shell: bash
+        run: |
+          args=(--report-type monthly --skip-collect)
+          [[ -n "${{ inputs.start_date }}" ]] && args+=(--start "${{ inputs.start_date }}")
+          [[ -n "${{ inputs.end_date }}" ]] && args+=(--end "${{ inputs.end_date }}")
+          [[ "${{ inputs.force }}" == "true" ]] && args+=(--force)
+          python -m policy_daily.main "${args[@]}"
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add data
+          git diff --cached --quiet || git commit -m "data: update monthly report"
+          git push
+

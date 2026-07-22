@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="全球重卡、纯电重卡与动力电池政策法规监测">
+  <title>政策法规日报</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand"><span class="brand-mark">规</span><div><strong>政策法规日报</strong><small>HEAVY TRUCK POLICY RADAR</small></div></div>
+    <nav aria-label="报告类型">
+      <button class="nav-tab active" data-type="daily">日报</button><button class="nav-tab" data-type="weekly">周报</button><button class="nav-tab" data-type="monthly">月报</button><button class="nav-tab" data-view="sources">来源状态</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">GLOBAL COMMERCIAL VEHICLE INTELLIGENCE</p>
+      <h1>看清规则变化，<br><em>跟上产业节奏。</em></h1>
+      <p class="hero-copy">聚合全球重卡、动力电池、充换电、排放与市场准入的可核验政策信息。</p>
+      <div class="report-meta"><span id="reportDate">载入中</span><span id="reportCount">—</span></div>
+    </section>
+    <section class="toolbar" aria-label="筛选工具">
+      <label class="search"><span>搜索</span><input id="search" type="search" placeholder="标题、摘要或标签"></label>
+      <label>分类<select id="category"><option value="">全部分类</option></select></label>
+      <label>地区<select id="region"><option value="">全部地区</option></select></label>
+      <label>来源<select id="source"><option value="">全部来源</option></select></label>
+      <label>标签<select id="tag"><option value="">全部标签</option></select></label>
+      <label>日期<input id="date" type="date"></label>
+    </section>
+    <section id="reportSummary" class="summary"></section>
+    <section id="highlights"><div class="section-title"><span>01</span><h2>今日重点</h2></div><div id="highlightCards" class="feature-grid"></div></section>
+    <section id="allNews"><div class="section-title"><span>02</span><h2>全部动态</h2></div><div id="cards" class="card-list"></div></section>
+    <section id="sourcesView" hidden><div class="section-title"><span>03</span><h2>来源状态</h2></div><div id="sourceCards" class="source-grid"></div></section>
+    <div id="empty" class="empty" hidden><strong>暂无重要更新</strong><p>当前筛选条件下没有可核验的信息。</p></div>
+  </main>
+  <footer><p>政策法规日报 · 仅收录正文与发布时间可核验的公开信息</p><p>北京时间 UTC+8 · 数据版本化保存</p></footer>
+  <script src="site-config.js"></script><script src="assets/app.js"></script>
+</body>
+</html>
+

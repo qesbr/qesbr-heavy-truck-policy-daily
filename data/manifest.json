@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-22T20:26:24.808279+08:00",
+  "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-07-22",
+      "title": "政策法规日报 · 2026-07-22",
+      "period_start": "2026-07-21T20:24:14.200932+08:00",
+      "period_end": "2026-07-22T20:24:14.200932+08:00",
+      "generated_at": "2026-07-22T20:24:14.200932+08:00",
+      "summary": "暂无重要更新。",
+      "empty": true,
+      "articles": []
+    },
+    {
+      "report_type": "weekly",
+      "report_id": "weekly-2026-07-22",
+      "title": "政策法规周报 · 2026-07-22",
+      "period_start": "2026-07-15T20:26:24.806155+08:00",
+      "period_end": "2026-07-22T20:26:24.806155+08:00",
+      "generated_at": "2026-07-22T20:26:24.806155+08:00",
+      "summary": "暂无重要更新。",
+      "empty": true,
+      "articles": []
+    }
+  ]
+}

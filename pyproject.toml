@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heavy-truck-policy-daily"
+version = "0.1.0"
+description = "政策法规日报：全球重卡政策法规自动监测与静态发布"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4==4.12.3",
+  "bleach==6.2.0",
+  "feedparser==6.0.11",
+  "httpx==0.28.1",
+  "pydantic==2.10.6",
+  "python-dateutil==2.9.0.post0",
+  "PyYAML==6.0.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5", "pytest-cov==6.0.0"]
+
+[project.scripts]
+policy-daily = "policy_daily.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
