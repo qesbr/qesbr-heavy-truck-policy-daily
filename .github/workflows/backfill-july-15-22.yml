@@ -1,4 +1,5 @@
 name: Backfill July 15-22 dry-run
+# Second run records auditable raw candidates and per-source AI outcomes.
 on:
   push:
     paths:

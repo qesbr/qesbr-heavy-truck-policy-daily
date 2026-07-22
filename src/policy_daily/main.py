@@ -79,6 +79,7 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
         highlight_threshold=settings.highlight_threshold, core_tags=tags["core_tags"], aliases=tags.get("aliases", {}),
     )
     processed: list[Article] = []
+    raw_candidates = []
     statuses: list[SourceStatus] = []
     with httpx.Client(timeout=timeout, transport=transport, headers={"User-Agent": settings.request.user_agent}, follow_redirects=True) as client:
         processor = DeepSeekProcessor(processor_config, client)
@@ -94,6 +95,9 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
                 continue
             collector_cls = {"rss": RssCollector, "official_site": OfficialSiteCollector}.get(source.get("adapter"), HtmlListCollector)
             result = collector_cls(source, client).collect(start, end)
+            raw_candidates.extend(result.articles)
+            accepted_before = len(processed)
+            ai_failures = 0
             if result.error:
                 status.status, status.message = "error", result.error[:240]
                 LOGGER.warning("来源采集失败 %s: %s", source["name"], result.error)
@@ -105,9 +109,12 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
                     if article:
                         processed.append(article)
                 except Exception as exc:
+                    ai_failures += 1
                     LOGGER.warning("AI处理失败 %s: %s", raw.source_name, exc)
+            status.message = "；".join(filter(None, [status.message, f"候选{len(result.articles)}条", f"收录{len(processed) - accepted_before}条", f"AI失败{ai_failures}条" if ai_failures else ""]))
             statuses.append(status)
     json_dump(data_dir / "sources.json", [item.model_dump(mode="json") for item in statuses])
+    json_dump(data_dir / "raw" / f"{end.date().isoformat()}.json", [item.model_dump(mode="json") for item in raw_candidates])
     if processed:
         json_dump(data_dir / "processed" / f"{end.date().isoformat()}.json", [item.model_dump(mode="json") for item in processed])
     return processed
