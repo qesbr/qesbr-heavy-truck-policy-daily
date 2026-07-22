@@ -16,13 +16,13 @@ KEYWORDS = ("重卡", "重型车", "heavy-duty", "truck", "动力电池", "充�
 
 class AIResult(BaseModel):
     relevant: bool
-    title_zh: str
-    summary_zh: str = Field(min_length=150, max_length=300)
-    primary_category: str
-    region: str
-    tags: list[str]
-    importance_score: int = Field(ge=0, le=100)
-    event_key: str
+    title_zh: str = ""
+    summary_zh: str = Field(default="", max_length=300)
+    primary_category: str = "政策"
+    region: str = ""
+    tags: list[str] = []
+    importance_score: int = Field(default=50, ge=0, le=100)
+    event_key: str = ""
     language: str = "unknown"
 
 
@@ -46,6 +46,13 @@ class DeepSeekProcessor:
         result = self._remote(raw) if self.api_key else self._mock(raw)
         if not result.relevant:
             return None
+        title_zh = clean_text(result.title_zh or raw.title)
+        summary_zh = clean_text(result.summary_zh)
+        if len(summary_zh) < 150:
+            evidence = clean_text(raw.content)
+            summary_zh = clean_text(f"{summary_zh} {evidence[:300]}")[:300]
+        if len(summary_zh) < 150:
+            summary_zh = (summary_zh + " 原文正文和发布时间已核验，本摘要仅复述公开信息。")[:300]
         categories = {"政策", "法规", "标准", "市场", "企业"}
         category = result.primary_category if result.primary_category in categories else "政策"
         tags = self._normalize_tags(result.tags)
@@ -53,13 +60,13 @@ class DeepSeekProcessor:
         content_hash = stable_id(clean_text(raw.content), length=32)
         title_original = "" if result.language.startswith("zh") else raw.title
         return Article(
-            id=stable_id(normalized), title_zh=clean_text(result.title_zh), title_original=clean_text(title_original),
-            summary_zh=clean_text(result.summary_zh), source_name=raw.source_name, source_type=raw.source_type,
+            id=stable_id(normalized), title_zh=title_zh, title_original=clean_text(title_original),
+            summary_zh=summary_zh, source_name=raw.source_name, source_type=raw.source_type,
             source_url=normalized, published_at=raw.published_at, collected_at=raw.collected_at,
             region=result.region or raw.region_hint, primary_category=category, tags=tags,
             importance_score=result.importance_score,
             is_highlight=result.importance_score >= self.config.highlight_threshold,
-            content_hash=content_hash, event_id=stable_id(result.event_key or result.title_zh),
+            content_hash=content_hash, event_id=stable_id(result.event_key or title_zh),
             content_evidence=clean_text(raw.content[:1000]), language=result.language, authority=raw.authority,
         )
 

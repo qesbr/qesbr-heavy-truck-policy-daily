@@ -1,5 +1,5 @@
 name: Backfill July 15-22 dry-run
-# Second run records auditable raw candidates and per-source AI outcomes.
+# Third run tolerates incomplete fields for rejected AI records and validates accepted summaries afterward.
 on:
   push:
     paths:
