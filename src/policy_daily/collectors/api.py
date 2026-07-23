@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime, timedelta
+from datetime import datetime
 from io import BytesIO
 import re
 
@@ -24,82 +24,9 @@ class ApiCollector(Collector):
         api_kind = self.source.get("api_kind")
         if api_kind == "federal_register":
             return self._federal_register(start, end)
-        if api_kind == "california_notice_register":
-            return self._california_notice_register(start, end)
         if api_kind == "eurlex_cellar":
             return self._eurlex_cellar(start, end)
         return CollectorResult(error=f"不支持的API类型: {api_kind}")
-
-    def _california_notice_register(self, start: datetime, end: datetime) -> CollectorResult:
-        """Read official weekly California Regulatory Notice Register PDFs."""
-        query = self.source.get("query", {})
-        agency_pattern = re.compile(
-            query.get("agency_pattern", r"Air Resources Board"), re.I
-        )
-        include_patterns = [
-            re.compile(pattern, re.I)
-            for pattern in query.get("include_patterns", [])
-        ]
-        day = start.date()
-        while day.weekday() != 4:
-            day += timedelta(days=1)
-        attempted = 0
-        accessible = 0
-        articles: list[RawArticle] = []
-        try:
-            while day <= end.date():
-                attempted += 1
-                issue = day.isocalendar().week
-                month = day.strftime("%B")
-                url = (
-                    f"{str(self.source['url']).rstrip('/')}/{day:%Y/%m}/"
-                    f"{day:%Y}-Notice-Register-No.-{issue}-Z-"
-                    f"{month}-{day.day}-{day:%Y}.pdf"
-                )
-                response = self.client.get(url)
-                if response.status_code == 404:
-                    day += timedelta(days=7)
-                    continue
-                response.raise_for_status()
-                accessible += 1
-                text = extract_pdf_text(response.content)
-                windows: list[str] = []
-                for match in agency_pattern.finditer(text):
-                    window = text[match.start():match.start() + 7000]
-                    if not include_patterns or any(pattern.search(window) for pattern in include_patterns):
-                        windows.append(window)
-                content = clean_text(" ".join(dict.fromkeys(windows)))
-                if len(content) >= int(self.source.get("min_content_chars", 200)):
-                    published = datetime.combine(day, datetime.min.time(), tzinfo=end.tzinfo)
-                    articles.append(RawArticle(
-                        title=(
-                            f"California Regulatory Notice Register "
-                            f"No. {issue}-Z: vehicle and emissions actions"
-                        ),
-                        source_id=self.source["id"],
-                        source_name=self.source["name"],
-                        source_type=self.source["source_type"],
-                        source_url=url,
-                        published_at=published,
-                        collected_at=end,
-                        content=content[:30000],
-                        region_hint=self.source.get("region", "美国-加州"),
-                        authority=self.source.get("authority", 100),
-                        document_id=f"{day:%Y}-{issue:02d}-Z",
-                        document_type="California Regulatory Notice Register",
-                        evidence_level=EvidenceLevel(self.source.get("evidence_level", "S")),
-                    ))
-                day += timedelta(days=7)
-            return CollectorResult(
-                articles=articles,
-                message=f"法规登记尝试{attempted}期；可访问{accessible}期；相关{len(articles)}期",
-            )
-        except Exception as exc:
-            return CollectorResult(
-                articles=articles,
-                error=f"{type(exc).__name__}: {exc}",
-                message=f"法规登记尝试{attempted}期；可访问{accessible}期",
-            )
 
     def _eurlex_cellar(self, start: datetime, end: datetime) -> CollectorResult:
         """Query the EU Publications Office's official machine-readable repository."""

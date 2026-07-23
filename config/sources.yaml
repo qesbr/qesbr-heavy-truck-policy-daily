@@ -142,29 +142,6 @@ sources:
     region: 美国-加州
     enabled: false
 
-  - id: california_oal_vehicle
-    name: California Regulatory Notice Register
-    adapter: api
-    api_kind: california_notice_register
-    url: https://oal.ca.gov/wp-content/uploads/sites/166
-    channel: 加州车辆与排放法规登记
-    document_types: [Notice of proposed action, Regulatory action, Emergency action]
-    query:
-      agency_pattern: "Air Resources Board|California Highway Patrol"
-      include_patterns:
-        - "vehicle"
-        - "truck"
-        - "emission"
-        - "zero.?emission"
-        - "fuel"
-        - "transport"
-        - "CVSA"
-        - "out.?of.?service"
-    source_type: 政府
-    authority: 100
-    evidence_level: S
-    region: 美国-加州
-
   - id: icct_heavy_duty
     name: 国际清洁交通委员会 ICCT
     adapter: official_site
