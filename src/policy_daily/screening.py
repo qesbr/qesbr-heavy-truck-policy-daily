@@ -3,7 +3,13 @@ from __future__ import annotations
 from policy_daily.models import Article, EvidenceLevel, LifecycleStage, RelevanceLevel
 
 DIRECT_TERMS = {"重型货车", "重卡", "N2", "N3", "heavy-duty", "heavy duty", "commercial truck"}
-PROBABLE_TERMS = {"商用车", "道路货运", "commercial vehicle", "freight", "megawatt charging", "大功率充电"}
+PROBABLE_TERMS = {
+    "商用车", "道路货运", "commercial vehicle", "road freight", "megawatt charging", "大功率充电",
+    "motor carrier", "commercial driver's license", "electronic logging device", "hours of service",
+    "qualification of drivers", "49 cfr part 575",
+}
+EXCLUDED_SECTORS = {"aviation", "aircraft", "airworthiness", "helicopter", "maritime", "shipping", "railway"}
+ROAD_TERMS = DIRECT_TERMS | PROBABLE_TERMS | {"road vehicle", "motor vehicle", "truck", "bus"}
 LIFECYCLE_RULES = [
     (LifecycleStage.CONSULTATION, ("征求意见", "consultation", "request for comments")),
     (LifecycleStage.DRAFT, ("草案", "draft", "proposal", "proposed rule")),
@@ -18,6 +24,8 @@ LIFECYCLE_RULES = [
 
 def classify_relevance(title: str, content: str) -> RelevanceLevel:
     text = f"{title} {content[:5000]}".lower()
+    if any(term in text for term in EXCLUDED_SECTORS) and not any(term.lower() in text for term in ROAD_TERMS):
+        return RelevanceLevel.NONE
     if any(term.lower() in text for term in DIRECT_TERMS):
         return RelevanceLevel.DIRECT
     if any(term.lower() in text for term in PROBABLE_TERMS):

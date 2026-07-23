@@ -2,11 +2,13 @@ sources:
   - id: miit_vehicle
     name: 工业和信息化部装备工业一司
     adapter: official_site
-    url: https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html
+    url: https://wap.miit.gov.cn/jgsj/zbys/wjfb/index.html
     channel: 汽车产业政策与准入公告
     document_types: [公告, 政策文件, 征求意见, 道路机动车辆生产企业及产品]
     url_patterns: ["/art/20"]
     content_selector: ".TRS_Editor, .ccontent, article"
+    fallback_urls:
+      - https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html
     source_type: 政府
     authority: 100
     evidence_level: A
@@ -117,6 +119,15 @@ sources:
     channel: 重型车辆政策研究
     document_types: [研究报告, 政策分析]
     url_patterns: ["/publication/"]
+    include_keywords:
+      - heavy-duty
+      - heavy duty
+      - truck
+      - commercial vehicle
+      - medium-duty
+      - medium duty
+      - bus
+      - freight
     source_type: 研究机构
     authority: 85
     evidence_level: B

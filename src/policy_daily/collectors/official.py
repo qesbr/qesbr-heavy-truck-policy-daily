@@ -111,6 +111,9 @@ class OfficialSiteCollector(Collector):
                     if len(content) < minimum:
                         rejected_content += 1
                         continue
+                    required_terms = [term.lower() for term in self.source.get("include_keywords", [])]
+                    if required_terms and not any(term in f"{list_title} {content}".lower() for term in required_terms):
+                        continue
                     articles.append(RawArticle(
                         title=clean_text(str(data.get("title") or list_title)),
                         source_id=self.source.get("id", ""), source_name=self.source["name"],
@@ -129,6 +132,6 @@ class OfficialSiteCollector(Collector):
                 reasons.append(f"{rejected_date}条日期不在窗口")
             if not articles and rejected_content:
                 reasons.append(f"{rejected_content}条正文不足")
-            return CollectorResult(articles=articles, error="；".join(reasons) if candidates else "未发现候选链接")
+            return CollectorResult(articles=articles, error="；".join(reasons))
         except Exception as exc:
             return CollectorResult(error=f"{type(exc).__name__}: {exc}")

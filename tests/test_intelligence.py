@@ -30,6 +30,8 @@ def test_layered_relevance_and_lifecycle():
     assert classify_relevance("N3零排放货车新规", "适用于heavy-duty vehicle") == RelevanceLevel.DIRECT
     assert classify_relevance("商用车大功率充电政策", "面向道路货运") == RelevanceLevel.PROBABLE
     assert classify_relevance("电池回收政策", "动力电池产业") == RelevanceLevel.INDIRECT
+    assert classify_relevance("Aviation carbon leakage", "EU ETS rules for international flights") == RelevanceLevel.NONE
+    assert classify_relevance("Hours of Service exemption", "Federal Motor Carrier Safety Regulations") == RelevanceLevel.PROBABLE
     assert classify_lifecycle("公开征求意见", "请于月底前反馈") == LifecycleStage.CONSULTATION
     assert classify_lifecycle("法规正式发布", "自明年起实施") == LifecycleStage.EFFECTIVE
 

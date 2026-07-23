@@ -57,6 +57,7 @@ class SourceDefinition(BaseModel):
     document_types: list[str] = Field(default_factory=list)
     url_patterns: list[str] = Field(default_factory=list)
     exclude_patterns: list[str] = Field(default_factory=list)
+    include_keywords: list[str] = Field(default_factory=list)
     link_selector: str = "a[href]"
     content_selector: str = "article, main, .article, .content, .TRS_Editor"
     date_selector: str = ""
