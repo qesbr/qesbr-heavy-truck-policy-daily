@@ -1,0 +1,57 @@
+name: Audit regulatory sources
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: 开始日期（YYYY-MM-DD）
+        required: true
+        type: string
+      end_date:
+        description: 结束日期（YYYY-MM-DD）
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: 采集并生成来源审计
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: 执行只读历史回测
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: >-
+          python -m policy_daily.main
+          --report-type daily
+          --start "${{ inputs.start_date }}"
+          --end "${{ inputs.end_date }}"
+          --force
+          --dry-run
+          --data-dir audit-output
+          --output-dir audit-site
+      - name: 汇总审计结果
+        if: always()
+        run: python scripts/summarize_audit.py audit-output audit-summary.md
+      - name: 上传审计附件
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regulatory-source-audit
+          path: |
+            audit-summary.md
+            audit-output/sources.json
+            audit-output/raw
+            audit-output/processed
+            audit-output/intelligence
+          if-no-files-found: warn
+          retention-days: 14
