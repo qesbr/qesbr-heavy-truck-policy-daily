@@ -143,6 +143,14 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
             if ai_failures:
                 details.append(f"AI失败{ai_failures}条")
             status.message = "；".join(filter(None, details))
+            LOGGER.info(
+                "来源 %s：状态=%s，候选=%s，收录=%s%s",
+                source["name"],
+                status.status,
+                status.candidates_found,
+                status.accepted_count,
+                f"，说明={status.message}" if status.message else "",
+            )
             statuses.append(status)
     save_official(data_dir, end, processed)
     save_leads(data_dir, end, leads)

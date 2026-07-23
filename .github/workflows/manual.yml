@@ -10,8 +10,13 @@ on:
         options: [daily, weekly, monthly]
       start_date: {description: "开始日期 YYYY-MM-DD（可选）", required: false, type: string}
       end_date: {description: "结束日期 YYYY-MM-DD（可选）", required: false, type: string}
+      lookback_days:
+        description: "未填写开始日期时，默认回看天数"
+        required: true
+        default: "7"
+        type: string
       send_email: {description: "发送邮件（仅有内容日报有效）", required: true, default: false, type: boolean}
-      force: {description: "强制重新生成", required: true, default: false, type: boolean}
+      force: {description: "强制重新生成", required: true, default: true, type: boolean}
       dry_run: {description: "仅生成邮件预览", required: true, default: true, type: boolean}
 permissions:
   contents: write
@@ -44,8 +49,16 @@ jobs:
         run: |
           args=(--report-type "${{ inputs.report_type }}")
           [[ "${{ inputs.report_type }}" != "daily" ]] && args+=(--skip-collect)
-          [[ -n "${{ inputs.start_date }}" ]] && args+=(--start "${{ inputs.start_date }}")
-          [[ -n "${{ inputs.end_date }}" ]] && args+=(--end "${{ inputs.end_date }}")
+          start_date="${{ inputs.start_date }}"
+          end_date="${{ inputs.end_date }}"
+          if [[ "${{ inputs.report_type }}" == "daily" && -z "$start_date" ]]; then
+            start_date="$(TZ=Asia/Shanghai date -d "${{ inputs.lookback_days }} days ago" +%F)"
+          fi
+          if [[ "${{ inputs.report_type }}" == "daily" && -z "$end_date" ]]; then
+            end_date="$(TZ=Asia/Shanghai date +%F)"
+          fi
+          [[ -n "$start_date" ]] && args+=(--start "$start_date")
+          [[ -n "$end_date" ]] && args+=(--end "$end_date")
           [[ "${{ inputs.force }}" == "true" ]] && args+=(--force)
           [[ "${{ inputs.send_email }}" == "true" ]] && args+=(--send-email)
           [[ "${{ inputs.dry_run }}" == "false" ]] && args+=(--no-dry-run)
