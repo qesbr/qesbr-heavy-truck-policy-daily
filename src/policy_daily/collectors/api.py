@@ -30,9 +30,14 @@ class ApiCollector(Collector):
         sparql = f"""
 PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 SELECT DISTINCT ?work ?celex ?date ?title WHERE {{
   ?work cdm:work_date_document ?date ;
-        cdm:work_id_document ?celex .
+        owl:sameAs ?celexUri .
+  FILTER(STRSTARTS(STR(?celexUri),
+    "http://publications.europa.eu/resource/celex/"))
+  BIND(STRAFTER(STR(?celexUri),
+    "http://publications.europa.eu/resource/celex/") AS ?celex)
   ?expression cdm:expression_belongs_to_work ?work ;
               cdm:expression_uses_language
                 <http://publications.europa.eu/resource/authority/language/ENG> ;

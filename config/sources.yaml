@@ -112,9 +112,15 @@ sources:
       agencies: [transportation-department, environmental-protection-agency, energy-department, national-highway-traffic-safety-administration]
       terms: ["heavy-duty vehicle", "commercial vehicle", "zero-emission vehicle", "truck", "vehicle emissions", "electric vehicle charging"]
     exclude_patterns:
-      - "application for exemptions?"
+      - "applications? for (?:an? |renewal of )?exemptions?"
       - "exemption applications?"
+      - "request to include .* exemptions?"
       - "information collection activities"
+      - "notice of (?:actions|applications) on (?:new )?special permits"
+      - "privacy act of"
+      - "fees for (?:commercial driver's license|the unified carrier)"
+      - "availability of .* registration system"
+      - "agricultural aircraft"
       - "airworthiness directives"
       - "advisory circular"
     source_type: 政府

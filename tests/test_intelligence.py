@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 from pathlib import Path
+import re
 from zoneinfo import ZoneInfo
 
 import httpx
@@ -26,6 +27,22 @@ def test_source_registry_is_valid_and_unique():
     unece = next(source for source in registry.sources if source.id == "unece_wp29")
     assert mot.url.host == "xxgk.mot.gov.cn"
     assert str(unece.url).endswith("/transport/vehicle-regulations")
+
+
+def test_federal_register_config_excludes_case_specific_noise():
+    registry = load_sources(Path(__file__).parents[1])
+    source = next(item for item in registry.sources if item.id == "us_federal_register_vehicle")
+    patterns = [re.compile(pattern, re.I) for pattern in source.exclude_patterns]
+    noisy_titles = [
+        "Parts and Accessories; Application for an Exemption From Example LLC",
+        "Commercial Driver's License; Application for Renewal of Exemption",
+        "Hours of Service; Request To Include a Carrier in Current Exemptions",
+        "Hazardous Materials: Notice of Actions on Special Permits",
+        "Privacy Act of 1974; System of Records",
+        "Fees for the Unified Carrier Registration Plan and Agreement",
+        "Transportation of Fuel for Agricultural Aircraft Operations",
+    ]
+    assert all(any(pattern.search(title) for pattern in patterns) for title in noisy_titles)
 
 
 def test_layered_relevance_and_lifecycle():
@@ -188,6 +205,9 @@ def test_california_oal_collector_keeps_vehicle_actions_in_window():
 def test_eurlex_cellar_collector_filters_and_fetches_official_text():
     def handler(request):
         if request.url.host == "publications.europa.eu":
+            query = request.url.params["query"]
+            assert "owl:sameAs ?celexUri" in query
+            assert "resource/celex/" in query
             return httpx.Response(200, json={"results": {"bindings": [
                 {
                     "work": {"value": "http://example.eu/work/1"},
