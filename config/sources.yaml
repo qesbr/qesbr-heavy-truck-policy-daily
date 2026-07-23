@@ -140,14 +140,15 @@ sources:
     authority: 100
     evidence_level: A
     region: 美国-加州
+    enabled: false
 
   - id: california_oal_vehicle
-    name: California Office of Administrative Law
+    name: California Regulatory Notice Register
     adapter: api
-    api_kind: california_oal
-    url: https://oal.ca.gov/rulemaking_process/regular_rulemaking_process/recent-actions/
-    channel: 加州车辆与排放法规审查结果
-    document_types: [Regulatory action, Approval, Disapproval, Withdrawal]
+    api_kind: california_notice_register
+    url: https://oal.ca.gov/wp-content/uploads/sites/166
+    channel: 加州车辆与排放法规登记
+    document_types: [Notice of proposed action, Regulatory action, Emergency action]
     query:
       agency_pattern: "Air Resources Board|California Highway Patrol"
       include_patterns:

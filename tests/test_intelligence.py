@@ -21,7 +21,7 @@ def test_source_registry_is_valid_and_unique():
     assert len(registry.sources) >= 9
     assert len({source.id for source in registry.sources}) == len(registry.sources)
     assert any(source.api_kind == "federal_register" for source in registry.sources)
-    assert any(source.api_kind == "california_oal" for source in registry.sources)
+    assert any(source.api_kind == "california_notice_register" for source in registry.sources)
     assert any(source.api_kind == "eurlex_cellar" for source in registry.sources)
     assert all(source.channel and source.document_types for source in registry.sources)
     mot = next(source for source in registry.sources if source.id == "mot_policy")
@@ -166,45 +166,6 @@ def test_federal_register_rejects_access_block_page():
     assert result.articles == []
 
 
-def test_california_oal_collector_keeps_vehicle_actions_in_window():
-    html = """
-    <table>
-      <tr><th>OAL File Number</th><th>Agency</th><th>Subject</th><th>Action</th></tr>
-      <tr>
-        <td>2026-0701-02</td><td>Air Resources Board</td>
-        <td>Heavy-Duty Vehicle Emissions Regulation</td>
-        <td>Approved, July 22, 2026</td>
-      </tr>
-      <tr>
-        <td>2026-0702-01</td><td>Air Resources Board</td>
-        <td>Landfill Methane Regulation</td>
-        <td>Approved, July 22, 2026</td>
-      </tr>
-    </table>
-    """
-
-    def handler(request):
-        return httpx.Response(200, text=html)
-
-    source = {
-        "id": "oal", "name": "California Office of Administrative Law",
-        "source_type": "政府", "url": "https://oal.ca.gov/recent-actions/",
-        "api_kind": "california_oal",
-        "query": {
-            "agency_pattern": "Air Resources Board",
-            "include_patterns": ["vehicle", "truck", "emission"],
-        },
-        "region": "美国-加州", "authority": 100, "evidence_level": "S",
-    }
-    result = ApiCollector(source, httpx.Client(transport=httpx.MockTransport(handler))).collect(
-        datetime(2026, 7, 21, tzinfo=TZ), NOW
-    )
-    assert not result.error
-    assert len(result.articles) == 1
-    assert result.articles[0].document_id == "2026-0701-02"
-    assert result.articles[0].title == "Heavy-Duty Vehicle Emissions Regulation"
-
-
 def test_eurlex_cellar_collector_filters_and_fetches_official_text(monkeypatch):
     monkeypatch.setattr(
         api_module,
@@ -256,3 +217,46 @@ def test_eurlex_cellar_collector_filters_and_fetches_official_text(monkeypatch):
     assert "resource/cellar" not in str(result.articles[0].source_url)
     assert "Cellar原始2条" in result.message
     assert "标题匹配1条" in result.message
+
+
+def test_california_notice_register_uses_official_weekly_pdf(monkeypatch):
+    monkeypatch.setattr(
+        api_module,
+        "extract_pdf_text",
+        lambda content: (
+            "Air Resources Board Emergency Vehicle Emissions Regulations. "
+            "This action changes heavy-duty truck emission and zero-emission vehicle "
+            "requirements under Title 13. " * 8
+        ),
+    )
+
+    def handler(request):
+        assert request.url.path.endswith(
+            "/2026/04/2026-Notice-Register-No.-15-Z-April-10-2026.pdf"
+        )
+        return httpx.Response(200, content=b"%PDF-test")
+
+    source = {
+        "id": "oal-register",
+        "name": "California Regulatory Notice Register",
+        "source_type": "政府",
+        "url": "https://oal.ca.gov/wp-content/uploads/sites/166",
+        "api_kind": "california_notice_register",
+        "query": {
+            "agency_pattern": "Air Resources Board",
+            "include_patterns": ["vehicle", "truck", "emission"],
+        },
+        "region": "美国-加州",
+        "authority": 100,
+        "evidence_level": "S",
+    }
+    result = ApiCollector(
+        source, httpx.Client(transport=httpx.MockTransport(handler))
+    ).collect(
+        datetime(2026, 4, 10, tzinfo=TZ),
+        datetime(2026, 4, 10, 23, 59, 59, tzinfo=TZ),
+    )
+    assert not result.error
+    assert len(result.articles) == 1
+    assert result.articles[0].document_id == "2026-15-Z"
+    assert "可访问1期" in result.message
