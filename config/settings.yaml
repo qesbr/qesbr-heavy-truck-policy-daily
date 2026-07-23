@@ -2,11 +2,11 @@ timezone: Asia/Shanghai
 window_hours: 24
 highlight_threshold: 75
 request:
-  timeout_seconds: 20
+  timeout_seconds: 25
   retries: 2
   rate_limit_seconds: 0.5
-  max_candidates_per_source: 30
-  user_agent: HeavyTruckPolicyDaily/0.1 (+https://qesbr.github.io/qesbr-heavy-truck-policy-daily/)
+  max_candidates_per_source: 100
+  user_agent: HeavyTruckPolicyDaily/0.2 (+https://qesbr.github.io/qesbr-heavy-truck-policy-daily/)
 deepseek:
   endpoint: https://api.deepseek.com/chat/completions
   model: deepseek-chat

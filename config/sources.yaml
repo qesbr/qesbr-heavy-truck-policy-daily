@@ -1,35 +1,123 @@
 sources:
-  - {id: unece_wp29, name: UNECE/WP.29, adapter: official_site, url: "https://unece.org/media/transport/Vehicle-Regulations/news/recent", url_patterns: ["/press/", "/media/transport/Vehicle-Regulations/"], source_type: 法规组织, authority: 100, region: UNECE/WP.29, enabled: true}
-  - {id: eu_transport, name: 欧盟委员会交通与运输总司, adapter: official_site, url: "https://transport.ec.europa.eu/news-events/news_en", url_patterns: ["/news-events/news/"], source_type: 政府, authority: 100, region: 欧盟, enabled: true}
-  - {id: eurlex, name: EUR-Lex, adapter: official_site, url: "https://eur-lex.europa.eu/oj/browse-oj.html?coll_oj=oj-l", url_patterns: ["/legal-content/", "CELEX"], source_type: 法规组织, authority: 100, region: 欧盟, enabled: true}
-  - {id: miit_vehicle, name: 工业和信息化部装备工业一司, adapter: official_site, url: "https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html", url_patterns: ["/art/20"], content_selector: ".TRS_Editor, .ccontent, article", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: mot, name: 交通运输部, adapter: official_site, url: "https://www.mot.gov.cn/gongkai/zcjd/index_25.html", url_patterns: ["/t20", "/zcjd/"], source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: mee, name: 生态环境部, adapter: official_site, url: "https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/", url_patterns: ["/t20"], content_selector: ".TRS_Editor, article", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: ndrc, name: 国家发展改革委, adapter: official_site, url: "https://www.ndrc.gov.cn/xxgk/zcfb/ghxwj/", url_patterns: ["/t20"], content_selector: ".TRS_Editor, article", source_type: 政府, authority: 100, region: 中国, enabled: true}
-  - {id: sac, name: 国家标准化管理委员会, adapter: official_site, url: "https://www.sac.gov.cn/xw/", url_patterns: ["/art/20", "/xw/"], source_type: 标准组织, authority: 100, region: 中国, enabled: true}
-  - {id: std_service, name: 全国标准信息公共服务平台, adapter: html_list, url: "https://std.samr.gov.cn/", source_type: 标准组织, authority: 100, region: 中国, enabled: true}
-  - {id: cattarc, name: 全国汽车标准化技术委员会, adapter: html_list, url: "https://www.catarc.org.cn/", source_type: 标准组织, authority: 95, region: 中国, enabled: true}
-  - {id: caam, name: 中国汽车工业协会, adapter: html_list, url: "https://www.caam.org.cn/", source_type: 行业协会, authority: 80, region: 中国, enabled: true}
-  - {id: autoinfo, name: 中国汽车工业信息网, adapter: html_list, url: "https://www.autoinfo.org.cn/", source_type: 行业媒体, authority: 60, region: 中国, enabled: true}
-  - {id: icct, name: 国际清洁交通委员会 ICCT, adapter: official_site, url: "https://theicct.org/publications/", url_patterns: ["/publication/", "/wp-content/"], source_type: 研究机构, authority: 80, region: 全球, enabled: true}
-  - {id: cnautonews, name: 中国汽车报, adapter: html_list, url: "https://www.cnautonews.com/", source_type: 行业媒体, authority: 60, region: 中国, enabled: true}
-  - {id: truckhome, name: 卡车之家, adapter: html_list, url: "https://www.360che.com/news/", source_type: 行业媒体, authority: 55, region: 中国, enabled: true}
-wechat_accounts:
-  - ATIC泰测技术
-  - 车合规CVRegs
-  - 重型车网
-  - 第一商用车网
-  - 放眼世界Focus重卡
-  - 国际清洁交通委员会
-  - 华认技术
-  - 节能与新能源汽车年鉴
-  - 卡车技术前线
-  - 路漫漫车行远
-  - 汽车法规菌
-  - 汽车法规视界
-  - 汽车海外技术合规联盟
-  - 锐驰莱德检测
-  - 通渠有道
-  - 万维认证
-  - 智驾小强
-  - 中汽数据
+  - id: miit_vehicle
+    name: 工业和信息化部装备工业一司
+    adapter: official_site
+    url: https://www.miit.gov.cn/jgsj/zbys/wjfb/index.html
+    channel: 汽车产业政策与准入公告
+    document_types: [公告, 政策文件, 征求意见, 道路机动车辆生产企业及产品]
+    url_patterns: ["/art/20"]
+    content_selector: ".TRS_Editor, .ccontent, article"
+    source_type: 政府
+    authority: 100
+    evidence_level: A
+    region: 中国
+
+  - id: mee_vehicle
+    name: 生态环境部
+    adapter: official_site
+    url: https://www.mee.gov.cn/xxgk2018/xxgk/xxgk01/
+    channel: 生态环境标准与车辆排放政策
+    document_types: [国家标准, 生态环境标准, 公告, 征求意见]
+    url_patterns: ["/t20"]
+    content_selector: ".TRS_Editor, article"
+    source_type: 政府
+    authority: 100
+    evidence_level: A
+    region: 中国
+
+  - id: mot_policy
+    name: 交通运输部
+    adapter: official_site
+    url: https://www.mot.gov.cn/zhengcejiedu/
+    channel: 道路运输政策与政策解读
+    document_types: [政策文件, 政策解读, 征求意见]
+    url_patterns: ["/t20"]
+    source_type: 政府
+    authority: 100
+    evidence_level: A
+    region: 中国
+
+  - id: sac_plan
+    name: 全国标准信息公共服务平台
+    adapter: official_site
+    url: https://std.samr.gov.cn/gb/search/gbQueryPage
+    channel: 国家标准发布与计划
+    document_types: [强制性国家标准, 推荐性国家标准, 标准计划]
+    source_type: 标准组织
+    authority: 100
+    evidence_level: S
+    region: 中国
+
+  - id: unece_wp29
+    name: UNECE WP.29
+    adapter: official_site
+    url: https://unece.org/media/transport/Vehicle-Regulations/news/recent
+    channel: WP.29车辆法规动态
+    document_types: [UN Regulation, Amendment, Supplement, Corrigendum, Proposal]
+    url_patterns: ["/transport/vehicle-regulations", "/media/transport/Vehicle-Regulations/"]
+    source_type: 法规组织
+    authority: 100
+    evidence_level: S
+    region: UNECE/WP.29
+
+  - id: eurlex_oj
+    name: EUR-Lex
+    adapter: official_site
+    url: https://eur-lex.europa.eu/oj/browse-oj.html?coll_oj=oj-l
+    channel: 欧盟官方公报L系列
+    document_types: [Regulation, Directive, Decision]
+    url_patterns: ["/legal-content/", "CELEX"]
+    source_type: 法规组织
+    authority: 100
+    evidence_level: S
+    region: 欧盟
+
+  - id: eu_transport
+    name: 欧盟委员会交通与运输总司
+    adapter: official_site
+    url: https://transport.ec.europa.eu/news-events/news_en
+    channel: 欧盟交通政策动态
+    document_types: [政策, 征求意见, 实施公告]
+    url_patterns: ["/news-events/news/"]
+    source_type: 政府
+    authority: 100
+    evidence_level: A
+    region: 欧盟
+
+  - id: us_federal_register_vehicle
+    name: 美国Federal Register
+    adapter: api
+    api_kind: federal_register
+    url: https://www.federalregister.gov/api/v1/documents.json
+    channel: 美国车辆、排放与能源法规
+    document_types: [Rule, Proposed Rule, Notice]
+    query:
+      agencies: [transportation-department, environmental-protection-agency, energy-department, national-highway-traffic-safety-administration]
+      terms: ["heavy-duty vehicle", "commercial vehicle", "zero-emission vehicle", "truck", "vehicle emissions", "electric vehicle charging"]
+    source_type: 政府
+    authority: 100
+    evidence_level: S
+    region: 美国
+
+  - id: carb_heavy_duty
+    name: California Air Resources Board
+    adapter: official_site
+    url: https://ww2.arb.ca.gov/our-work/programs/advanced-clean-trucks
+    channel: 加州零排放重卡法规
+    document_types: [Regulation, Workshop, Notice, Amendment]
+    source_type: 政府
+    authority: 100
+    evidence_level: A
+    region: 美国-加州
+
+  - id: icct_heavy_duty
+    name: 国际清洁交通委员会 ICCT
+    adapter: official_site
+    url: https://theicct.org/publications/
+    channel: 重型车辆政策研究
+    document_types: [研究报告, 政策分析]
+    url_patterns: ["/publication/"]
+    source_type: 研究机构
+    authority: 85
+    evidence_level: B
+    region: 全球

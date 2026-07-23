@@ -10,12 +10,14 @@ from zoneinfo import ZoneInfo
 
 import httpx
 
-from policy_daily.collectors import HtmlListCollector, OfficialSiteCollector, RssCollector
-from policy_daily.config import load_settings, read_yaml
+from policy_daily.collectors import ApiCollector, HtmlListCollector, OfficialSiteCollector, RssCollector
+from policy_daily.config import load_settings, load_sources, read_yaml
 from policy_daily.emailer import deliver
-from policy_daily.models import Article, Report, SourceStatus
+from policy_daily.intelligence_store import save_leads, save_official
+from policy_daily.models import Article, EvidenceLevel, LeadCandidate, Report, SourceStatus
 from policy_daily.processor import DeepSeekProcessor, ProcessorConfig
 from policy_daily.reports import build_report
+from policy_daily.screening import eligible_for_official_store
 from policy_daily.site_builder import build_site
 from policy_daily.utils import configure_logging, json_dump
 
@@ -70,7 +72,7 @@ def load_articles(data_dir: Path) -> list[Article]:
 
 def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[Article]:
     settings = load_settings(root)
-    source_config = read_yaml(root / "config" / "sources.yaml")
+    source_config = load_sources(root)
     tags = read_yaml(root / "config" / "tags.yaml")
     timeout = httpx.Timeout(settings.request.timeout_seconds)
     transport = httpx.HTTPTransport(retries=settings.request.retries)
@@ -83,8 +85,9 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
     statuses: list[SourceStatus] = []
     with httpx.Client(timeout=timeout, transport=transport, headers={"User-Agent": settings.request.user_agent}, follow_redirects=True) as client:
         processor = DeepSeekProcessor(processor_config, client)
-        for source in source_config["sources"]:
-            source = dict(source)
+        leads: list[LeadCandidate] = []
+        for definition in source_config.sources:
+            source = definition.model_dump(mode="json")
             source.setdefault("max_candidates", settings.request.max_candidates_per_source)
             status = SourceStatus(
                 id=source["id"], name=source["name"], url=source["url"], source_type=source["source_type"],
@@ -93,7 +96,11 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
             if not source.get("enabled", True):
                 statuses.append(status)
                 continue
-            collector_cls = {"rss": RssCollector, "official_site": OfficialSiteCollector}.get(source.get("adapter"), HtmlListCollector)
+            collector_cls = {
+                "api": ApiCollector,
+                "rss": RssCollector,
+                "official_site": OfficialSiteCollector,
+            }.get(source.get("adapter"), HtmlListCollector)
             result = collector_cls(source, client).collect(start, end)
             raw_candidates.extend(result.articles)
             accepted_before = len(processed)
@@ -105,14 +112,28 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
                 status.status, status.last_success_at = "ok", end
             for raw in result.articles:
                 try:
+                    raw.source_id = source["id"]
+                    raw.document_type = raw.document_type or ", ".join(source.get("document_types", []))
+                    raw.evidence_level = EvidenceLevel(source["evidence_level"])
                     article = processor.process(raw)
                     if article:
-                        processed.append(article)
+                        if eligible_for_official_store(article):
+                            processed.append(article)
+                        else:
+                            leads.append(LeadCandidate(
+                                id=article.id, title=article.title_zh, source_name=article.source_name,
+                                source_url=article.source_url, published_at=article.published_at,
+                                collected_at=article.collected_at,
+                                reason=f"相关等级={article.relevance_level.value}，证据等级={article.evidence_level.value}",
+                                evidence_level=article.evidence_level,
+                            ))
                 except Exception as exc:
                     ai_failures += 1
                     LOGGER.warning("AI处理失败 %s: %s", raw.source_name, exc)
             status.message = "；".join(filter(None, [status.message, f"候选{len(result.articles)}条", f"收录{len(processed) - accepted_before}条", f"AI失败{ai_failures}条" if ai_failures else ""]))
             statuses.append(status)
+        save_official(data_dir, end, processed)
+        save_leads(data_dir, end, leads)
     json_dump(data_dir / "sources.json", [item.model_dump(mode="json") for item in statuses])
     json_dump(data_dir / "raw" / f"{end.date().isoformat()}.json", [item.model_dump(mode="json") for item in raw_candidates])
     if processed:

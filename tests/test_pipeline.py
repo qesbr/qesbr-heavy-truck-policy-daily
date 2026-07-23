@@ -25,6 +25,21 @@ def raw(title="重型车辆排放标准正式发布"):
     return RawArticle(title=title, source_name="测试政府", source_type="政府", source_url="https://example.com/rule", published_at=NOW, collected_at=NOW, content=("本标准规定重型车辆排放和市场准入要求，适用于相关生产企业，自2027年1月1日起实施。" * 12), region_hint="中国", authority=100)
 
 
+def raw(title="重型货车排放标准正式发布"):
+    return RawArticle(
+        title=title,
+        source_name="测试政府",
+        source_type="政府",
+        source_url="https://example.com/rule",
+        published_at=NOW,
+        collected_at=NOW,
+        content=("本标准规定重型货车排放和市场准入要求，适用于相关生产企业，自2027年1月1日起实施。" * 12),
+        region_hint="中国",
+        authority=100,
+        evidence_level="A",
+    )
+
+
 def processor(transport=None):
     client = httpx.Client(transport=transport) if transport else httpx.Client()
     cfg = ProcessorConfig("https://api.deepseek.com/chat/completions", "deepseek-chat", 1, 75, ["排放", "市场准入"], {})
