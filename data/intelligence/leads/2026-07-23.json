@@ -1,0 +1,35 @@
+[
+  {
+    "id": "e445967805aa7304",
+    "title": "空气计划批准；宾夕法尼亚州；哈里斯堡-黎巴嫩-卡莱尔-约克维护区，2006年细颗粒物国家环境空气质量标准第二个10年维护计划",
+    "source_name": "美国Federal Register",
+    "source_url": "https://www.federalregister.gov/documents/2026/07/23/2026-14902/air-plan-approval-pennsylvania-harrisburg-lebanon-carlisle-york-maintenance-area-second-10-year",
+    "published_at": "2026-07-23T00:00:00+08:00",
+    "collected_at": "2026-07-23T23:59:59.999999+08:00",
+    "reason": "相关等级=indirect，证据等级=S",
+    "evidence_level": "S",
+    "status": "pending"
+  },
+  {
+    "id": "5b88fd5bb2d89374",
+    "title": "欧洲汽车市场监测：2026年6月",
+    "source_name": "国际清洁交通委员会 ICCT",
+    "source_url": "https://theicct.org/publication/european-car-market-monitor-june-2026",
+    "published_at": "2026-07-22T00:00:00+08:00",
+    "collected_at": "2026-07-23T23:59:59.999999+08:00",
+    "reason": "相关等级=indirect，证据等级=B",
+    "evidence_level": "B",
+    "status": "pending"
+  },
+  {
+    "id": "857a5741a675ee45",
+    "title": "德国纯电动汽车与内燃机汽车价格及市场趋势（2020-2025）",
+    "source_name": "国际清洁交通委员会 ICCT",
+    "source_url": "https://theicct.org/publication/price-and-market-trends-of-battery-electric-and-internal-combustion-engine-vehicles-in-germany-2020-2025-jul26",
+    "published_at": "2026-07-21T00:00:00+08:00",
+    "collected_at": "2026-07-23T23:59:59.999999+08:00",
+    "reason": "相关等级=indirect，证据等级=B",
+    "evidence_level": "B",
+    "status": "pending"
+  }
+]

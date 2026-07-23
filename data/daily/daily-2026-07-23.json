@@ -2,10 +2,105 @@
   "report_type": "daily",
   "report_id": "daily-2026-07-23",
   "title": "政策法规日报 · 2026-07-23",
-  "period_start": "2026-07-22T11:55:42.519264+08:00",
-  "period_end": "2026-07-23T11:55:42.519264+08:00",
-  "generated_at": "2026-07-23T11:59:03.682513+08:00",
-  "summary": "暂无重要更新。",
-  "empty": true,
-  "articles": []
+  "period_start": "2026-07-16T00:00:00+08:00",
+  "period_end": "2026-07-23T23:59:59.999999+08:00",
+  "generated_at": "2026-07-23T22:41:18.834693+08:00",
+  "summary": "本期共收录2条经正文与发布时间核验的信息，其中今日重点2条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "53b686cbe85a9f9b",
+      "title_zh": "美国零排放卡车与客车市场（2026年第一季度）",
+      "title_original": "Zero-emission bus and truck market in the United States (January–March 2026) - International Council on Clean Transportation",
+      "summary_zh": "2026年第一季度，美国Class 2b-8中重型车辆（MHDV）总注册量为353,173辆，其中零排放车辆15,338辆（占比4.3%），较2025年第四季度下降43.6%，较2025年同期下降54.8%。客车零排放注册200辆（占比4.9%），中型卡车（MDT）15,006辆（占比5.0%），重型卡车（HDT）132辆（占比0.3%）。加州在零排放客车和MDT注册量领先，但整体市场下滑明显。报告涵盖Class 2b-3车辆，导致注册量统计口径变化。",
+      "source_name": "国际清洁交通委员会 ICCT",
+      "source_type": "研究机构",
+      "source_url": "https://theicct.org/publication/zero-emission-bus-and-truck-market-us-q1-2026-jul26",
+      "published_at": "2026-07-21T00:00:00+08:00",
+      "collected_at": "2026-07-23T23:59:59.999999+08:00",
+      "region": "美国",
+      "primary_category": "市场",
+      "tags": [
+        "零排放车辆",
+        "中重型车辆",
+        "市场数据"
+      ],
+      "importance_score": 84,
+      "is_highlight": true,
+      "content_hash": "1e348527ef020f71a03217deeb0f8ea9",
+      "event_id": "8988f380ac4ada57",
+      "related_sources": [],
+      "content_evidence": "Race to zero: Zero-emission bus and truck market in the United States (January–March 2025) Market Spotlight Zero-emission bus and truck market in the United States (January–March 2026) Overview A total of new 353,173 Class 2b-8 medium- and heavy-duty vehicles (MHDVs) were registered between January and March 2026 in the United States, of which 15,338 (4.3%) were zero-emission. Compared to the final quarter of 2025, the total number of MHDV registrations fell by 14.5%, and the number of zero-emission MHDV registrations fell further by 43.6%. Year-on-year, the first quarter (Q1) of 2026 was also a worse period for MHDVs compared to Q1 2025, with 12.1% fewer total registrations and less than half the number of zero-emission registrations. All three segments—medium-duty trucks (MDTs), heavy-duty trucks (HDTs), and buses—experienced declines, with MDTs being the hardest hit. Starting from this quarter, our market spotlight of the U.S. MHDV market also includes Class 2b-3 trucks, vans, and b",
+      "language": "en",
+      "authority": 85,
+      "source_id": "icct_heavy_duty",
+      "document_id": "",
+      "document_type": "研究报告, 政策分析",
+      "lifecycle_stage": "published",
+      "relevance_level": "direct",
+      "evidence_level": "B",
+      "vehicle_classes": [
+        "Class 2b-8",
+        "MHDV",
+        "bus",
+        "medium-duty truck",
+        "heavy-duty truck"
+      ],
+      "powertrain_scope": [
+        "zero-emission",
+        "battery electric",
+        "fuel cell"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "A total of new 353,173 Class 2b-8 medium- and heavy-duty vehicles (MHDVs) were registered between January and March 2026 in the United States, of which 15,338 (4.3%) were zero-emission.",
+        "Compared to the final quarter of 2025, the total number of MHDV registrations fell by 14.5%, and the number of zero-emission MHDV registrations fell further by 43.6%.",
+        "There were 200 zero-emission bus registrations in Q1 2026, a 6.5% quarter-on-quarter decline and 16.0% year-on-year decline."
+      ]
+    },
+    {
+      "id": "184b5eb901a6f134",
+      "title_zh": "联邦机动车安全法规的一般技术、组织、符合性和更正修订",
+      "title_original": "General Technical, Organizational, Conforming, and Correcting Amendments to the Federal Motor Carrier Safety Regulations",
+      "summary_zh": "美国联邦机动车安全管理局（FMCSA）发布最终规则，对联邦机动车安全法规（FMCSR）进行技术性修订，包括纠正错误和遗漏、删除或更新过时引用、提高清晰度和一致性。规则不施加任何新的实质性要求或增加合规义务，因此依据行政程序法的“正当理由”例外，未经事先通知和公众评论即发布。生效日期为2026年7月21日。修订涉及商业区域定义、财务责任程序等，主要影响商用机动车（CMV）的监管。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/07/21/2026-14701/general-technical-organizational-conforming-and-correcting-amendments-to-the-federal-motor-carrier",
+      "published_at": "2026-07-21T00:00:00+08:00",
+      "collected_at": "2026-07-23T23:59:59.999999+08:00",
+      "region": "美国",
+      "primary_category": "政策",
+      "tags": [
+        "技术修订",
+        "FMCSR",
+        "商用机动车"
+      ],
+      "importance_score": 88,
+      "is_highlight": true,
+      "content_hash": "cc23c78093d712d6eff52d354f759167",
+      "event_id": "af03641c1f193bf4",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION Federal Motor Carrier Safety Administration 49 CFR Chapter III [Docket No. FMCSA-2025-0754] RIN 2126-AC75 General Technical, Organizational, Conforming, and Correcting Amendments to the Federal Motor Carrier Safety Regulations AGENCY: Federal Motor Carrier Safety Administration (FMCSA), Department of Transportation (DOT). ACTION: Final rule. SUMMARY: FMCSA amends its regulations by making technical corrections throughout the Federal Motor Carrier Safety Regulations (FMCSR). The Agency makes minor changes to correct inadvertent errors and omissions, remove or update obsolete references, and improve the clarity and consistency of certain regulatory provisions. FMCSA also makes a change to its rules of organization, procedures, and practice. Because the rule does not impose any new material requirements or increase compliance obligations, it is issued without prior notice and opportunity for comment, pursuant to the good cause exception in the Administrative P",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-14701",
+      "document_type": "Rule",
+      "lifecycle_stage": "published",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "N2",
+        "N3",
+        "HDV"
+      ],
+      "powertrain_scope": [],
+      "effective_at": null,
+      "evidence_quotes": [
+        "FMCSA amends its regulations by making technical corrections throughout the Federal Motor Carrier Safety Regulations (FMCSR).",
+        "Because the rule does not impose any new material requirements or increase compliance obligations, it is issued without prior notice and opportunity for comment.",
+        "Effective July 21, 2026."
+      ]
+    }
+  ]
 }
