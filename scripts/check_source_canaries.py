@@ -1,0 +1,49 @@
+from __future__ import annotations
+
+from datetime import datetime
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+import httpx
+
+from policy_daily.collectors.api import ApiCollector
+from policy_daily.config import load_settings, load_sources
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def main() -> int:
+    settings = load_settings(ROOT)
+    source = next(
+        item for item in load_sources(ROOT).sources if item.id == "eurlex_oj"
+    ).model_dump(mode="json")
+    timezone = ZoneInfo(settings.timezone)
+    start = datetime(2026, 2, 15, tzinfo=timezone)
+    end = datetime(2026, 2, 25, 23, 59, 59, tzinfo=timezone)
+    with httpx.Client(
+        timeout=httpx.Timeout(60),
+        follow_redirects=True,
+        headers={"User-Agent": settings.request.user_agent},
+    ) as client:
+        result = ApiCollector(source, client).collect(start, end)
+    if result.error:
+        raise RuntimeError(f"EUR-Lex canary collection failed: {result.error}")
+    documents = {article.document_id: article for article in result.articles}
+    expected = "32026R0361"
+    if expected not in documents:
+        raise RuntimeError(
+            f"EUR-Lex canary {expected} missing. {result.message}"
+        )
+    article = documents[expected]
+    if len(article.content) < 500:
+        raise RuntimeError(f"EUR-Lex canary text too short: {len(article.content)}")
+    print(
+        f"EUR-Lex canary passed: {expected}, "
+        f"{len(article.content)} text characters. {result.message}"
+    )
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
