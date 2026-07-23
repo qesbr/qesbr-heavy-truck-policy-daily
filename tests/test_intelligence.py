@@ -20,6 +20,10 @@ def test_source_registry_is_valid_and_unique():
     assert len({source.id for source in registry.sources}) == len(registry.sources)
     assert any(source.api_kind == "federal_register" for source in registry.sources)
     assert all(source.channel and source.document_types for source in registry.sources)
+    mot = next(source for source in registry.sources if source.id == "mot_policy")
+    unece = next(source for source in registry.sources if source.id == "unece_wp29")
+    assert mot.url.host == "xxgk.mot.gov.cn"
+    assert str(unece.url).endswith("/transport/vehicle-regulations")
 
 
 def test_layered_relevance_and_lifecycle():

@@ -136,6 +136,8 @@ class DeepSeekProcessor:
                 return AIResult.model_validate_json(response.json()["choices"][0]["message"]["content"])
             except Exception as exc:
                 last_error = exc
+                if isinstance(exc, httpx.HTTPStatusError) and exc.response.status_code == 401:
+                    break
         raise RuntimeError(f"DeepSeek结构化输出失败: {last_error}")
 
     def _mock(self, raw: RawArticle) -> AIResult:

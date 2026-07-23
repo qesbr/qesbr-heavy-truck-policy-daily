@@ -28,10 +28,10 @@ sources:
   - id: mot_policy
     name: 交通运输部
     adapter: official_site
-    url: https://www.mot.gov.cn/zhengcejiedu/
-    channel: 道路运输政策与政策解读
-    document_types: [政策文件, 政策解读, 征求意见]
-    url_patterns: ["/t20"]
+    url: https://xxgk.mot.gov.cn/2020/jigou/fgs/
+    channel: 交通运输法规与道路运输政策
+    document_types: [部门规章, 政策文件, 立法计划, 征求意见]
+    url_patterns: ["/202"]
     source_type: 政府
     authority: 100
     evidence_level: A
@@ -51,10 +51,10 @@ sources:
   - id: unece_wp29
     name: UNECE WP.29
     adapter: official_site
-    url: https://unece.org/media/transport/Vehicle-Regulations/news/recent
+    url: https://unece.org/transport/vehicle-regulations
     channel: WP.29车辆法规动态
     document_types: [UN Regulation, Amendment, Supplement, Corrigendum, Proposal]
-    url_patterns: ["/transport/vehicle-regulations", "/media/transport/Vehicle-Regulations/"]
+    url_patterns: ["/sustainable-development/press/", "/transport/vehicle-regulations"]
     source_type: 法规组织
     authority: 100
     evidence_level: S
