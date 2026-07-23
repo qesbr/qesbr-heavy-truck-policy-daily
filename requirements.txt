@@ -1,2 +1,2 @@
 -e .[test]
-
+playwright==1.52.0

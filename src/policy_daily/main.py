@@ -10,7 +10,7 @@ from zoneinfo import ZoneInfo
 
 import httpx
 
-from policy_daily.collectors import ApiCollector, HtmlListCollector, OfficialSiteCollector, RssCollector
+from policy_daily.collectors import ApiCollector, BrowserSiteCollector, HtmlListCollector, OfficialSiteCollector, RssCollector
 from policy_daily.config import load_settings, load_sources, read_yaml
 from policy_daily.emailer import deliver
 from policy_daily.intelligence_store import save_leads, save_official
@@ -104,6 +104,7 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
             collector_cls = {
                 "api": ApiCollector,
                 "rss": RssCollector,
+                "browser_site": BrowserSiteCollector,
                 "official_site": OfficialSiteCollector,
             }.get(source.get("adapter"), HtmlListCollector)
             result = collector_cls(source, client).collect(start, end)

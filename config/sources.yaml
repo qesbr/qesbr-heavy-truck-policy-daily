@@ -52,7 +52,7 @@ sources:
 
   - id: unece_wp29
     name: UNECE WP.29
-    adapter: official_site
+    adapter: browser_site
     url: https://unece.org/transport/vehicle-regulations
     channel: WP.29车辆法规动态
     document_types: [UN Regulation, Amendment, Supplement, Corrigendum, Proposal]
@@ -109,7 +109,7 @@ sources:
 
   - id: carb_heavy_duty
     name: California Air Resources Board
-    adapter: official_site
+    adapter: browser_site
     url: https://ww2.arb.ca.gov/our-work/programs/advanced-clean-trucks
     channel: 加州零排放重卡法规
     document_types: [Regulation, Workshop, Notice, Amendment]
