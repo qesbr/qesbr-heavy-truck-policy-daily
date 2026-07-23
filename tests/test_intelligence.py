@@ -19,6 +19,7 @@ def test_source_registry_is_valid_and_unique():
     assert len(registry.sources) >= 9
     assert len({source.id for source in registry.sources}) == len(registry.sources)
     assert any(source.api_kind == "federal_register" for source in registry.sources)
+    assert any(source.api_kind == "california_oal" for source in registry.sources)
     assert all(source.channel and source.document_types for source in registry.sources)
     mot = next(source for source in registry.sources if source.id == "mot_policy")
     unece = next(source for source in registry.sources if source.id == "unece_wp29")
@@ -142,3 +143,42 @@ def test_federal_register_rejects_access_block_page():
         NOW - timedelta(days=1), NOW
     )
     assert result.articles == []
+
+
+def test_california_oal_collector_keeps_vehicle_actions_in_window():
+    html = """
+    <table>
+      <tr><th>OAL File Number</th><th>Agency</th><th>Subject</th><th>Action</th></tr>
+      <tr>
+        <td>2026-0701-02</td><td>Air Resources Board</td>
+        <td>Heavy-Duty Vehicle Emissions Regulation</td>
+        <td>Approved, July 22, 2026</td>
+      </tr>
+      <tr>
+        <td>2026-0702-01</td><td>Air Resources Board</td>
+        <td>Landfill Methane Regulation</td>
+        <td>Approved, July 22, 2026</td>
+      </tr>
+    </table>
+    """
+
+    def handler(request):
+        return httpx.Response(200, text=html)
+
+    source = {
+        "id": "oal", "name": "California Office of Administrative Law",
+        "source_type": "政府", "url": "https://oal.ca.gov/recent-actions/",
+        "api_kind": "california_oal",
+        "query": {
+            "agency_pattern": "Air Resources Board",
+            "include_patterns": ["vehicle", "truck", "emission"],
+        },
+        "region": "美国-加州", "authority": 100, "evidence_level": "S",
+    }
+    result = ApiCollector(source, httpx.Client(transport=httpx.MockTransport(handler))).collect(
+        datetime(2026, 7, 21, tzinfo=TZ), NOW
+    )
+    assert not result.error
+    assert len(result.articles) == 1
+    assert result.articles[0].document_id == "2026-0701-02"
+    assert result.articles[0].title == "Heavy-Duty Vehicle Emissions Regulation"

@@ -3,6 +3,7 @@ from __future__ import annotations
 from datetime import datetime
 import re
 
+from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
 
 from policy_daily.collectors.base import Collector, CollectorResult
@@ -14,9 +15,79 @@ class ApiCollector(Collector):
     """Collector for stable, structured regulatory APIs."""
 
     def collect(self, start: datetime, end: datetime) -> CollectorResult:
-        if self.source.get("api_kind") != "federal_register":
-            return CollectorResult(error=f"不支持的API类型: {self.source.get('api_kind')}")
-        return self._federal_register(start, end)
+        api_kind = self.source.get("api_kind")
+        if api_kind == "federal_register":
+            return self._federal_register(start, end)
+        if api_kind == "california_oal":
+            return self._california_oal(start, end)
+        return CollectorResult(error=f"不支持的API类型: {api_kind}")
+
+    def _california_oal(self, start: datetime, end: datetime) -> CollectorResult:
+        """Read official OAL action tables as a structured regulatory register."""
+        try:
+            response = self.client.get(self.source["url"])
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+            agency_pattern = re.compile(
+                self.source.get("query", {}).get("agency_pattern", r"Air Resources Board"),
+                re.I,
+            )
+            include_patterns = [
+                re.compile(pattern, re.I)
+                for pattern in self.source.get("query", {}).get("include_patterns", [])
+            ]
+            articles: list[RawArticle] = []
+            seen: set[str] = set()
+            for row in soup.select("table tr"):
+                cells = [clean_text(cell.get_text(" ", strip=True)) for cell in row.select("th, td")]
+                if len(cells) < 3:
+                    continue
+                row_text = " | ".join(cells)
+                if not agency_pattern.search(row_text):
+                    continue
+                if include_patterns and not any(pattern.search(row_text) for pattern in include_patterns):
+                    continue
+                date_match = re.search(
+                    r"\b(January|February|March|April|May|June|July|August|September|October|November|December)"
+                    r"\s+\d{1,2},\s+\d{4}\b",
+                    row_text,
+                    re.I,
+                )
+                if not date_match:
+                    continue
+                published = date_parser.parse(date_match.group(0)).replace(tzinfo=end.tzinfo)
+                if not within_window(published, start, end):
+                    continue
+                document_id = next(
+                    (cell for cell in cells if re.fullmatch(r"\d{4}-\d{4}-\d{2}[A-Z]*", cell, re.I)),
+                    "",
+                )
+                subject = next(
+                    (cell for cell in cells if cell and not agency_pattern.fullmatch(cell) and cell != document_id),
+                    cells[0],
+                )
+                key = document_id or f"{subject}|{published.date()}"
+                if key in seen:
+                    continue
+                seen.add(key)
+                articles.append(RawArticle(
+                    title=subject,
+                    source_id=self.source["id"],
+                    source_name=self.source["name"],
+                    source_type=self.source["source_type"],
+                    source_url=self.source["url"],
+                    published_at=published,
+                    collected_at=end,
+                    content=row_text[:30000],
+                    region_hint=self.source.get("region", "美国-加州"),
+                    authority=self.source.get("authority", 100),
+                    document_id=document_id,
+                    document_type="Regulatory action",
+                    evidence_level=EvidenceLevel(self.source.get("evidence_level", "S")),
+                ))
+            return CollectorResult(articles=articles)
+        except Exception as exc:
+            return CollectorResult(error=f"{type(exc).__name__}: {exc}")
 
     def _federal_register(self, start: datetime, end: datetime) -> CollectorResult:
         query = self.source.get("query", {})

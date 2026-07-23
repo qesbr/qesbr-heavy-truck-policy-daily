@@ -118,6 +118,29 @@ sources:
     evidence_level: A
     region: 美国-加州
 
+  - id: california_oal_vehicle
+    name: California Office of Administrative Law
+    adapter: api
+    api_kind: california_oal
+    url: https://oal.ca.gov/rulemaking_process/regular_rulemaking_process/recent-actions/
+    channel: 加州车辆与排放法规审查结果
+    document_types: [Regulatory action, Approval, Disapproval, Withdrawal]
+    query:
+      agency_pattern: "Air Resources Board|California Highway Patrol"
+      include_patterns:
+        - "vehicle"
+        - "truck"
+        - "emission"
+        - "zero.?emission"
+        - "fuel"
+        - "transport"
+        - "CVSA"
+        - "out.?of.?service"
+    source_type: 政府
+    authority: 100
+    evidence_level: S
+    region: 美国-加州
+
   - id: icct_heavy_duty
     name: 国际清洁交通委员会 ICCT
     adapter: official_site
