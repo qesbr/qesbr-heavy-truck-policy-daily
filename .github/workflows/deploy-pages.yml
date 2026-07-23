@@ -18,8 +18,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with: {python-version: "3.11", cache: pip}
       - run: pip install -r requirements.txt
       - run: python -m policy_daily.main --report-type daily --skip-collect --data-dir data --output-dir site-dist
