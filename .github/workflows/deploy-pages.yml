@@ -24,8 +24,9 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python -m policy_daily.main --report-type daily --skip-collect --data-dir data --output-dir site-dist
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with: {path: site-dist}
       - id: deployment
         uses: actions/deploy-pages@v4
-
