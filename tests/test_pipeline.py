@@ -13,6 +13,7 @@ from policy_daily.reports import build_report
 from policy_daily.site_builder import build_site
 from policy_daily.main import load_recipients
 from policy_daily.collectors.html_list import HtmlListCollector
+from policy_daily.collectors.rss import RssCollector
 from policy_daily.collectors.wechat import WechatPublicCollector
 from policy_daily.collectors.official import OfficialSiteCollector, extract_meta_date
 
@@ -113,6 +114,44 @@ def test_collector_failure_is_isolated():
     source = {"url": "https://example.com/list", "name": "故障来源", "source_type": "政府"}
     result = HtmlListCollector(source, client).collect(NOW - timedelta(hours=24), NOW)
     assert result.articles == [] and "503" in result.error
+
+
+def test_rss_collector_filters_topics_and_uses_summary_when_detail_fails():
+    feed = """<?xml version="1.0"?>
+    <rss version="2.0"><channel>
+      <item><title>New electric truck charging policy</title>
+        <link>https://example.com/truck</link>
+        <pubDate>Wed, 22 Jul 2026 07:00:00 +0800</pubDate>
+        <description><![CDATA[This electric truck charging policy applies to
+        heavy-duty commercial fleets and introduces new infrastructure requirements.
+        The programme includes implementation dates and funding conditions.]]></description>
+      </item>
+      <item><title>Passenger car paint colours</title>
+        <link>https://example.com/car</link>
+        <pubDate>Wed, 22 Jul 2026 07:00:00 +0800</pubDate>
+        <description>Unrelated passenger car story with enough filler text to parse.</description>
+      </item>
+    </channel></rss>"""
+
+    def handler(request):
+        if request.url.path == "/feed":
+            return httpx.Response(200, content=feed.encode())
+        return httpx.Response(503)
+
+    source = {
+        "url": "https://example.com/feed",
+        "name": "Industry feed",
+        "source_type": "行业媒体",
+        "region": "全球",
+        "authority": 70,
+        "include_keywords": ["truck", "heavy-duty"],
+    }
+    result = RssCollector(
+        source, httpx.Client(transport=httpx.MockTransport(handler))
+    ).collect(NOW - timedelta(hours=24), NOW)
+    assert not result.error
+    assert len(result.articles) == 1
+    assert result.articles[0].source_url == "https://example.com/truck"
 
 
 def test_wechat_without_public_entry_is_safe():

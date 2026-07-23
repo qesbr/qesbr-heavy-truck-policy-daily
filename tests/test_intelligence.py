@@ -10,7 +10,13 @@ from policy_daily.collectors.api import ApiCollector
 from policy_daily.config import load_sources
 from policy_daily.intelligence_store import snapshot_page
 from policy_daily.models import Article, EvidenceLevel, LifecycleStage, RelevanceLevel
-from policy_daily.screening import calculate_importance, classify_lifecycle, classify_relevance, eligible_for_official_store
+from policy_daily.screening import (
+    calculate_importance,
+    classify_lifecycle,
+    classify_relevance,
+    eligible_for_official_store,
+    eligible_for_publication,
+)
 
 TZ = ZoneInfo("Asia/Shanghai")
 NOW = datetime(2026, 7, 23, 8, 30, tzinfo=TZ)
@@ -69,6 +75,9 @@ def test_rule_based_importance_and_store_gate():
     assert eligible_for_official_store(article)
     article.evidence_level = EvidenceLevel.MEDIA
     assert not eligible_for_official_store(article)
+    assert eligible_for_publication(article)
+    article.evidence_level = EvidenceLevel.UNVERIFIED
+    assert not eligible_for_publication(article)
 
 
 def test_snapshot_only_marks_real_changes(tmp_path):

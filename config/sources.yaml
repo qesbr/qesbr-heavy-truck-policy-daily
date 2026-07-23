@@ -162,3 +162,99 @@ sources:
     authority: 85
     evidence_level: B
     region: 全球
+
+  - id: dieselnet_news
+    name: DieselNet
+    adapter: html_list
+    url: https://dieselnet.com/news/
+    channel: 全球排放法规与清洁运输动态
+    document_types: [法规动态, 排放标准, 行业新闻]
+    include_keywords: [truck, heavy-duty, heavy duty, commercial vehicle, emission, regulation, zero-emission, charging]
+    source_type: 专业媒体
+    authority: 82
+    evidence_level: B
+    region: 全球
+
+  - id: electrive_commercial
+    name: electrive
+    adapter: rss
+    url: https://www.electrive.com/feed/
+    channel: 电动商用车与充电基础设施
+    document_types: [行业动态, 政策动态, 企业动态]
+    include_keywords: [truck, heavy-duty, heavy duty, commercial vehicle, bus, freight, megawatt, charging]
+    source_type: 行业媒体
+    authority: 72
+    evidence_level: D
+    region: 全球
+
+  - id: charged_evs
+    name: Charged EVs
+    adapter: rss
+    url: https://chargedevs.com/feed/
+    channel: 商用电动车与充电技术
+    document_types: [技术动态, 充电设施, 企业动态]
+    include_keywords: [truck, heavy-duty, heavy duty, commercial vehicle, fleet, bus, megawatt, charging]
+    source_type: 行业媒体
+    authority: 68
+    evidence_level: D
+    region: 全球
+
+  - id: sustainable_bus
+    name: Sustainable Bus
+    adapter: rss
+    url: https://www.sustainable-bus.com/feed/
+    channel: 零排放公交与商用车辆
+    document_types: [行业动态, 政策动态, 企业动态]
+    include_keywords: [truck, bus, commercial vehicle, zero emission, battery, hydrogen, charging]
+    source_type: 行业媒体
+    authority: 68
+    evidence_level: D
+    region: 全球
+
+  - id: green_car_congress
+    name: Green Car Congress
+    adapter: rss
+    url: https://www.greencarcongress.com/index.rdf
+    channel: 清洁车辆、动力与燃料政策
+    document_types: [行业动态, 技术动态, 政策动态]
+    include_keywords: [truck, heavy-duty, heavy duty, commercial vehicle, fleet, bus, freight, charging]
+    source_type: 行业媒体
+    authority: 70
+    evidence_level: D
+    region: 全球
+
+  - id: act_news
+    name: ACT News
+    adapter: rss
+    url: https://www.act-news.com/feed/
+    channel: 北美清洁商用运输
+    document_types: [政策动态, 市场动态, 企业动态]
+    include_keywords: [truck, heavy-duty, heavy duty, commercial vehicle, fleet, freight, charging, regulation]
+    source_type: 行业媒体
+    authority: 72
+    evidence_level: D
+    region: 北美
+
+  - id: transport_environment
+    name: Transport & Environment
+    adapter: html_list
+    url: https://www.transportenvironment.org/topics/road-freight/
+    channel: 欧洲道路货运与重卡脱碳政策
+    document_types: [政策分析, 研究报告, 法规动态]
+    include_keywords: [truck, heavy-duty, freight, zero-emission, charging, road transport]
+    source_type: 研究机构
+    authority: 85
+    evidence_level: B
+    region: 欧洲
+
+  - id: acea_commercial
+    name: European Automobile Manufacturers' Association
+    adapter: html_list
+    url: https://www.acea.auto/news/
+    channel: 欧洲商用车行业与法规动态
+    document_types: [行业动态, 政策立场, 市场数据]
+    include_keywords: [truck, heavy-duty, commercial vehicle, bus, freight, charging]
+    source_type: 行业协会
+    authority: 84
+    evidence_level: B
+    region: 欧洲

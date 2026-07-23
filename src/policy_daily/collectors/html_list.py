@@ -36,9 +36,15 @@ class HtmlListCollector(Collector):
             soup = BeautifulSoup(response.text, "html.parser")
             articles: list[RawArticle] = []
             seen: set[str] = set()
+            keywords = [
+                value.casefold() for value in self.source.get("include_keywords", [])
+            ]
+            max_candidates = int(self.source.get("max_candidates", 100))
             for link in soup.select("a[href]"):
                 title = clean_text(link.get_text(" ", strip=True))
                 if len(title) < 8:
+                    continue
+                if keywords and not any(word in title.casefold() for word in keywords):
                     continue
                 published = _date_from_node(link)
                 if not published:
@@ -65,10 +71,11 @@ class HtmlListCollector(Collector):
                         source_url=url, published_at=published, collected_at=end, content=content[:20000],
                         region_hint=self.source.get("region", "其他"), authority=self.source.get("authority", 50),
                     ))
+                    if len(articles) >= max_candidates:
+                        break
                     time.sleep(float(self.source.get("rate_limit_seconds", 0)))
                 except Exception:
                     continue
             return CollectorResult(articles=articles)
         except Exception as exc:
             return CollectorResult(error=f"{type(exc).__name__}: {exc}")
-

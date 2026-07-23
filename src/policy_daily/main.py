@@ -17,7 +17,7 @@ from policy_daily.intelligence_store import save_leads, save_official
 from policy_daily.models import Article, EvidenceLevel, LeadCandidate, Report, SourceStatus
 from policy_daily.processor import DeepSeekProcessor, ProcessorConfig
 from policy_daily.reports import build_report
-from policy_daily.screening import eligible_for_official_store
+from policy_daily.screening import eligible_for_publication
 from policy_daily.site_builder import build_site
 from policy_daily.utils import configure_logging, json_dump
 
@@ -125,7 +125,7 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
                     article = processor.process(raw)
                     if not article:
                         continue
-                    if eligible_for_official_store(article):
+                    if eligible_for_publication(article):
                         processed.append(article)
                     else:
                         leads.append(LeadCandidate(
