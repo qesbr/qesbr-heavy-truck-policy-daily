@@ -116,6 +116,7 @@ def collect(root: Path, start: datetime, end: datetime, data_dir: Path) -> list[
                 LOGGER.warning("来源采集异常 %s: %s", source["name"], result.error)
             else:
                 status.status, status.last_success_at = "ok", end
+                status.message = result.message[:240]
             for raw in result.articles:
                 try:
                     raw.source_id = source["id"]

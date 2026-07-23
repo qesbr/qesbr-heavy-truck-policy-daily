@@ -41,6 +41,8 @@ def test_federal_register_config_excludes_case_specific_noise():
         "Privacy Act of 1974; System of Records",
         "Fees for the Unified Carrier Registration Plan and Agreement",
         "Transportation of Fuel for Agricultural Aircraft Operations",
+        "Energy Conservation Program: Notification of Petition for Rulemaking",
+        "Removal of Obsolete References to Water Carriers",
     ]
     assert all(any(pattern.search(title) for pattern in patterns) for title in noisy_titles)
 
@@ -238,3 +240,5 @@ def test_eurlex_cellar_collector_filters_and_fetches_official_text():
     assert len(result.articles) == 1
     assert result.articles[0].document_id == "32026R0123"
     assert "CELEX:32026R0123" in str(result.articles[0].source_url)
+    assert "Cellar原始2条" in result.message
+    assert "标题匹配1条" in result.message

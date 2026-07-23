@@ -121,6 +121,8 @@ sources:
       - "fees for (?:commercial driver's license|the unified carrier)"
       - "availability of .* registration system"
       - "agricultural aircraft"
+      - "energy conservation program: notification of petition"
+      - "water carriers"
       - "airworthiness directives"
       - "advisory circular"
     source_type: 政府

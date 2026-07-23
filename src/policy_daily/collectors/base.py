@@ -13,6 +13,7 @@ from policy_daily.models import RawArticle
 class CollectorResult:
     articles: list[RawArticle] = field(default_factory=list)
     error: str = ""
+    message: str = ""
 
 
 class Collector(ABC):
@@ -23,4 +24,3 @@ class Collector(ABC):
     @abstractmethod
     def collect(self, start: datetime, end: datetime) -> CollectorResult:
         raise NotImplementedError
-

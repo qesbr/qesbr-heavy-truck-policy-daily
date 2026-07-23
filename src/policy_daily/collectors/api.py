@@ -59,13 +59,18 @@ LIMIT {int(query.get("limit", 500))}
             terms = [term.casefold() for term in query.get("terms", [])]
             articles: list[RawArticle] = []
             seen: set[str] = set()
+            identified = 0
+            title_matches = 0
+            detail_rejections = 0
             for binding in bindings:
                 title = clean_text(binding.get("title", {}).get("value", ""))
                 celex = clean_text(binding.get("celex", {}).get("value", ""))
                 if not title or not celex or celex in seen:
                     continue
+                identified += 1
                 if terms and not any(term in title.casefold() for term in terms):
                     continue
+                title_matches += 1
                 published = date_parser.parse(binding["date"]["value"]).replace(tzinfo=end.tzinfo)
                 if not within_window(published, start, end):
                     continue
@@ -74,6 +79,7 @@ LIMIT {int(query.get("limit", 500))}
                 detail.raise_for_status()
                 content = clean_text(detail.text)
                 if len(content) < int(self.source.get("min_content_chars", 200)):
+                    detail_rejections += 1
                     continue
                 seen.add(celex)
                 articles.append(RawArticle(
@@ -91,7 +97,13 @@ LIMIT {int(query.get("limit", 500))}
                     document_type="EU legal act",
                     evidence_level=EvidenceLevel(self.source.get("evidence_level", "S")),
                 ))
-            return CollectorResult(articles=articles)
+            return CollectorResult(
+                articles=articles,
+                message=(
+                    f"Cellar原始{len(bindings)}条；有效CELEX及标题{identified}条；"
+                    f"标题匹配{title_matches}条；正文拒绝{detail_rejections}条"
+                ),
+            )
         except Exception as exc:
             return CollectorResult(error=f"{type(exc).__name__}: {exc}")
 
