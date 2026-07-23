@@ -20,6 +20,7 @@ def test_source_registry_is_valid_and_unique():
     assert len({source.id for source in registry.sources}) == len(registry.sources)
     assert any(source.api_kind == "federal_register" for source in registry.sources)
     assert any(source.api_kind == "california_oal" for source in registry.sources)
+    assert any(source.api_kind == "eurlex_cellar" for source in registry.sources)
     assert all(source.channel and source.document_types for source in registry.sources)
     mot = next(source for source in registry.sources if source.id == "mot_policy")
     unece = next(source for source in registry.sources if source.id == "unece_wp29")
@@ -182,3 +183,38 @@ def test_california_oal_collector_keeps_vehicle_actions_in_window():
     assert len(result.articles) == 1
     assert result.articles[0].document_id == "2026-0701-02"
     assert result.articles[0].title == "Heavy-Duty Vehicle Emissions Regulation"
+
+
+def test_eurlex_cellar_collector_filters_and_fetches_official_text():
+    def handler(request):
+        if request.url.host == "publications.europa.eu":
+            return httpx.Response(200, json={"results": {"bindings": [
+                {
+                    "work": {"value": "http://example.eu/work/1"},
+                    "celex": {"value": "32026R0123"},
+                    "date": {"value": "2026-07-22"},
+                    "title": {"value": "Heavy-duty vehicle emissions type-approval"},
+                },
+                {
+                    "work": {"value": "http://example.eu/work/2"},
+                    "celex": {"value": "32026R0124"},
+                    "date": {"value": "2026-07-22"},
+                    "title": {"value": "Fishing opportunities in the Baltic Sea"},
+                },
+            ]}})
+        return httpx.Response(200, text="Official EU legal text on heavy-duty vehicle emissions. " * 20)
+
+    source = {
+        "id": "eurlex", "name": "EUR-Lex", "source_type": "法规组织",
+        "url": "https://publications.europa.eu/webapi/rdf/sparql",
+        "api_kind": "eurlex_cellar",
+        "query": {"terms": ["heavy-duty", "truck"], "limit": 100},
+        "region": "欧盟", "authority": 100, "evidence_level": "S",
+    }
+    result = ApiCollector(source, httpx.Client(transport=httpx.MockTransport(handler))).collect(
+        datetime(2026, 7, 21, tzinfo=TZ), NOW
+    )
+    assert not result.error
+    assert len(result.articles) == 1
+    assert result.articles[0].document_id == "32026R0123"
+    assert "CELEX:32026R0123" in str(result.articles[0].source_url)

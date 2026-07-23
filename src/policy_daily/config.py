@@ -46,7 +46,7 @@ class Settings(BaseModel):
 class SourceDefinition(BaseModel):
     id: str
     name: str
-    adapter: Literal["official_site", "browser_site", "html_list", "rss", "api", "sitemap", "page_watch"]
+    adapter: Literal["official_site", "html_list", "rss", "api", "sitemap", "page_watch"]
     url: HttpUrl
     source_type: str
     authority: int = Field(ge=0, le=100)
@@ -65,8 +65,6 @@ class SourceDefinition(BaseModel):
     query: dict[str, Any] = Field(default_factory=dict)
     min_content_chars: int = 200
     max_candidates: int = 100
-    browser_timeout_seconds: int = Field(default=30, ge=5, le=120)
-    browser_user_agent: str = ""
     fallback_urls: list[HttpUrl] = Field(default_factory=list)
 
     @model_validator(mode="after")

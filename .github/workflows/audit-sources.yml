@@ -27,8 +27,6 @@ jobs:
           python-version: "3.11"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: 安装公开网页浏览器
-        run: python -m playwright install --with-deps chromium
       - name: 执行只读历史回测
         run: >-
           python -m policy_daily.main

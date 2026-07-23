@@ -52,7 +52,7 @@ sources:
 
   - id: unece_wp29
     name: UNECE WP.29
-    adapter: browser_site
+    adapter: official_site
     url: https://unece.org/transport/vehicle-regulations
     channel: WP.29车辆法规动态
     document_types: [UN Regulation, Amendment, Supplement, Corrigendum, Proposal]
@@ -64,8 +64,9 @@ sources:
 
   - id: eurlex_oj
     name: EUR-Lex
-    adapter: official_site
-    url: https://eur-lex.europa.eu/oj/browse-oj.html?coll_oj=oj-l
+    adapter: api
+    api_kind: eurlex_cellar
+    url: https://publications.europa.eu/webapi/rdf/sparql
     channel: 欧盟官方公报L系列
     document_types: [Regulation, Directive, Decision]
     url_patterns: ["/legal-content/", "CELEX"]
@@ -73,6 +74,20 @@ sources:
     authority: 100
     evidence_level: S
     region: 欧盟
+    query:
+      limit: 500
+      terms:
+        - heavy-duty
+        - heavy duty
+        - commercial vehicle
+        - truck
+        - road vehicle
+        - vehicle emission
+        - zero-emission vehicle
+        - battery
+        - recharging
+        - alternative fuels
+        - type-approval
 
   - id: eu_transport
     name: 欧盟委员会交通与运输总司
@@ -109,7 +124,7 @@ sources:
 
   - id: carb_heavy_duty
     name: California Air Resources Board
-    adapter: browser_site
+    adapter: official_site
     url: https://ww2.arb.ca.gov/our-work/programs/advanced-clean-trucks
     channel: 加州零排放重卡法规
     document_types: [Regulation, Workshop, Notice, Amendment]

@@ -20,7 +20,75 @@ class ApiCollector(Collector):
             return self._federal_register(start, end)
         if api_kind == "california_oal":
             return self._california_oal(start, end)
+        if api_kind == "eurlex_cellar":
+            return self._eurlex_cellar(start, end)
         return CollectorResult(error=f"不支持的API类型: {api_kind}")
+
+    def _eurlex_cellar(self, start: datetime, end: datetime) -> CollectorResult:
+        """Query the EU Publications Office's official machine-readable repository."""
+        query = self.source.get("query", {})
+        sparql = f"""
+PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?work ?celex ?date ?title WHERE {{
+  ?work cdm:work_date_document ?date ;
+        cdm:work_id_document ?celex .
+  ?expression cdm:expression_belongs_to_work ?work ;
+              cdm:expression_uses_language
+                <http://publications.europa.eu/resource/authority/language/ENG> ;
+              cdm:expression_title ?title .
+  FILTER(?date >= "{start.date().isoformat()}"^^xsd:date &&
+         ?date <= "{end.date().isoformat()}"^^xsd:date)
+}}
+ORDER BY DESC(?date)
+LIMIT {int(query.get("limit", 500))}
+"""
+        try:
+            response = self.client.get(
+                self.source["url"],
+                params={"query": sparql, "format": "application/sparql-results+json"},
+                headers={"Accept": "application/sparql-results+json"},
+            )
+            response.raise_for_status()
+            bindings = response.json().get("results", {}).get("bindings", [])
+            terms = [term.casefold() for term in query.get("terms", [])]
+            articles: list[RawArticle] = []
+            seen: set[str] = set()
+            for binding in bindings:
+                title = clean_text(binding.get("title", {}).get("value", ""))
+                celex = clean_text(binding.get("celex", {}).get("value", ""))
+                if not title or not celex or celex in seen:
+                    continue
+                if terms and not any(term in title.casefold() for term in terms):
+                    continue
+                published = date_parser.parse(binding["date"]["value"]).replace(tzinfo=end.tzinfo)
+                if not within_window(published, start, end):
+                    continue
+                content_url = f"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:{celex}"
+                detail = self.client.get(content_url)
+                detail.raise_for_status()
+                content = clean_text(detail.text)
+                if len(content) < int(self.source.get("min_content_chars", 200)):
+                    continue
+                seen.add(celex)
+                articles.append(RawArticle(
+                    title=title,
+                    source_id=self.source["id"],
+                    source_name=self.source["name"],
+                    source_type=self.source["source_type"],
+                    source_url=content_url,
+                    published_at=published,
+                    collected_at=end,
+                    content=content[:30000],
+                    region_hint=self.source.get("region", "欧盟"),
+                    authority=self.source.get("authority", 100),
+                    document_id=celex,
+                    document_type="EU legal act",
+                    evidence_level=EvidenceLevel(self.source.get("evidence_level", "S")),
+                ))
+            return CollectorResult(articles=articles)
+        except Exception as exc:
+            return CollectorResult(error=f"{type(exc).__name__}: {exc}")
 
     def _california_oal(self, start: datetime, end: datetime) -> CollectorResult:
         """Read official OAL action tables as a structured regulatory register."""
