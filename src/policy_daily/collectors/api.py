@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+import re
 
 from dateutil import parser as date_parser
 
@@ -35,7 +36,11 @@ class ApiCollector(Collector):
                     if key:
                         documents[key] = document
             articles: list[RawArticle] = []
+            excluded_titles = [re.compile(pattern, re.I) for pattern in self.source.get("exclude_patterns", [])]
             for document in documents.values():
+                title = clean_text(document.get("title", ""))
+                if any(pattern.search(title) for pattern in excluded_titles):
+                    continue
                 published = date_parser.parse(document["publication_date"]).replace(tzinfo=end.tzinfo)
                 if not within_window(published, start, end):
                     continue
@@ -48,7 +53,7 @@ class ApiCollector(Collector):
                 if len(content) < int(self.source.get("min_content_chars", 200)):
                     continue
                 articles.append(RawArticle(
-                    title=clean_text(document.get("title", "")),
+                    title=title,
                     source_id=self.source["id"], source_name=self.source["name"],
                     source_type=self.source["source_type"],
                     source_url=document.get("html_url") or detail_url,

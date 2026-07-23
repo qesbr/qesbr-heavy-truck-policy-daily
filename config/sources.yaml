@@ -96,6 +96,12 @@ sources:
     query:
       agencies: [transportation-department, environmental-protection-agency, energy-department, national-highway-traffic-safety-administration]
       terms: ["heavy-duty vehicle", "commercial vehicle", "zero-emission vehicle", "truck", "vehicle emissions", "electric vehicle charging"]
+    exclude_patterns:
+      - "application for exemptions?"
+      - "exemption applications?"
+      - "information collection activities"
+      - "airworthiness directives"
+      - "advisory circular"
     source_type: 政府
     authority: 100
     evidence_level: S

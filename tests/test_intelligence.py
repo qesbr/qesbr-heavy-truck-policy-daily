@@ -82,3 +82,28 @@ def test_federal_register_api_collector():
     )
     assert not result.error and len(result.articles) == 1
     assert result.articles[0].document_id == "2026-10001"
+
+
+def test_federal_register_excludes_case_specific_notices():
+    def handler(request):
+        if request.url.path.endswith("documents.json"):
+            return httpx.Response(200, json={"results": [{
+                "document_number": "2026-EXEMPT",
+                "title": "Hours of Service: Example Carrier; Application for Exemption",
+                "publication_date": "2026-07-23",
+                "type": "Notice",
+                "html_url": "https://example.com/exemption",
+                "raw_text_url": "https://example.com/exemption.txt",
+            }]})
+        return httpx.Response(200, text="Federal Motor Carrier Safety Regulations. " * 30)
+    source = {
+        "id": "fr", "name": "Federal Register", "source_type": "政府",
+        "url": "https://www.federalregister.gov/api/v1/documents.json",
+        "api_kind": "federal_register", "query": {"terms": ["truck"], "agencies": []},
+        "region": "美国", "authority": 100, "evidence_level": "S",
+        "exclude_patterns": ["application for exemptions?"],
+    }
+    result = ApiCollector(source, httpx.Client(transport=httpx.MockTransport(handler))).collect(
+        NOW - timedelta(days=1), NOW
+    )
+    assert result.articles == []
