@@ -44,12 +44,32 @@ class ApiCollector(Collector):
                 published = date_parser.parse(document["publication_date"]).replace(tzinfo=end.tzinfo)
                 if not within_window(published, start, end):
                     continue
-                detail_url = document.get("raw_text_url") or document.get("html_url")
-                if not detail_url:
-                    continue
-                detail = self.client.get(detail_url)
-                detail.raise_for_status()
-                content = clean_text(detail.text)
+                document_number = document.get("document_number", "")
+                metadata_url = document.get("json_url") or (
+                    f"https://www.federalregister.gov/api/v1/documents/{document_number}.json"
+                    if document_number else ""
+                )
+                metadata = document
+                if metadata_url:
+                    metadata_response = self.client.get(metadata_url)
+                    metadata_response.raise_for_status()
+                    metadata = {**document, **metadata_response.json()}
+                detail_urls = [
+                    metadata.get("full_text_xml_url"),
+                    metadata.get("raw_text_url"),
+                    metadata.get("body_html_url"),
+                ]
+                content = ""
+                for detail_url in filter(None, detail_urls):
+                    detail = self.client.get(detail_url)
+                    detail.raise_for_status()
+                    candidate = clean_text(detail.text)
+                    lowered = candidate.lower()
+                    if "request access" in lowered or "aggressive automated scraping" in lowered:
+                        continue
+                    if len(candidate) >= int(self.source.get("min_content_chars", 200)):
+                        content = candidate
+                        break
                 if len(content) < int(self.source.get("min_content_chars", 200)):
                     continue
                 articles.append(RawArticle(
@@ -60,8 +80,8 @@ class ApiCollector(Collector):
                     published_at=published, collected_at=end, content=content[:30000],
                     region_hint=self.source.get("region", "美国"),
                     authority=self.source.get("authority", 100),
-                    document_id=document.get("document_number", ""),
-                    document_type=document.get("type", ""),
+                    document_id=document_number,
+                    document_type=metadata.get("type", document.get("type", "")),
                     evidence_level=EvidenceLevel(self.source.get("evidence_level", "S")),
                 ))
             return CollectorResult(articles=articles)

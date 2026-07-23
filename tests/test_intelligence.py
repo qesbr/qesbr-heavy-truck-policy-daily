@@ -69,6 +69,12 @@ def test_federal_register_api_collector():
                 "html_url": "https://example.com/rule",
                 "raw_text_url": "https://example.com/rule.txt",
             }]})
+        if request.url.path.endswith("2026-10001.json"):
+            return httpx.Response(200, json={
+                "document_number": "2026-10001",
+                "type": "Rule",
+                "full_text_xml_url": "https://example.com/rule.xml",
+            })
         return httpx.Response(200, text="Heavy-duty vehicle emissions regulation. " * 30)
 
     source = {
@@ -102,6 +108,35 @@ def test_federal_register_excludes_case_specific_notices():
         "api_kind": "federal_register", "query": {"terms": ["truck"], "agencies": []},
         "region": "美国", "authority": 100, "evidence_level": "S",
         "exclude_patterns": ["application for exemptions?"],
+    }
+    result = ApiCollector(source, httpx.Client(transport=httpx.MockTransport(handler))).collect(
+        NOW - timedelta(days=1), NOW
+    )
+    assert result.articles == []
+
+
+def test_federal_register_rejects_access_block_page():
+    def handler(request):
+        if request.url.path.endswith("documents.json"):
+            return httpx.Response(200, json={"results": [{
+                "document_number": "2026-BLOCK",
+                "title": "Heavy-Duty Vehicle Final Rule",
+                "publication_date": "2026-07-23",
+                "type": "Rule",
+                "html_url": "https://example.com/rule",
+                "raw_text_url": "https://example.com/blocked.txt",
+            }]})
+        if request.url.path.endswith("2026-BLOCK.json"):
+            return httpx.Response(200, json={
+                "document_number": "2026-BLOCK",
+                "raw_text_url": "https://example.com/blocked.txt",
+            })
+        return httpx.Response(200, text="Federal Register :: Request Access. Due to aggressive automated scraping. " * 10)
+    source = {
+        "id": "fr", "name": "Federal Register", "source_type": "政府",
+        "url": "https://www.federalregister.gov/api/v1/documents.json",
+        "api_kind": "federal_register", "query": {"terms": ["heavy-duty vehicle"], "agencies": []},
+        "region": "美国", "authority": 100, "evidence_level": "S",
     }
     result = ApiCollector(source, httpx.Client(transport=httpx.MockTransport(handler))).collect(
         NOW - timedelta(days=1), NOW
