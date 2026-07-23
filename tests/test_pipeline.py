@@ -74,6 +74,13 @@ def test_site_build_supports_subpath(tmp_path):
     output = tmp_path / "dist"
     build_site(root, data, output, "/qesbr-heavy-truck-policy-daily/")
     assert (output / "index.html").exists()
+    html = (output / "index.html").read_text(encoding="utf-8")
+    javascript = (output / "assets" / "app.js").read_text(encoding="utf-8")
+    assert 'id="archive"' in html
+    assert 'data-type="daily"' in html
+    assert 'id="search"' not in html
+    assert 'id="category"' not in html
+    assert "reports.find(report => report.articles?.length)" in javascript
     assert 'qesbr-heavy-truck-policy-daily' in (output / "site-config.js").read_text(encoding="utf-8")
     assert not (output / "data" / "sources.json").exists()
 
