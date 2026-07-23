@@ -4,6 +4,7 @@ import re
 from zoneinfo import ZoneInfo
 
 import httpx
+import policy_daily.collectors.api as api_module
 
 from policy_daily.collectors.api import ApiCollector
 from policy_daily.config import load_sources
@@ -204,7 +205,13 @@ def test_california_oal_collector_keeps_vehicle_actions_in_window():
     assert result.articles[0].title == "Heavy-Duty Vehicle Emissions Regulation"
 
 
-def test_eurlex_cellar_collector_filters_and_fetches_official_text():
+def test_eurlex_cellar_collector_filters_and_fetches_official_text(monkeypatch):
+    monkeypatch.setattr(
+        api_module,
+        "extract_pdf_text",
+        lambda content: "Official EU legal text on heavy-duty vehicle emissions. " * 20,
+    )
+
     def handler(request):
         if request.url.path == "/webapi/rdf/sparql":
             query = request.url.params["query"]
@@ -218,7 +225,7 @@ def test_eurlex_cellar_collector_filters_and_fetches_official_text():
                     "date": {"value": "2026-07-22"},
                     "title": {"value": "Heavy-duty vehicle emissions type-approval"},
                     "item": {"value": "https://publications.europa.eu/resource/cellar/one/DOC_1"},
-                    "format": {"value": "application/xhtml+xml"},
+                    "format": {"value": "application/pdf"},
                 },
                 {
                     "work": {"value": "http://example.eu/work/2"},
@@ -226,11 +233,11 @@ def test_eurlex_cellar_collector_filters_and_fetches_official_text():
                     "date": {"value": "2026-07-22"},
                     "title": {"value": "Fishing opportunities in the Baltic Sea"},
                     "item": {"value": "https://publications.europa.eu/resource/cellar/two/DOC_1"},
-                    "format": {"value": "application/xhtml+xml"},
+                    "format": {"value": "application/pdf"},
                 },
             ]}})
         assert request.url.path == "/resource/cellar/one/DOC_1"
-        return httpx.Response(200, text="Official EU legal text on heavy-duty vehicle emissions. " * 20)
+        return httpx.Response(200, content=b"%PDF-test")
 
     source = {
         "id": "eurlex", "name": "EUR-Lex", "source_type": "法规组织",

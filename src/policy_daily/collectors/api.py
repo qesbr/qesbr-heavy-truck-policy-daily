@@ -1,14 +1,21 @@
 from __future__ import annotations
 
 from datetime import datetime
+from io import BytesIO
 import re
 
 from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
+from pypdf import PdfReader
 
 from policy_daily.collectors.base import Collector, CollectorResult
 from policy_daily.models import EvidenceLevel, RawArticle
 from policy_daily.utils import clean_text, within_window
+
+
+def extract_pdf_text(content: bytes) -> str:
+    reader = PdfReader(BytesIO(content))
+    return clean_text(" ".join(page.extract_text() or "" for page in reader.pages))
 
 
 class ApiCollector(Collector):
@@ -45,7 +52,7 @@ SELECT DISTINCT ?work ?celex ?date ?title ?item ?format WHERE {{
   ?manifestation cdm:manifestation_manifests_expression ?expression ;
                  cdm:manifestation_type ?format .
   ?item cdm:item_belongs_to_manifestation ?manifestation .
-  FILTER(CONTAINS(LCASE(STR(?format)), "html"))
+  FILTER(CONTAINS(LCASE(STR(?format)), "pdf"))
   FILTER(?date >= "{start.date().isoformat()}"^^xsd:date &&
          ?date <= "{end.date().isoformat()}"^^xsd:date)
 }}
@@ -84,7 +91,7 @@ LIMIT {int(query.get("limit", 500))}
                     continue
                 detail = self.client.get(item_url)
                 detail.raise_for_status()
-                content = clean_text(detail.text)
+                content = extract_pdf_text(detail.content)
                 if len(content) < int(self.source.get("min_content_chars", 200)):
                     detail_rejections += 1
                     continue
