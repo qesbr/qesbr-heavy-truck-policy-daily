@@ -206,24 +206,30 @@ def test_california_oal_collector_keeps_vehicle_actions_in_window():
 
 def test_eurlex_cellar_collector_filters_and_fetches_official_text():
     def handler(request):
-        if request.url.host == "publications.europa.eu":
+        if request.url.path == "/webapi/rdf/sparql":
             query = request.url.params["query"]
             assert "owl:sameAs ?celexUri" in query
             assert "resource/celex/" in query
+            assert "item_belongs_to_manifestation" in query
             return httpx.Response(200, json={"results": {"bindings": [
                 {
                     "work": {"value": "http://example.eu/work/1"},
                     "celex": {"value": "32026R0123"},
                     "date": {"value": "2026-07-22"},
                     "title": {"value": "Heavy-duty vehicle emissions type-approval"},
+                    "item": {"value": "https://publications.europa.eu/resource/cellar/one/DOC_1"},
+                    "format": {"value": "application/xhtml+xml"},
                 },
                 {
                     "work": {"value": "http://example.eu/work/2"},
                     "celex": {"value": "32026R0124"},
                     "date": {"value": "2026-07-22"},
                     "title": {"value": "Fishing opportunities in the Baltic Sea"},
+                    "item": {"value": "https://publications.europa.eu/resource/cellar/two/DOC_1"},
+                    "format": {"value": "application/xhtml+xml"},
                 },
             ]}})
+        assert request.url.path == "/resource/cellar/one/DOC_1"
         return httpx.Response(200, text="Official EU legal text on heavy-duty vehicle emissions. " * 20)
 
     source = {
@@ -240,5 +246,6 @@ def test_eurlex_cellar_collector_filters_and_fetches_official_text():
     assert len(result.articles) == 1
     assert result.articles[0].document_id == "32026R0123"
     assert "CELEX:32026R0123" in str(result.articles[0].source_url)
+    assert "resource/cellar" not in str(result.articles[0].source_url)
     assert "Cellar原始2条" in result.message
     assert "标题匹配1条" in result.message

@@ -31,7 +31,7 @@ class ApiCollector(Collector):
 PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-SELECT DISTINCT ?work ?celex ?date ?title WHERE {{
+SELECT DISTINCT ?work ?celex ?date ?title ?item ?format WHERE {{
   ?work cdm:work_date_document ?date ;
         owl:sameAs ?celexUri .
   FILTER(STRSTARTS(STR(?celexUri),
@@ -42,6 +42,10 @@ SELECT DISTINCT ?work ?celex ?date ?title WHERE {{
               cdm:expression_uses_language
                 <http://publications.europa.eu/resource/authority/language/ENG> ;
               cdm:expression_title ?title .
+  ?manifestation cdm:manifestation_manifests_expression ?expression ;
+                 cdm:manifestation_type ?format .
+  ?item cdm:item_belongs_to_manifestation ?manifestation .
+  FILTER(CONTAINS(LCASE(STR(?format)), "html"))
   FILTER(?date >= "{start.date().isoformat()}"^^xsd:date &&
          ?date <= "{end.date().isoformat()}"^^xsd:date)
 }}
@@ -74,8 +78,11 @@ LIMIT {int(query.get("limit", 500))}
                 published = date_parser.parse(binding["date"]["value"]).replace(tzinfo=end.tzinfo)
                 if not within_window(published, start, end):
                     continue
-                content_url = f"https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:{celex}"
-                detail = self.client.get(content_url)
+                item_url = clean_text(binding.get("item", {}).get("value", ""))
+                if not item_url:
+                    detail_rejections += 1
+                    continue
+                detail = self.client.get(item_url)
                 detail.raise_for_status()
                 content = clean_text(detail.text)
                 if len(content) < int(self.source.get("min_content_chars", 200)):
@@ -87,7 +94,7 @@ LIMIT {int(query.get("limit", 500))}
                     source_id=self.source["id"],
                     source_name=self.source["name"],
                     source_type=self.source["source_type"],
-                    source_url=content_url,
+                    source_url=f"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:{celex}",
                     published_at=published,
                     collected_at=end,
                     content=content[:30000],
