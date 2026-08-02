@@ -1,0 +1,48 @@
+[
+  {
+    "id": "85c7fcb42bc5ed2b",
+    "title_zh": "欧盟法规2019/2144关于机动车及其挂车型式认证的一般安全要求",
+    "title_original": "Regulation (EU) 2019/2144 of the European Parliament and of the Council of 27 November 2019 on type-approval requirements for motor vehicles and their trailers, and systems, components and separate technical units intended for such vehicles, as regards their general safety and the protection of vehicle occupants and vulnerable road users, amending Regulation (EU) 2018/858 of the European Parliament and of the Council and repealing Regulations (EC) No 78/2009, (EC) No 79/2009 and (EC) No 661/2009 of the European Parliament and of the Council and Commission Regulations (EC) No 631/2009, (EU) No 406/2010, (EU) No 672/2010, (EU) No 1003/2010, (EU) No 1005/2010, (EU) No 1008/2010, (EU) No 1009/2010, (EU) No 19/2011, (EU) No 109/2011, (EU) No 458/2011, (EU) No 65/2012, (EU) No 130/2012, (EU) No 347/2012, (EU) No 351/2012, (EU) No 1230/2012 and (EU) 2015/166 (Text with EEA relevance)",
+    "summary_zh": "欧盟法规(EU)2019/2144于2019年11月27日通过，规定了机动车及其挂车、系统、部件和独立技术单元的型式认证要求，涵盖一般安全、车辆乘员和弱势道路使用者保护。该法规适用于M、N、O类车辆，包括卡车和货车，并修订了(EU)2018/858，废除了多项旧法规。法规要求制造商确保新车符合附件II中列出的技术要求，包括制动、轮胎、先进驾驶辅助系统等，并自附件规定的日期起生效。该法规已多次修订，最新修订至2025年，并将于2026年8月2日整合版本生效。",
+    "source_name": "EUR-Lex",
+    "source_type": "法规组织",
+    "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A02019R2144-20260802",
+    "published_at": "2026-08-02T00:00:00+08:00",
+    "collected_at": "2026-08-02T12:04:43.892660+08:00",
+    "region": "欧盟",
+    "primary_category": "法规",
+    "tags": [
+      "型式认证",
+      "一般安全",
+      "先进驾驶辅助系统"
+    ],
+    "importance_score": 95,
+    "is_highlight": true,
+    "content_hash": "b77e7914fabd48bfda769d0d00b8ea7c",
+    "event_id": "71e87f792cb9a30b",
+    "related_sources": [],
+    "content_evidence": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the relevant acts, including their preambles, are those published in the Official Journal of the European Union and available in EUR-Lex. Those official texts are directly accessible through the links embedded in this document ►B REGULATION (EU) 2019/2144 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 27 November 2019 on type-approval requirements for motor vehicles and their trailers, and systems, components and separate technical units intended for such vehicles, as regards their general safety and the protection of vehicle occupants and vulnerable road users, amending Regulation (EU) 2018/858 of the European Parliament and of the Council and repealing Regulations (EC) No 78/2009, (EC) No 79/2009 and (EC) No 661/2009 of the European Parliament and of the Council and Commission Regulations (EC) No 631/2009, (EU) N",
+    "language": "en",
+    "authority": 100,
+    "source_id": "eurlex_oj",
+    "document_id": "02019R2144-20260802",
+    "document_type": "EU legal act",
+    "lifecycle_stage": "effective",
+    "relevance_level": "direct",
+    "evidence_level": "S",
+    "vehicle_classes": [
+      "M",
+      "N",
+      "O"
+    ],
+    "powertrain_scope": [
+      "所有动力类型"
+    ],
+    "effective_at": null,
+    "evidence_quotes": [
+      "This Regulation applies to vehicles of categories M, N and O, as defined in Article 4 of Regulation (EU) 2018/858",
+      "Manufacturers shall demonstrate that all new vehicles that are placed on the market, registered or entered into service, and all new systems, components and separate technical units that are placed on the market or entered into service, are",
+      "Manufacturers shall ensure that vehicles are designed, constructed and assembled so as to minimise the risk of injury to vehicle occupants and vulnerable road users."
+    ]
+  }
+]
