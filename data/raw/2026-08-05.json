@@ -1,0 +1,19 @@
+[
+  {
+    "title": "CARB releases draft proposed Tier 5 emission regulation for off-road engines",
+    "source_name": "DieselNet",
+    "source_type": "专业媒体",
+    "source_url": "https://dieselnet.com/news/2026/02carb.php",
+    "published_at": "2026-08-05T00:00:00+08:00",
+    "collected_at": "2026-08-05T11:45:20.757721+08:00",
+    "content": "news: CARB releases draft proposed Tier 5 emission regulation for off-road engines CARB releases draft proposed Tier 5 emission regulation for off-road engines 9 February 2026 The California Air Resources Board (CARB) has released the draft potential Tier 5 emission regulations for off-road (a.k.a. nonroad) compression-ignition engines. If adopted, the standards would be phased-in over the period of 2031-2036. Please log in to view the full version of this article ( subscription required). Under the proposed standards, NOx emissions from off-road engines would have to be reduced by up to 90%, compared to the current US EPA Tier 4 final standards, while PM emissions would have to be reduced by up to 75%—forcing the use of diesel particulate filters on all affected off-road engines. As of model year 2020, more than half of all new off-road compression-ignition engine families continue to be certified in California to the Tier 4 Final emission standards without the use of diesel particulate filters (DPF). However, the proposed Tier 5 regulation would not be applicable to new engines below 175 hp that are used in construction or farm equipment—these engines have been preempted from California regulations. Furthermore, current regulations do not prevent California residents from bringing off-road engines and equipment from other states. Unless an aligned Tier 5 regulation be adopted at the US federal level, the California Tier 5 standards would have only a limited effect. In addition to land-based off-road engines, the Tier 5 proposal includes emission standards for Category 1 marine diesel engines (displacement &lt; 7 L per cylinder). The Tier 5 standards would also apply to off-road engines fueled by hydrogen. Compared to the prior Tier 5 proposal , released in September 2024, the Tier 5 implementation dates have been delayed and GHG emission requirements are no longer included in the proposed standards. The Tier 5 proposal includes several requirements that are phased-in through model year 2036 and depend on engine category. For off-road engines between 56 and 560 kW, the Tier 5 Final requirements include: Criteria pollutant standards Low-load cycle certification In-use testing program for NOx In-use testing program for PM Longer useful life and warranty Revised durability demonstration Enhanced defects reporting SCR inducements (for engines with SCR) Idle reduction provisions The Tier 5 standards over the NRTC and the RMC test cycles are summarized in Table 1. The Tier 5 Interim standards are optional—manufacturers may comply with either the Tier 5 Interim or Tier 4 Final emission standards. Table 1. Proposed Tier 5 emission standards, NRTC &amp; RMC, g/kWh Power Category Model Year Type NOx PM NMHC CO &lt; 8 kW 2036 Final 5.0 a 0.2 n/a 8.0 8 ≤ kW &lt; 19 2036 Final 4.0 a 0.1 n/a 6.6 19 ≤ kW &lt; 56 2031 Interim 4.4 a 0.010 n/a 5.0 2036 Final 2.5 0.008 0.19 5.0 56 ≤ kW &lt; 130 2031 Interim 0.35 0.010 0.19 5.0 2036 Final 0.040 0.005 0.080 b 5.0 130 ≤ kW ≤ 560 2031 Interim 0.35 0.010 0.19 3.5 2036 Final 0.040 0.005 0.080 b 3.5 &gt; 560 kW (GEN) 2036 Final 0.35 0.008 0.080 b 3.5 &gt; 560 kW (ELSE) 2036 Final 3.0 0.040 0.19 3.5 a NMHC+NOx b 0.19 g/kWh for lean-burn natural gas engines The Tier 5 rulemaking will be discussed at a CARB public workshop on February 27, 2026. Source: CARB Related US nonroad engine emission standards",
+    "region_hint": "全球",
+    "authority": 82,
+    "language": "unknown",
+    "source_id": "dieselnet_news",
+    "document_id": "",
+    "document_type": "法规动态, 排放标准, 行业新闻",
+    "evidence_level": "B",
+    "attachment_urls": []
+  }
+]
