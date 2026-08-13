@@ -1,6 +1,17 @@
 {
-  "generated_at": "2026-08-12T03:05:46.587591+00:00",
+  "generated_at": "2026-08-13T03:09:32.691623+00:00",
   "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-08-13",
+      "title": "政策法规日报 · 2026-08-13",
+      "period_start": "2026-08-12T11:09:14.235655+08:00",
+      "period_end": "2026-08-13T11:09:14.235655+08:00",
+      "generated_at": "2026-08-13T11:09:32.690768+08:00",
+      "summary": "暂无重要更新。",
+      "empty": true,
+      "articles": []
+    },
     {
       "report_type": "daily",
       "report_id": "daily-2026-08-12",
