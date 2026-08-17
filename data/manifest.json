@@ -1,6 +1,64 @@
 {
-  "generated_at": "2026-08-17T01:59:26.128257+00:00",
+  "generated_at": "2026-08-17T02:05:30.047695+00:00",
   "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-08-17",
+      "title": "政策法规日报 · 2026-08-17",
+      "period_start": "2026-08-16T10:04:58.098804+08:00",
+      "period_end": "2026-08-17T10:04:58.098804+08:00",
+      "generated_at": "2026-08-17T10:05:30.045835+08:00",
+      "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "3daee346296fb934",
+          "title_zh": "驳回机动车缺陷申诉请愿书，DP26002",
+          "title_original": "Denial of Motor Vehicle Defect Petition, DP26002",
+          "summary_zh": "美国国家公路交通安全管理局（NHTSA）于2026年8月14日发布通知，驳回由Bhupinder Dhadda提交的缺陷调查请愿书（DP26002）。该请愿书要求对重型车辆及使用10-285.75毫米螺栓圈车轮的车辆，因缺乏冗余机械车轮紧固机制而可能存在的安全缺陷进行调查。NHTSA缺陷调查办公室在审查了车主问卷、早期预警报告及联邦汽车运输安全管理局的违规数据后，认为现有证据不足以支持存在系统性安全缺陷，因此决定驳回请愿。该决定不影响未来基于新信息重新评估。",
+          "source_name": "美国Federal Register",
+          "source_type": "政府",
+          "source_url": "https://www.federalregister.gov/documents/2026/08/17/2026-16749/denial-of-motor-vehicle-defect-petition-dp26002",
+          "published_at": "2026-08-17T00:00:00+08:00",
+          "collected_at": "2026-08-17T10:04:58.098804+08:00",
+          "region": "美国",
+          "primary_category": "政策",
+          "tags": [
+            "重型货车",
+            "缺陷调查",
+            "车轮紧固"
+          ],
+          "importance_score": 95,
+          "is_highlight": true,
+          "content_hash": "91253279eb5fec5127019ca17c9b35fb",
+          "event_id": "329200d6565b9a9b",
+          "related_sources": [],
+          "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration [Docket No. NHTSA-2026-1750] Denial of Motor Vehicle Defect Petition, DP26002 AGENCY: National Highway Traffic Safety Administration (NHTSA), Department of Transportation. ACTION: Denial of a petition for a defect investigation. SUMMARY: This notice sets forth the reasons for the denial of a defect petition (DP26002) submitted by Mr. Bhupinder Dhadda. The petition requested that the Agency initiate a safety defect investigation into wheel fastening practices on heavy-duty vehicles and vehicles utilizing 10-285.75 mm bolt circle wheels, with the focus of the investigation being the absence of a redundant mechanical wheel fastener mechanism. After conducting a technical review of the petition and other information, NHTSA's Office of Defects Investigation has concluded that the issues raised by the petition do not warrant a defect investigation at this time. Accordingly, the Agency has denied the petition. FOR FUR",
+          "language": "en",
+          "authority": 100,
+          "source_id": "us_federal_register_vehicle",
+          "document_id": "2026-16749",
+          "document_type": "Notice",
+          "lifecycle_stage": "published",
+          "relevance_level": "direct",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "N2",
+            "N3",
+            "重型车辆"
+          ],
+          "powertrain_scope": [
+            "所有动力类型"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "The petition requested that the Agency initiate a safety defect investigation into wheel fastening practices on heavy-duty vehicles and vehicles utilizing 10-285.75 mm bolt circle wheels",
+            "ODI has found insufficient evidence to support the petitioner's claim that a safety-related defect exists.",
+            "the denial of this petition does not foreclose the Agency from taking further action if warranted"
+          ]
+        }
+      ]
+    },
     {
       "report_type": "daily",
       "report_id": "daily-2026-08-16",
