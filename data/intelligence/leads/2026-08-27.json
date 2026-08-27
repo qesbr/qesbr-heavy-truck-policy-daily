@@ -1,0 +1,24 @@
+[
+  {
+    "id": "ad9c330b533fda27",
+    "title": "米其林北美公司关于无关紧要不合规决定的请愿批准",
+    "source_name": "美国Federal Register",
+    "source_url": "https://www.federalregister.gov/documents/2026/08/27/2026-17472/michelin-north-america-inc-grant-of-petition-for-decision-of-inconsequential-noncompliance",
+    "published_at": "2026-08-27T00:00:00+08:00",
+    "collected_at": "2026-08-27T18:10:09.681970+08:00",
+    "reason": "相关等级=indirect，证据等级=S",
+    "evidence_level": "S",
+    "status": "pending"
+  },
+  {
+    "id": "59aab06c8d19ba10",
+    "title": "空气计划批准；阿肯色州；第二个实施期区域雾霾州实施计划",
+    "source_name": "美国Federal Register",
+    "source_url": "https://www.federalregister.gov/documents/2026/08/27/2026-17494/air-plan-approval-arkansas-regional-haze-state-implementation-plan-for-the-second-implementation",
+    "published_at": "2026-08-27T00:00:00+08:00",
+    "collected_at": "2026-08-27T18:10:09.681970+08:00",
+    "reason": "相关等级=indirect，证据等级=S",
+    "evidence_level": "S",
+    "status": "pending"
+  }
+]
