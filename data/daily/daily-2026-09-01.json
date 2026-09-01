@@ -1,0 +1,108 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-09-01",
+  "title": "政策法规日报 · 2026-09-01",
+  "period_start": "2026-08-31T13:30:36.281419+08:00",
+  "period_end": "2026-09-01T13:30:36.281419+08:00",
+  "generated_at": "2026-09-01T13:31:22.227479+08:00",
+  "summary": "本期共收录2条经正文与发布时间核验的信息，其中今日重点2条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "eb357f483384545f",
+      "title_zh": "印度车辆电动化就业影响评估",
+      "title_original": "Employment implications of vehicle electrification under alternative fuel efficiency pathways in India - International Council on Clean Transportation",
+      "summary_zh": "国际清洁交通委员会发布报告，评估印度汽车行业从内燃机向电动汽车转型的就业影响。报告基于2024年世界投入产出数据，构建合成电动汽车部门，模拟三种电动化情景至2040年。结果显示，在高度电动化情景下，电动汽车制造业直接就业将从2024年约9万增至2040年430万，若实现电池本地化则超700万；间接就业达1730万。但净就业影响在电池本地化低于25%时为负，超过25%后转正。报告建议设定严格能效标准、实现电池本地化目标（2032年30%，2040年50%），并实施公正转型计划。",
+      "source_name": "国际清洁交通委员会 ICCT",
+      "source_type": "研究机构",
+      "source_url": "https://theicct.org/publication/employment-implications-of-vehicle-electrification-under-alternative-fuel-efficiency-pathways-in-india-sept26",
+      "published_at": "2026-09-01T00:00:00+08:00",
+      "collected_at": "2026-09-01T13:30:36.281419+08:00",
+      "region": "印度",
+      "primary_category": "政策",
+      "tags": [
+        "电动化",
+        "就业",
+        "电池本地化"
+      ],
+      "importance_score": 77,
+      "is_highlight": true,
+      "content_hash": "3ef26cab0f862010385bc15d01b101a0",
+      "event_id": "e6a3b4a421240455",
+      "related_sources": [],
+      "content_evidence": "Report Employment implications of vehicle electrification under alternative fuel efficiency pathways in India Overview India’s automotive sector is a cornerstone of the national economy, contributing approximately 7.1% of national gross domestic product (GDP) and supporting nearly 30 million direct and indirect jobs. This report provides an economy-wide assessment of the industrial and labor market implications associated with the industry transition from internal combustion engine (ICE) vehicles to electric vehicles (EVs). Specifically, it estimates the direct and indirect employment impacts of electrification under corporate average fuel efficiency (CAFE) norms of varying stringency levels. Using a demand-driven input–output (IO) framework based on an updated 2024 World Input-Output Database (WIOD) dataset for India, we developed a “synthetic” EV sector to explicitly model the distinct production structure of electric vehicles. We used three scenarios to assess the pace of India’s ve",
+      "language": "en",
+      "authority": 85,
+      "source_id": "icct_heavy_duty",
+      "document_id": "",
+      "document_type": "研究报告, 政策分析",
+      "lifecycle_stage": "published",
+      "relevance_level": "probable",
+      "evidence_level": "B",
+      "vehicle_classes": [
+        "passenger_cars",
+        "two_wheelers",
+        "commercial_vehicles"
+      ],
+      "powertrain_scope": [
+        "BEV",
+        "ICE"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "India’s automotive sector is a cornerstone of the national economy, contributing approximately 7.1% of national gross domestic product (GDP) and supporting nearly 30 million direct and indirect jobs.",
+        "Under the Aligned with Viksit Bharat pathway, direct employment in core EV manufacturing, including vehicle assembly and key component production, is projected to increase from approximately 90,000 jobs in 2024 to 4.3 million jobs by 2040 u",
+        "Targeting at least 30% battery localization by 2032 and 50% by 2040 would help ensure that the shift to EVs creates more jobs than it displaces, transforming India’s EV transition into a net employment opportunity."
+      ]
+    },
+    {
+      "id": "7550ed221b295391",
+      "title_zh": "印度电动汽车转型：2024至2050年电动汽车电池需求对进口支付的影响",
+      "title_original": "India’s EV transition: Impact of electric vehicle battery demand on import payments from 2024 to 2050 - International Council on Clean Transportation",
+      "summary_zh": "国际清洁交通委员会发布工作论文，研究印度电动汽车转型中电池需求对进口支付的影响。印度纯电动汽车销量快速增长，但电池几乎全靠进口。研究模拟2024至2050年所有主要道路车辆（包括卡车）的电池需求，评估不同本土制造路径对石油和电池进口费用的影响。结果显示，即使电池依赖进口，快速电动化也能大幅降低进口费用，2050年雄心情景下进口账单比基准情景低61%。本土电池制造可进一步节省310亿美元。",
+      "source_name": "国际清洁交通委员会 ICCT",
+      "source_type": "研究机构",
+      "source_url": "https://theicct.org/publication/impact-of-ev-battery-demand-on-import-payments-from-2024-to-2050-sept26",
+      "published_at": "2026-09-01T00:00:00+08:00",
+      "collected_at": "2026-09-01T13:30:36.281419+08:00",
+      "region": "印度",
+      "primary_category": "政策",
+      "tags": [
+        "动力电池",
+        "电动汽车",
+        "进口"
+      ],
+      "importance_score": 77,
+      "is_highlight": true,
+      "content_hash": "11deccefcbd12e15eff8d1372f5610c2",
+      "event_id": "596a2d561346428a",
+      "related_sources": [],
+      "content_evidence": "Working Paper India’s EV transition: Impact of electric vehicle battery demand on import payments from 2024 to 2050 India’s battery electric vehicle (BEV) sales have grown rapidly, with a compound annual growth rate of 62.5% from fiscal year (FY) 2019–20 to FY 2024–25. Yet this growth has not been matched by growth in domestic battery manufacturing and India’s battery cell demand is currently met almost entirely through imports. As BEV adoption accelerates further, battery imports may continue to grow if local battery manufacturing supply chains remain inadequate, even as reliance on imported petrol and diesel declines. This study models India’s battery demand across all major on-road vehicle segments, including two-wheelers, three-wheelers, passenger cars, light commercial vehicles, buses, and trucks, from 2024 to 2050 under three BEV uptake scenarios. It then assesses how different levels of domestic battery manufacturing pathways could affect India’s combined oil and battery import",
+      "language": "en",
+      "authority": 85,
+      "source_id": "icct_heavy_duty",
+      "document_id": "",
+      "document_type": "研究报告, 政策分析",
+      "lifecycle_stage": "published",
+      "relevance_level": "probable",
+      "evidence_level": "B",
+      "vehicle_classes": [
+        "truck",
+        "bus",
+        "light commercial vehicle",
+        "passenger car",
+        "two-wheeler",
+        "three-wheeler"
+      ],
+      "powertrain_scope": [
+        "BEV"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "This study models India’s battery demand across all major on-road vehicle segments, including two-wheelers, three-wheelers, passenger cars, light commercial vehicles, buses, and trucks, from 2024 to 2050 under three BEV uptake scenarios.",
+        "Faster electrification reduces India’s import payments even if batteries continue to be imported.",
+        "Domestic battery manufacturing provides additional savings."
+      ]
+    }
+  ]
+}
