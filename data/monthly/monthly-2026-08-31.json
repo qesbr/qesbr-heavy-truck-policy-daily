@@ -1,0 +1,202 @@
+{
+  "report_type": "monthly",
+  "report_id": "monthly-2026-08-31",
+  "title": "政策法规月报 · 2026-08-31",
+  "period_start": "2026-08-01T00:00:00+08:00",
+  "period_end": "2026-08-31T23:59:59+08:00",
+  "generated_at": "2026-09-01T13:24:10.547932+08:00",
+  "summary": "本期共收录4条经正文与发布时间核验的信息，其中今日重点4条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "203a548e4343b0db",
+      "title_zh": "重置NHTSA燃油经济性计划：商用中重型公路车辆和工作卡车",
+      "title_original": "Resetting NHTSA's Fuel Economy Program: Commercial Medium- and Heavy-Duty On-Highway Vehicles and Work Trucks",
+      "summary_zh": "美国国家公路交通安全管理局（NHTSA）发布解释性规则，明确其根据《2007年能源独立与安全法案》（EISA）对商用中重型公路车辆和工作卡车的燃油经济性标准制定权限仅限于车辆本身，不包括单独为发动机设定标准。该规则自2026年8月31日起适用，并将在后续单独规则制定中审查现有标准的一致性。此举旨在确保法规在法律授权范围内，并给予制造商灵活性。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/08/31/2026-17756/resetting-nhtsas-fuel-economy-program-commercial-medium--and-heavy-duty-on-highway-vehicles-and-work",
+      "published_at": "2026-08-31T00:00:00+08:00",
+      "collected_at": "2026-08-31T13:57:51.678422+08:00",
+      "region": "美国",
+      "primary_category": "政策",
+      "tags": [
+        "燃油经济性",
+        "中重型车辆",
+        "NHTSA"
+      ],
+      "importance_score": 95,
+      "is_highlight": true,
+      "content_hash": "acfae01ef066f3e8bb0c836879c125cc",
+      "event_id": "183fcce637a25de9",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration 49 CFR Parts 523, 534, and 535 [Docket No. NHTSA-2026-1948] Resetting NHTSA's Fuel Economy Program: Commercial Medium- and Heavy-Duty On-Highway Vehicles and Work Trucks AGENCY: National Highway Traffic Safety Administration (NHTSA), Department of Transportation (DOT). ACTION: Interpretive rule. SUMMARY: The National Highway Traffic Safety Administration is issuing this interpretive rule regarding the scope of its authority to set fuel economy standards for commercial medium- and heavy-duty on-highway vehicles and work trucks. This rule describes NHTSA's authority to set vehicle standards, which does not include the authority to set separate standards for engines. NHTSA will review its existing standards applicable to commercial medium- and heavy-duty on-highway vehicles and work trucks for consistency with this interpretation in a separate rulemaking. Pending the rulemaking process, NHTSA will exercise its enf",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-17756",
+      "document_type": "Rule",
+      "lifecycle_stage": "published",
+      "relevance_level": "direct",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "N2",
+        "N3",
+        "HDV"
+      ],
+      "powertrain_scope": [
+        "ICE",
+        "HEV",
+        "BEV",
+        "FCEV"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "NHTSA's authority to set vehicle standards, which does not include the authority to set separate standards for engines.",
+        "EISA specifically requires NHTSA set standards for vehicles, and authorized separate standards for different classes of vehicles, but did not authorize standalone engine standards.",
+        "This interpretive rule is applicable as of August 31, 2026."
+      ]
+    },
+    {
+      "id": "0da8009e0145780e",
+      "title_zh": "AV框架更新及临时指南征求意见；评论期延长",
+      "title_original": "AV Framework Updates and Request for Comments on Interim Guidance; Extension of Comment Period",
+      "summary_zh": "美国国家公路交通安全管理局（NHTSA）宣布将2026年7月31日发布的关于AV框架更新及自动驾驶车辆商业部署豁免临时指南的公众评论期延长30天，至2026年9月30日。该指南旨在为根据49 U.S.C. 30113和49 CFR part 555申请一般豁免的制造商提供更多指导，特别是针对配备自动驾驶系统（ADS）的车辆。延长评论期是应汽车创新联盟（Auto Innovators）的请求，以促进更深入的公众参与。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/08/31/2026-17741/av-framework-updates-and-request-for-comments-on-interim-guidance-extension-of-comment-period",
+      "published_at": "2026-08-31T00:00:00+08:00",
+      "collected_at": "2026-08-31T13:57:51.678422+08:00",
+      "region": "美国",
+      "primary_category": "政策",
+      "tags": [
+        "自动驾驶",
+        "豁免",
+        "评论期"
+      ],
+      "importance_score": 81,
+      "is_highlight": true,
+      "content_hash": "98738b281c556fa354bdb1bc74714291",
+      "event_id": "d3867c9d81df534f",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration [Docket No. NHTSA-2026-1552] AV Framework Updates and Request for Comments on Interim Guidance; Extension of Comment Period AGENCY: National Highway Traffic Safety Administration (NHTSA), Department of Transportation (DOT). ACTION: Extension of comment period. SUMMARY: In response to a request from the Alliance for Automotive Innovation (Auto Innovators), NHTSA is announcing a 30-day extension of the public comment period for the notice published on July 31, 2026 summarizing NHTSA's recent activity relating to the AV Framework and requesting comment on interim guidance for commercial deployment exemptions for automated vehicles. The comment period for the notice was originally scheduled to end on August 31, 2026. It will now end on September 30, 2026. DATES: The comment period for the notice published at 91 FR 48485 on July 31, 2026, is extended. Comments should be received on or before September 30, 2026. ADDR",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-17741",
+      "document_type": "Notice",
+      "lifecycle_stage": "consultation",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "N2",
+        "N3",
+        "HDV"
+      ],
+      "powertrain_scope": [
+        "BEV",
+        "PHEV",
+        "ICE",
+        "FCEV"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "NHTSA is announcing a 30-day extension of the public comment period for the notice published on July 31, 2026 summarizing NHTSA's recent activity relating to the AV Framework and requesting comment on interim guidance for commercial deploym",
+        "The interim guidance in the notice provides more detail about what types of information would be most helpful to the agency, how NHTSA reviews each of the possible grounds for a General Exemption, and whether the exemption furthers the publ",
+        "Although the interim guidance is intended to help all part 555 applicants, it is expected to be especially helpful to manufacturers seeking exemptions for ADS-equipped vehicles because it contains a section dedicated to the information like"
+      ]
+    },
+    {
+      "id": "3daee346296fb934",
+      "title_zh": "驳回机动车缺陷申诉请愿书，DP26002",
+      "title_original": "Denial of Motor Vehicle Defect Petition, DP26002",
+      "summary_zh": "美国国家公路交通安全管理局（NHTSA）于2026年8月14日发布通知，驳回由Bhupinder Dhadda提交的缺陷调查请愿书（DP26002）。该请愿书要求对重型车辆及使用10-285.75毫米螺栓圈车轮的车辆，因缺乏冗余机械车轮紧固机制而可能存在的安全缺陷进行调查。NHTSA缺陷调查办公室在审查了车主问卷、早期预警报告及联邦汽车运输安全管理局的违规数据后，认为现有证据不足以支持存在系统性安全缺陷，因此决定驳回请愿。该决定不影响未来基于新信息重新评估。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/08/17/2026-16749/denial-of-motor-vehicle-defect-petition-dp26002",
+      "published_at": "2026-08-17T00:00:00+08:00",
+      "collected_at": "2026-08-17T10:04:58.098804+08:00",
+      "region": "美国",
+      "primary_category": "政策",
+      "tags": [
+        "重型货车",
+        "缺陷调查",
+        "车轮紧固"
+      ],
+      "importance_score": 95,
+      "is_highlight": true,
+      "content_hash": "91253279eb5fec5127019ca17c9b35fb",
+      "event_id": "329200d6565b9a9b",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration [Docket No. NHTSA-2026-1750] Denial of Motor Vehicle Defect Petition, DP26002 AGENCY: National Highway Traffic Safety Administration (NHTSA), Department of Transportation. ACTION: Denial of a petition for a defect investigation. SUMMARY: This notice sets forth the reasons for the denial of a defect petition (DP26002) submitted by Mr. Bhupinder Dhadda. The petition requested that the Agency initiate a safety defect investigation into wheel fastening practices on heavy-duty vehicles and vehicles utilizing 10-285.75 mm bolt circle wheels, with the focus of the investigation being the absence of a redundant mechanical wheel fastener mechanism. After conducting a technical review of the petition and other information, NHTSA's Office of Defects Investigation has concluded that the issues raised by the petition do not warrant a defect investigation at this time. Accordingly, the Agency has denied the petition. FOR FUR",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-16749",
+      "document_type": "Notice",
+      "lifecycle_stage": "published",
+      "relevance_level": "direct",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "N2",
+        "N3",
+        "重型车辆"
+      ],
+      "powertrain_scope": [
+        "所有动力类型"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "The petition requested that the Agency initiate a safety defect investigation into wheel fastening practices on heavy-duty vehicles and vehicles utilizing 10-285.75 mm bolt circle wheels",
+        "ODI has found insufficient evidence to support the petitioner's claim that a safety-related defect exists.",
+        "the denial of this petition does not foreclose the Agency from taking further action if warranted"
+      ]
+    },
+    {
+      "id": "85c7fcb42bc5ed2b",
+      "title_zh": "欧盟法规2019/2144关于机动车及其挂车型式认证的一般安全要求",
+      "title_original": "Regulation (EU) 2019/2144 of the European Parliament and of the Council of 27 November 2019 on type-approval requirements for motor vehicles and their trailers, and systems, components and separate technical units intended for such vehicles, as regards their general safety and the protection of vehicle occupants and vulnerable road users, amending Regulation (EU) 2018/858 of the European Parliament and of the Council and repealing Regulations (EC) No 78/2009, (EC) No 79/2009 and (EC) No 661/2009 of the European Parliament and of the Council and Commission Regulations (EC) No 631/2009, (EU) No 406/2010, (EU) No 672/2010, (EU) No 1003/2010, (EU) No 1005/2010, (EU) No 1008/2010, (EU) No 1009/2010, (EU) No 19/2011, (EU) No 109/2011, (EU) No 458/2011, (EU) No 65/2012, (EU) No 130/2012, (EU) No 347/2012, (EU) No 351/2012, (EU) No 1230/2012 and (EU) 2015/166 (Text with EEA relevance)",
+      "summary_zh": "欧盟法规(EU)2019/2144于2019年11月27日通过，规定了机动车及其挂车、系统、部件和独立技术单元的型式认证要求，涵盖一般安全、车辆乘员和弱势道路使用者保护。该法规适用于M、N、O类车辆，包括卡车和货车，并修订了(EU)2018/858，废除了多项旧法规。法规要求制造商确保新车符合附件II中列出的技术要求，包括制动、轮胎、先进驾驶辅助系统等，并自附件规定的日期起生效。该法规已多次修订，最新修订至2025年，并将于2026年8月2日整合版本生效。",
+      "source_name": "EUR-Lex",
+      "source_type": "法规组织",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A02019R2144-20260802",
+      "published_at": "2026-08-02T00:00:00+08:00",
+      "collected_at": "2026-08-02T12:04:43.892660+08:00",
+      "region": "欧盟",
+      "primary_category": "法规",
+      "tags": [
+        "型式认证",
+        "一般安全",
+        "先进驾驶辅助系统"
+      ],
+      "importance_score": 95,
+      "is_highlight": true,
+      "content_hash": "b77e7914fabd48bfda769d0d00b8ea7c",
+      "event_id": "71e87f792cb9a30b",
+      "related_sources": [],
+      "content_evidence": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the relevant acts, including their preambles, are those published in the Official Journal of the European Union and available in EUR-Lex. Those official texts are directly accessible through the links embedded in this document ►B REGULATION (EU) 2019/2144 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 27 November 2019 on type-approval requirements for motor vehicles and their trailers, and systems, components and separate technical units intended for such vehicles, as regards their general safety and the protection of vehicle occupants and vulnerable road users, amending Regulation (EU) 2018/858 of the European Parliament and of the Council and repealing Regulations (EC) No 78/2009, (EC) No 79/2009 and (EC) No 661/2009 of the European Parliament and of the Council and Commission Regulations (EC) No 631/2009, (EU) N",
+      "language": "en",
+      "authority": 100,
+      "source_id": "eurlex_oj",
+      "document_id": "02019R2144-20260802",
+      "document_type": "EU legal act",
+      "lifecycle_stage": "effective",
+      "relevance_level": "direct",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "M",
+        "N",
+        "O"
+      ],
+      "powertrain_scope": [
+        "所有动力类型"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "This Regulation applies to vehicles of categories M, N and O, as defined in Article 4 of Regulation (EU) 2018/858",
+        "Manufacturers shall demonstrate that all new vehicles that are placed on the market, registered or entered into service, and all new systems, components and separate technical units that are placed on the market or entered into service, are",
+        "Manufacturers shall ensure that vehicles are designed, constructed and assembled so as to minimise the risk of injury to vehicle occupants and vulnerable road users."
+      ]
+    }
+  ]
+}
