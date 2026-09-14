@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T05:15:26.146597+00:00",
+  "generated_at": "2026-09-14T05:11:49.241675+00:00",
   "reports": [
     {
       "report_type": "daily",
@@ -1079,6 +1079,17 @@
       "period_start": "2026-07-15T00:00:00+08:00",
       "period_end": "2026-07-15T23:59:59.999999+08:00",
       "generated_at": "2026-07-22T23:28:59.119906+08:00",
+      "summary": "暂无重要更新。",
+      "empty": true,
+      "articles": []
+    },
+    {
+      "report_type": "weekly",
+      "report_id": "weekly-2026-09-14",
+      "title": "政策法规周报 · 2026-09-14",
+      "period_start": "2026-09-07T13:11:49.237518+08:00",
+      "period_end": "2026-09-14T13:11:49.237518+08:00",
+      "generated_at": "2026-09-14T13:11:49.238530+08:00",
       "summary": "暂无重要更新。",
       "empty": true,
       "articles": []
