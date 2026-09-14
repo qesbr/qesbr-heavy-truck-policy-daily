@@ -1,6 +1,65 @@
 {
-  "generated_at": "2026-09-14T05:11:49.241675+00:00",
+  "generated_at": "2026-09-14T05:20:28.396875+00:00",
   "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-09-14",
+      "title": "政策法规日报 · 2026-09-14",
+      "period_start": "2026-09-13T13:19:48.323452+08:00",
+      "period_end": "2026-09-14T13:19:48.323452+08:00",
+      "generated_at": "2026-09-14T13:20:28.393620+08:00",
+      "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "c4aa7666cf42d0c1",
+          "title_zh": "美国环保署批准加州圣华金谷2008年臭氧标准机动车排放预算修订",
+          "title_original": "Approval and Promulgation of Implementation Plans; California; San Joaquin Valley, Revisions to Motor Vehicle Emissions Budgets for Ozone",
+          "summary_zh": "美国环保署发布最终规则，批准加州圣华金谷地区州实施计划修订，更新2008年8小时臭氧国家环境空气质量标准下的氮氧化物和挥发性有机物机动车排放预算。新预算基于EMFAC2021模型及2025年11月批准的调整因子，覆盖2026、2029和2031年，适用于圣华金谷全部子区域，并取代此前基于EMFAC2014的旧预算。规则于2026年10月14日生效。该调整因子取消了先进清洁卡车、重型车综合法规等的排放收益，对重型商用车排放核算产生直接影响。",
+          "source_name": "美国Federal Register",
+          "source_type": "政府",
+          "source_url": "https://www.federalregister.gov/documents/2026/09/14/2026-18748/approval-and-promulgation-of-implementation-plans-california-san-joaquin-valley-revisions-to-motor",
+          "published_at": "2026-09-14T00:00:00+08:00",
+          "collected_at": "2026-09-14T13:19:48.323452+08:00",
+          "region": "美国加利福尼亚州圣华金谷",
+          "primary_category": "法规",
+          "tags": [
+            "排放预算",
+            "臭氧",
+            "重型车"
+          ],
+          "importance_score": 95,
+          "is_highlight": true,
+          "content_hash": "510c69f4db2b34cf57852d80d175bd83",
+          "event_id": "163df1ef47d35ce3",
+          "related_sources": [],
+          "content_evidence": "ENVIRONMENTAL PROTECTION AGENCY 40 CFR Part 52 [EPA-R09-OAR-2026-3400; FRL-13355-02-R9] Approval and Promulgation of Implementation Plans; California; San Joaquin Valley, Revisions to Motor Vehicle Emissions Budgets for Ozone AGENCY: Environmental Protection Agency (EPA). ACTION: Final rule. SUMMARY: The U.S. Environmental Protection Agency (EPA or “Agency”) is taking final action to approve a revision to the State of California's state implementation plan (SIP) for the San Joaquin Valley (SJV) area. The revision includes an update to the SJV area's motor vehicle emissions budgets (“budgets”) for nitrogen oxides (NO X ) and volatile organic compounds (VOC) for the 2008 8-hour ozone national ambient air quality standards (NAAQS or “standards”). These updated budgets for 2026, 2029, and 2031 were developed with the latest modeling method approved for California. These updated budgets apply to all subareas within the SJV. Upon the effective date of this rule, the updated budgets will supe",
+          "language": "en",
+          "authority": 100,
+          "source_id": "us_federal_register_vehicle",
+          "document_id": "2026-18748",
+          "document_type": "Rule",
+          "lifecycle_stage": "effective",
+          "relevance_level": "direct",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "N2",
+            "N3",
+            "HDV"
+          ],
+          "powertrain_scope": [
+            "柴油",
+            "汽油"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "These updated budgets for 2026, 2029, and 2031 were developed with the latest modeling method approved for California.",
+            "This rule is effective October 14, 2026.",
+            "EPA Region 9 letter approving EMFAC2021 Adjustment Factors that remove the emissions benefits of the Advanced Clean Trucks, Heavy-Duty Omnibus, and other regulations"
+          ]
+        }
+      ]
+    },
     {
       "report_type": "daily",
       "report_id": "daily-2026-09-13",

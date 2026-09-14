@@ -1,0 +1,24 @@
+[
+  {
+    "id": "8691769129f80c0b",
+    "title": "美国环保署拟对加州萨克拉门托都会区1997年8小时臭氧标准作出清洁数据认定",
+    "source_name": "美国Federal Register",
+    "source_url": "https://www.federalregister.gov/documents/2026/09/14/2026-18755/clean-data-determination-1997-8-hour-ozone-standards-california-sacramento-metro-area",
+    "published_at": "2026-09-14T00:00:00+08:00",
+    "collected_at": "2026-09-14T13:19:48.323452+08:00",
+    "reason": "相关等级=indirect，证据等级=S",
+    "evidence_level": "S",
+    "status": "pending"
+  },
+  {
+    "id": "30baad79a6157082",
+    "title": "美国法官阻止EPA撤销加州排放豁免",
+    "source_name": "DieselNet",
+    "source_url": "https://dieselnet.com/news/2026/09epa.php",
+    "published_at": "2026-09-14T00:00:00+08:00",
+    "collected_at": "2026-09-14T13:19:48.323452+08:00",
+    "reason": "相关等级=indirect，证据等级=B",
+    "evidence_level": "B",
+    "status": "pending"
+  }
+]
