@@ -1,0 +1,63 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-09-28",
+  "title": "政策法规日报 · 2026-09-28",
+  "period_start": "2026-09-27T13:44:27.854388+08:00",
+  "period_end": "2026-09-28T13:44:27.854388+08:00",
+  "generated_at": "2026-09-28T13:44:53.149736+08:00",
+  "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "e27a064ab98721c4",
+      "title_zh": "危险材料：纳入ASME第XII卷及国家检验规范",
+      "title_original": "Hazardous Materials: Incorporation of ASME Code Section XII and the National Board Inspection Code",
+      "summary_zh": "美国管道与危险材料安全管理局（PHMSA）发布最终规则，修订《危险材料条例》，以引用方式纳入2015版ASME锅炉与压力容器规范第XII卷（运输罐建造与持续使用规则）及2015版国家检验规范第2、3部分（含补充6）。该规则适用于特定规格的货物罐车（MC 331、338及DOT 406、407、412）、低温便携式罐（UN T75）和多单元罐车罐（DOT 106A、110AW）。制造商可选择按第XII卷或继续按第VIII卷第1分卷建造。自愿合规日期为2026年9月28日，生效日期为2026年10月28日。PHMSA预计年化净成本节约约810万美元。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/09/28/2026-19741/hazardous-materials-incorporation-of-asme-code-section-xii-and-the-national-board-inspection-code",
+      "published_at": "2026-09-28T00:00:00+08:00",
+      "collected_at": "2026-09-28T13:44:27.854388+08:00",
+      "region": "美国",
+      "primary_category": "法规",
+      "tags": [
+        "危险材料运输",
+        "货物罐车",
+        "ASME标准"
+      ],
+      "importance_score": 95,
+      "is_highlight": true,
+      "content_hash": "18d383daedb47d21fbfdc94d80290ddf",
+      "event_id": "554781c363c40d40",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION Pipeline and Hazardous Materials Safety Administration 49 CFR Parts 107, 171, 173, 178, 179, and 180 [Docket No. PHMSA-2010-0019 (HM-241)] RIN 2137-AE58 Hazardous Materials: Incorporation of ASME Code Section XII and the National Board Inspection Code AGENCY: Pipeline and Hazardous Materials Safety Administration (PHMSA), Department of Transportation (DOT). ACTION: Final rule. SUMMARY: PHMSA is amending the Hazardous Materials Regulations (HMR) to incorporate by reference and authorize the use of the 2015 edition of the American Society of Mechanical Engineers (ASME) Boiler and Pressure Vessel Code, Section XII—Rules for Construction and Continued Service of Transport Tanks for the construction and continued service of certain specification cargo tank motor vehicles (CTMVs), cryogenic portable tanks, and multi-unit tank car tanks. PHMSA is also amending the HMR to incorporate by reference and authorize the use of the 2015 edition of the National Board of Bo",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-19741",
+      "document_type": "Rule",
+      "lifecycle_stage": "effective",
+      "relevance_level": "direct",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "MC 331",
+        "MC 338",
+        "DOT 406",
+        "DOT 407",
+        "DOT 412",
+        "UN T75",
+        "DOT 106A",
+        "DOT 110AW"
+      ],
+      "powertrain_scope": [
+        "未指定"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "PHMSA is amending the Hazardous Materials Regulations (HMR) to incorporate by reference and authorize the use of the 2015 edition of the American Society of Mechanical Engineers (ASME) Boiler and Pressure Vessel Code, Section XII—Rules for ",
+        "Effective date: October 28, 2026. Voluntary compliance date: September 28, 2026.",
+        "Table 1—Authorized Transport Tanks Under Section XII Tank type Specification CTMV MC 331 and 338, and DOT 406, 407, and 412. Cryogenic Portable Tank UN T75. Ton Tank DOT 106A and 110AW."
+      ]
+    }
+  ]
+}
