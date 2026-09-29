@@ -1,0 +1,42 @@
+[
+  {
+    "id": "5dac937d4cdd8294",
+    "title_zh": "欧盟委员会主席冯德莱恩将为2026年欧洲互联日开幕",
+    "title_original": "President von der Leyen to open Connecting Europe Days 2026",
+    "summary_zh": "2026年9月28日至10月1日，欧盟委员会旗舰交通与出行活动“欧洲互联日2026”在布鲁塞尔举行，冯德莱恩将于次日14:00 CEST开幕致辞。活动聚焦跨欧洲交通网络（TEN-T）建设、消除瓶颈、提升交通韧性与军事机动性、保障基础设施投资，并讨论海事、港口、高速铁路与客运联通等议题。会议期间将签署希腊、保加利亚和罗马尼亚关键交通链接跨境合作新行动计划。该活动为政策与实施公告，涉及交通基础设施与货运通道，但未明确针对重卡或商用车排放法规。",
+    "source_name": "欧盟委员会交通与运输总司",
+    "source_type": "政府",
+    "source_url": "https://transport.ec.europa.eu/news-events/news/president-von-der-leyen-open-connecting-europe-days-2026-2026-09-28_en",
+    "published_at": "2026-09-28T14:10:32+02:00",
+    "collected_at": "2026-09-29T14:02:05.908340+08:00",
+    "region": "欧盟",
+    "primary_category": "政策",
+    "tags": [
+      "TEN-T",
+      "交通基础设施",
+      "军事机动性"
+    ],
+    "importance_score": 86,
+    "is_highlight": true,
+    "content_hash": "fd0aef977c84b9fdd6c09bfc617055ed",
+    "event_id": "5f12602d9cd46b17",
+    "related_sources": [],
+    "content_evidence": "Today marks the start of Connecting Europe Days 2026, the European Commission's flagship event for transport and mobility, taking place from 28 September to 1 October in Brussels. It will bring together leading politicians, industry representatives and the Commission to discuss key transport issues and their role in boosting Europe's competitiveness, connectivity and resilience, including military mobility and defence, across the 27-member bloc and beyond. President of the European Commission Ursula von der Leyen will deliver a speech during the opening ceremony tomorrow at 14.00 CEST. You can follow it live on EBS+. Ahead of the opening ceremony, President of the European Commission, Ursula von der Leyen, said: \"Transport turns the promise of a connected Europe into an everyday experience. We want to build the transport system Europe will need for the decades ahead and create a true Transport Union. To connect our people. And for our competitiveness and resilience. Today, we are reinf",
+    "language": "en",
+    "authority": 100,
+    "source_id": "eu_transport",
+    "document_id": "",
+    "document_type": "政策, 征求意见, 实施公告",
+    "lifecycle_stage": "published",
+    "relevance_level": "probable",
+    "evidence_level": "A",
+    "vehicle_classes": [],
+    "powertrain_scope": [],
+    "effective_at": null,
+    "evidence_quotes": [
+      "Transport turns the promise of a connected Europe into an everyday experience.",
+      "the Connecting Europe Days will examine how transport policy can help complete the Trans-European Transport Network, remove its remaining bottlenecks, strengthen transport resilience and military mobility, as well as secure investments for ",
+      "including military mobility and defence, across the 27-member bloc and beyond"
+    ]
+  }
+]
