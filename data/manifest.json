@@ -1,6 +1,58 @@
 {
-  "generated_at": "2026-09-29T06:02:26.252646+00:00",
+  "generated_at": "2026-09-30T05:51:21.532692+00:00",
   "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-09-30",
+      "title": "政策法规日报 · 2026-09-30",
+      "period_start": "2026-09-29T13:51:00.977512+08:00",
+      "period_end": "2026-09-30T13:51:00.977512+08:00",
+      "generated_at": "2026-09-30T13:51:21.528801+08:00",
+      "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "b28da74365499796",
+          "title_zh": "葡萄牙、斯洛伐克和挪威加入自动驾驶车辆跨境测试床倡议",
+          "title_original": "Portugal, Slovakia and Norway join cross-border initiative on autonomous vehicle testbeds",
+          "summary_zh": "2026年9月29日，葡萄牙、斯洛伐克和挪威在布鲁塞尔“连接欧洲日”期间签署《自动驾驶车辆大规模跨境测试床联合意向声明》，西班牙于上周签署，参与国总数增至22个。该倡议依据《欧洲汽车行动计划》启动，旨在汇集成员国、非欧盟国家、地区和地方当局、产业利益相关方及运输运营商，以安全、协调和竞争的方式加速自动驾驶车辆在欧洲的统一商业化预部署。联合声明最初于6月由18个成员国签署。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://transport.ec.europa.eu/news-events/news/portugal-slovakia-and-norway-join-cross-border-initiative-autonomous-vehicle-testbeds-2026-09-29_en",
+          "published_at": "2026-09-29T11:10:08+02:00",
+          "collected_at": "2026-09-30T13:51:00.977512+08:00",
+          "region": "欧洲",
+          "primary_category": "政策",
+          "tags": [
+            "自动驾驶",
+            "跨境测试床",
+            "欧洲汽车行动计划"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "a7f3dc6de0595eaa73b5256906f78a9d",
+          "event_id": "814f652932c2ce8f",
+          "related_sources": [],
+          "content_evidence": "Today, Portugal, Slovakia and Norway signed the Joint Declaration of Intent on large-scale cross-border testbeds for autonomous vehicles during Connecting Europe Days in Brussels. Spain signed the Declaration last week, bringing the total number of participating countries to 22. The additional signatories reflect the continued commitment to accelerate the harmonised deployment of autonomous vehicles across Europe in a safe, coordinated and competitive way, building on the initiative launched under the European Automotive Action Plan. Background The large-scale cross-border testbed initiative for autonomous vehicles was launched under the European Automotive Action Plan. It aims to support the harmonised commercial pre-deployment of autonomous vehicles across Europe by bringing together Member States, non-EU countries, regional and local authorities, industry stakeholders and transport operators. The Joint Declaration was first signed in June by 18 Member States. Spain joined the initia",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [],
+          "powertrain_scope": [],
+          "effective_at": null,
+          "evidence_quotes": [
+            "Today, Portugal, Slovakia and Norway signed the Joint Declaration of Intent on large-scale cross-border testbeds for autonomous vehicles during Connecting Europe Days in Brussels.",
+            "Spain signed the Declaration last week, bringing the total number of participating countries to 22.",
+            "The large-scale cross-border testbed initiative for autonomous vehicles was launched under the European Automotive Action Plan."
+          ]
+        }
+      ]
+    },
     {
       "report_type": "daily",
       "report_id": "daily-2026-09-29",
