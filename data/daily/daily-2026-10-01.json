@@ -1,0 +1,52 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-10-01",
+  "title": "政策法规日报 · 2026-10-01",
+  "period_start": "2026-09-30T14:24:14.045652+08:00",
+  "period_end": "2026-10-01T14:24:14.045652+08:00",
+  "generated_at": "2026-10-01T14:24:32.569378+08:00",
+  "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "6a0af7aa529cd881",
+      "title_zh": "TEN-T欧洲协调员工作计划发布",
+      "title_original": "Work plans for TEN-T European Coordinators published",
+      "summary_zh": "欧盟委员会交通与运输总司发布新版欧洲交通走廊及横向优先事项工作计划，系修订后TEN-T法规下的首版。计划梳理已取得进展、剩余投资需求，评估基础设施是否符合TEN-T要求，并确定未来最需投资的领域，同时指出须尽快消除的持续瓶颈。欧洲海事空间工作计划聚焦港口、海上连接及其与更广泛欧洲交通网络的融合；欧洲铁路交通管理系统（ERTMS）工作计划已于2月发布，覆盖整个TEN-T铁路网。文件由欧洲协调员、委员会部门、交通部、基础设施管理者及地区和地方利益相关方共同参与编制。发布日期为2026年9月30日。",
+      "source_name": "欧盟委员会交通与运输总司",
+      "source_type": "政府",
+      "source_url": "https://transport.ec.europa.eu/news-events/news/work-plans-ten-t-european-coordinators-published-2026-09-30_en",
+      "published_at": "2026-09-30T15:16:42+02:00",
+      "collected_at": "2026-10-01T14:24:14.045652+08:00",
+      "region": "欧盟",
+      "primary_category": "政策",
+      "tags": [
+        "TEN-T",
+        "基础设施",
+        "ERTMS"
+      ],
+      "importance_score": 86,
+      "is_highlight": true,
+      "content_hash": "0cfc0b315fa17f48b22b92baa232ab21",
+      "event_id": "b853c500defe30ee",
+      "related_sources": [],
+      "content_evidence": "DG MOVE is pleased to announce the publication of the new European Transport Corridor and Horizontal Priorities work plans. Following on from the revised TEN-T Regulation, this first edition of the work plans outlines the progress achieved to date, highlights remaining investment needs, assesses infrastructure compliance with TEN-T requirements, and identifies the investments most needed to implement the Corridors and the horizontal priorities in the years ahead. Each work plan also identifies persistent bottlenecks that must be removed quickly to ensure the Corridors function fully and effectively. The work plan for the European Maritime Space sets out the priorities for strengthening the maritime dimension of the TEN-T, with a particular focus on ports, maritime connections and their integration with the wider European transport network. The work plan for the European Rail Traffic Management system (ERTMS) was already published in February and sets out the status, challenges and way",
+      "language": "en",
+      "authority": 100,
+      "source_id": "eu_transport",
+      "document_id": "",
+      "document_type": "政策, 征求意见, 实施公告",
+      "lifecycle_stage": "published",
+      "relevance_level": "probable",
+      "evidence_level": "A",
+      "vehicle_classes": [],
+      "powertrain_scope": [],
+      "effective_at": null,
+      "evidence_quotes": [
+        "DG MOVE is pleased to announce the publication of the new European Transport Corridor and Horizontal Priorities work plans.",
+        "The work plan for the European Rail Traffic Management system (ERTMS) was already published in February and sets out the status, challenges and way forward for ERTMS deployment across the entire TEN-T rail network.",
+        "Publication date - 30 September 2026"
+      ]
+    }
+  ]
+}
