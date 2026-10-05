@@ -1,0 +1,105 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-10-05",
+  "title": "政策法规日报 · 2026-10-05",
+  "period_start": "2026-10-04T14:05:09.026628+08:00",
+  "period_end": "2026-10-05T14:05:09.026628+08:00",
+  "generated_at": "2026-10-05T14:05:46.789085+08:00",
+  "summary": "本期共收录2条经正文与发布时间核验的信息，其中今日重点1条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "b985bb7045451c68",
+      "title_zh": "紧急豁免适用性澄清；对复议请愿的回应",
+      "title_original": "Clarification to the Applicability of Emergency Exemptions; Response to Petitions for Reconsideration",
+      "summary_zh": "美国联邦汽车运输安全管理局（FMCSA）发布最终规则，修订49 CFR 390.23(b)，将州长、其授权代表或FMCSA宣布地区紧急状态后自动触发的紧急豁免期限从14天恢复为30天。该规则回应2023年10月最终规则后的多份复议请愿，旨在减轻行政负担，同时确保紧急期间安全运营。豁免仅适用于直接响应已宣布紧急状态、参与直接援助的商用机动车，使其免于49 CFR 395.3和395.5的小时服务规定。规则自2026年10月5日起生效，复议请愿须在2026年11月4日前提交。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/10/05/2026-20325/clarification-to-the-applicability-of-emergency-exemptions-response-to-petitions-for-reconsideration",
+      "published_at": "2026-10-05T00:00:00+08:00",
+      "collected_at": "2026-10-05T14:05:09.026628+08:00",
+      "region": "美国",
+      "primary_category": "法规",
+      "tags": [
+        "紧急豁免",
+        "商用车",
+        "小时服务"
+      ],
+      "importance_score": 95,
+      "is_highlight": true,
+      "content_hash": "0e5d2247a8e7415a2d2b908328916665",
+      "event_id": "7e08d031d3b7ea96",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION Federal Motor Carrier Safety Administration 49 CFR Part 390 [Docket No. FMCSA-2025-0124] RIN 2126-AC77 Clarification to the Applicability of Emergency Exemptions; Response to Petitions for Reconsideration AGENCY: Federal Motor Carrier Safety Administration (FMCSA), Department of Transportation (DOT). ACTION: Final rule. SUMMARY: FMCSA amends its emergency declaration regulations to revise from 14 days to 30 days the length of the relief automatically triggered subsequent to a regional declaration of emergency by a Governor of a State, the Governor's authorized representative, or FMCSA. This action is in response to several petitions for reconsideration received after publication of a final rule in October 2023. DATES: Effective October 5, 2026. Petitions for reconsideration of this final rule must be submitted to the FMCSA Administrator no later than November 4, 2026. FOR FURTHER INFORMATION CONTACT: Ms. Kathryn Sinniger, Regulatory and Legislative Affairs",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-20325",
+      "document_type": "Rule",
+      "lifecycle_stage": "effective",
+      "relevance_level": "direct",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "商用机动车",
+        "重型卡车",
+        "N2",
+        "N3"
+      ],
+      "powertrain_scope": [
+        "全部动力类型"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "FMCSA amends its emergency declaration regulations to revise from 14 days to 30 days the length of the relief automatically triggered subsequent to a regional declaration of emergency",
+        "Effective October 5, 2026",
+        "exempting only those commercial motor vehicles that are acting in direct assistance in response to a declared emergency from the HOS regulations found in 49 CFR 395.3 and 395.5"
+      ]
+    },
+    {
+      "id": "8a2661eddbbd0014",
+      "title_zh": "CARB发布非道路发动机Tier 5排放法规草案",
+      "title_original": "CARB releases draft proposed Tier 5 emission regulation for off-road engines",
+      "summary_zh": "2026年2月9日，加州空气资源委员会（CARB）发布非道路压燃式发动机Tier 5排放法规草案。若获通过，标准将于2031至2036年分阶段实施，NOx较EPA Tier 4 Final最多削减90%，PM最多削减75%，将强制使用柴油颗粒捕集器。56至560千瓦非道路发动机适用最终标准，含低负荷循环认证、在用NOx与PM测试、延长耐久与保修等要求；Tier 5中期标准为可选。175马力以下农建发动机不适用。相较2024年9月版本，实施日期推迟且不再含温室气体要求。该提案将于2026年2月27日CARB公开研讨会上讨论。",
+      "source_name": "DieselNet",
+      "source_type": "专业媒体",
+      "source_url": "https://dieselnet.com/news/2026/02carb.php",
+      "published_at": "2026-10-05T00:00:00+08:00",
+      "collected_at": "2026-10-05T14:05:09.026628+08:00",
+      "region": "美国加利福尼亚州",
+      "primary_category": "法规",
+      "tags": [
+        "排放标准",
+        "非道路发动机",
+        "CARB"
+      ],
+      "importance_score": 69,
+      "is_highlight": false,
+      "content_hash": "82b064c821ce4fea89c3067f8eb4347b",
+      "event_id": "88b9d89623e2d08b",
+      "related_sources": [],
+      "content_evidence": "news: CARB releases draft proposed Tier 5 emission regulation for off-road engines CARB releases draft proposed Tier 5 emission regulation for off-road engines 9 February 2026 The California Air Resources Board (CARB) has released the draft potential Tier 5 emission regulations for off-road (a.k.a. nonroad) compression-ignition engines. If adopted, the standards would be phased-in over the period of 2031-2036. Please log in to view the full version of this article ( subscription required). Under the proposed standards, NOx emissions from off-road engines would have to be reduced by up to 90%, compared to the current US EPA Tier 4 final standards, while PM emissions would have to be reduced by up to 75%—forcing the use of diesel particulate filters on all affected off-road engines. As of model year 2020, more than half of all new off-road compression-ignition engine families continue to be certified in California to the Tier 4 Final emission standards without the use of diesel particula",
+      "language": "en",
+      "authority": 82,
+      "source_id": "dieselnet_news",
+      "document_id": "",
+      "document_type": "法规动态, 排放标准, 行业新闻",
+      "lifecycle_stage": "draft",
+      "relevance_level": "probable",
+      "evidence_level": "B",
+      "vehicle_classes": [
+        "非道路压燃式发动机",
+        "Category 1船用柴油机"
+      ],
+      "powertrain_scope": [
+        "柴油",
+        "氢燃料"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "CARB releases draft proposed Tier 5 emission regulation for off-road engines",
+        "If adopted, the standards would be phased-in over the period of 2031-2036",
+        "The Tier 5 standards would also apply to off-road engines fueled by hydrogen"
+      ]
+    }
+  ]
+}
