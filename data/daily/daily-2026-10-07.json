@@ -1,0 +1,59 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-10-07",
+  "title": "政策法规日报 · 2026-10-07",
+  "period_start": "2026-10-06T14:20:17.679559+08:00",
+  "period_end": "2026-10-07T14:20:17.679559+08:00",
+  "generated_at": "2026-10-07T14:20:36.690429+08:00",
+  "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点0条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "404b972563f87d06",
+      "title_zh": "美国NHTSA受理13家客车制造商侧向座椅安全带临时豁免续期申请",
+      "title_original": "Receipt of Petitions for Renewal of Temporary Exemptions From Shoulder Belt Requirement for Side-Facing Seats on Motorcoaches",
+      "summary_zh": "美国NHTSA发布通知，已收到13家“娱乐型长途客车”最终阶段制造商提交的相同申请，请求续期FMVSS第208号标准中侧向座椅肩带要求的临时豁免，允许其继续在侧向座椅位置安装仅腰带式（Type 1）安全带，而非标准要求的腰带加肩带（Type 2）。申请人依据49 CFR 555.6(d)，主张若不豁免将无法销售整体安全水平不低于非豁免车辆的车型，每12个月销量不超过2500辆。因申请在豁免终止前60天期限内提交，现行豁免在NHTSA作出决定前继续有效。公众评论截止日期为2026年11月6日。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20496/receipt-of-petitions-for-renewal-of-temporary-exemptions-from-shoulder-belt-requirement-for",
+      "published_at": "2026-10-07T00:00:00+08:00",
+      "collected_at": "2026-10-07T14:20:17.679559+08:00",
+      "region": "美国",
+      "primary_category": "法规",
+      "tags": [
+        "FMVSS 208",
+        "安全带豁免",
+        "客车"
+      ],
+      "importance_score": 73,
+      "is_highlight": false,
+      "content_hash": "96fce1f0f6710f7011bcc0220564183b",
+      "event_id": "eae604a7f08545db",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration [Docket No. NHTSA-2026-1816] Receipt of Petitions for Renewal of Temporary Exemptions From Shoulder Belt Requirement for Side-Facing Seats on Motorcoaches AGENCY: National Highway Traffic Safety Administration (NHTSA), Department of Transportation (DOT). ACTION: Notice of receipt of petitions for renewal of temporary exemptions; request for comment. SUMMARY: NHTSA has received identical petitions from 13 final-stage manufacturers of “entertainer-type motorcoaches,” seeking renewal of temporary exemptions from a shoulder belt requirement of Federal Motor Vehicle Safety Standard (FMVSS) No. 208, “Occupant crash protection,” for side-facing seats on motorcoaches. The petitioners seek to renew their exemptions that allow them to install Type 1 seat belts (lap belt only) at side-facing seating positions, instead of Type 2 seat belts (lap and shoulder belts) required by FMVSS No. 208. Each petitioner states that, abs",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-20496",
+      "document_type": "Notice",
+      "lifecycle_stage": "pre_notice",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "M2",
+        "M3",
+        "motorcoach",
+        "over-the-road bus"
+      ],
+      "powertrain_scope": [
+        "not_powertrain_specific"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "NHTSA has received identical petitions from 13 final-stage manufacturers of “entertainer-type motorcoaches,” seeking renewal of temporary exemptions from a shoulder belt requirement of Federal Motor Vehicle Safety Standard (FMVSS) No. 208",
+        "The petitioners seek to renew their exemptions that allow them to install Type 1 seat belts (lap belt only) at side-facing seating positions, instead of Type 2 seat belts (lap and shoulder belts) required by FMVSS No. 208.",
+        "you should submit your comment not later than November 6, 2026"
+      ]
+    }
+  ]
+}
