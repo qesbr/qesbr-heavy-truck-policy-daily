@@ -1,6 +1,58 @@
 {
-  "generated_at": "2026-10-07T06:20:36.694991+00:00",
+  "generated_at": "2026-10-08T06:31:58.769041+00:00",
   "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-10-08",
+      "title": "政策法规日报 · 2026-10-08",
+      "period_start": "2026-10-07T14:31:36.882827+08:00",
+      "period_end": "2026-10-08T14:31:36.882827+08:00",
+      "generated_at": "2026-10-08T14:31:58.766385+08:00",
+      "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "e6a7458ec0387149",
+          "title_zh": "CEF交通基金2026年征集收到近30亿欧元申请",
+          "title_original": "CEF Transport: Almost €3 billion requested for transport infrastructure projects",
+          "summary_zh": "欧盟连接欧洲基金（CEF）交通项目2026年征集于2026年10月6日截止，CINEA共收到246份申请，申请共同融资总额近30亿欧元，约为2026年CEF交通征集可用预算11亿欧元的2.69倍。CINEA将先核查申请的受理资格与合规性，合格申请随后由独立外部专家、欧盟委员会和CINEA评估。申请人将于2027年3月获知评估结果，成功项目的赠款协议预计在2027年6月前签署。入选项目将用于建设和现代化欧盟及周边交通基础设施，支持跨欧洲交通网络（TEN-T）发展，包括军事机动性。CEF是欧盟完成和现代化TEN-T的关键融资工具，2021至2027年计划投入258亿欧元。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://cinea.ec.europa.eu/news-events/news/cef-transport-almost-eur3-billion-requested-transport-infrastructure-projects-2026-10-07_en",
+          "published_at": "2026-10-07T15:42:22+02:00",
+          "collected_at": "2026-10-08T14:31:36.882827+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "CEF",
+            "TEN-T",
+            "交通基础设施融资"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "5f31e840ef9ff5a55d17fae9c7b6af4b",
+          "event_id": "d5ff60e274563bb0",
+          "related_sources": [],
+          "content_evidence": "CINEA received 246 applications requesting almost €3 billion in co-funding from the Connecting Europe Facility (CEF) Transport by the 6 October 2026 call deadline. This represents nearly 2.69 times the €1.1 billion budget available under the 2026 CEF Transport calls for proposals. CINEA will now check the admissibility and eligibility of the proposals. Eligible proposals will then be evaluated by independent external experts, the European Commission and CINEA. Applicants will be informed of the evaluation results in March 2027, with grant agreements for successful projects expected to be signed by June 2027. The selected projects will help build and modernise transport infrastructure in the European Union and beyond. They will contribute to the development of the trans-European transport network (TEN-T), including by supporting military mobility. Background CEF Transport is the key EU funding instrument for the completion and modernisation of the trans-European transport network. CEF-f",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [],
+          "powertrain_scope": [],
+          "effective_at": null,
+          "evidence_quotes": [
+            "CINEA received 246 applications requesting almost €3 billion in co-funding from the Connecting Europe Facility (CEF) Transport by the 6 October 2026 call deadline.",
+            "The selected projects will help build and modernise transport infrastructure in the European Union and beyond.",
+            "They will contribute to the development of the trans-European transport network (TEN-T), including by supporting military mobility."
+          ]
+        }
+      ]
+    },
     {
       "report_type": "daily",
       "report_id": "daily-2026-10-07",
