@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T06:15:26.236452+00:00",
+  "generated_at": "2026-10-12T06:14:20.391817+00:00",
   "reports": [
     {
       "report_type": "daily",
@@ -1935,6 +1935,145 @@
       "summary": "暂无重要更新。",
       "empty": true,
       "articles": []
+    },
+    {
+      "report_type": "weekly",
+      "report_id": "weekly-2026-10-12",
+      "title": "政策法规周报 · 2026-10-12",
+      "period_start": "2026-10-05T14:14:20.381654+08:00",
+      "period_end": "2026-10-12T14:14:20.381654+08:00",
+      "generated_at": "2026-10-12T14:14:20.386886+08:00",
+      "summary": "本期共收录3条经正文与发布时间核验的信息，其中今日重点2条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "7e616ada760a2add",
+          "title_zh": "保加利亚、希腊和罗马尼亚签署联合行动计划加快战略交通连接建设",
+          "title_original": "Bulgaria, Greece and Romania step up delivery of strategic transport links",
+          "summary_zh": "2026年10月9日，保加利亚、希腊和罗马尼亚在布鲁塞尔“连接欧洲日2026”期间签署联合行动计划，将2025年12月的政治承诺转化为具体行动，加快东南欧跨境交通项目落地。计划聚焦三国间优先交通轴线，包括铁路和公路连接、多瑙河跨河通道及港口与多式联运码头衔接。重点项目涵盖希腊亚历山德鲁波利斯港至保加利亚斯维伦格勒的跨境铁路、久尔久-鲁塞铁路桥现代化改造、新建久尔久-鲁塞公铁两用桥前期准备，以及三国间其他关键铁路和公路改善工程。同日还启动了“东南欧之友”倡议以支持区域互联互通合作。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://transport.ec.europa.eu/news-events/news/bulgaria-greece-and-romania-step-delivery-strategic-transport-links-2026-10-09_en",
+          "published_at": "2026-10-09T12:44:01+02:00",
+          "collected_at": "2026-10-10T14:15:31.969267+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "跨境交通",
+            "基础设施",
+            "东南欧"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "21952980a1d68d4046a88291a008ff42",
+          "event_id": "b6df7a2429dd8233",
+          "related_sources": [],
+          "content_evidence": "Bulgaria, Greece and Romania today signed a joint Action Plan to accelerate strategic cross-border transport projects in South-East Europe. The signing ceremony took place in the margins of Connecting Europe Days 2026 in Brussels, hosted by Apostolos Tzitzikostas, European Commissioner for Sustainable Transport and Tourism. The Action Plan turns the political commitments made by the three countries in December 2025 into concrete actions, supporting the faster delivery of key infrastructure projects, stronger connectivity and greater resilience across the region. The Action Plan will strengthen coordination on project preparation, financing and implementation, helping to remove cross-border bottlenecks and accelerate improvements to rail, road and multimodal connections across the region. At the same event, Member of the European Parliament Andrey Novakov, with the support of European Corridor Coordinators Maria Mauro and Margarida Marques, launched the Friends of South-East Europe (FoS",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [],
+          "powertrain_scope": [],
+          "effective_at": null,
+          "evidence_quotes": [
+            "Bulgaria, Greece and Romania today signed a joint Action Plan to accelerate strategic cross-border transport projects in South-East Europe.",
+            "The Action Plan will strengthen coordination on project preparation, financing and implementation, helping to remove cross-border bottlenecks and accelerate improvements to rail, road and multimodal connections across the region.",
+            "Priority projects include the strategic cross-border rail link between the Port of Alexandroupoli in Greece and Svilengrad in Bulgaria"
+          ]
+        },
+        {
+          "id": "e6a7458ec0387149",
+          "title_zh": "CEF交通基金2026年征集收到近30亿欧元申请",
+          "title_original": "CEF Transport: Almost €3 billion requested for transport infrastructure projects",
+          "summary_zh": "欧盟连接欧洲基金（CEF）交通项目2026年征集于2026年10月6日截止，CINEA共收到246份申请，申请共同融资总额近30亿欧元，约为2026年CEF交通征集可用预算11亿欧元的2.69倍。CINEA将先核查申请的受理资格与合规性，合格申请随后由独立外部专家、欧盟委员会和CINEA评估。申请人将于2027年3月获知评估结果，成功项目的赠款协议预计在2027年6月前签署。入选项目将用于建设和现代化欧盟及周边交通基础设施，支持跨欧洲交通网络（TEN-T）发展，包括军事机动性。CEF是欧盟完成和现代化TEN-T的关键融资工具，2021至2027年计划投入258亿欧元。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://cinea.ec.europa.eu/news-events/news/cef-transport-almost-eur3-billion-requested-transport-infrastructure-projects-2026-10-07_en",
+          "published_at": "2026-10-07T15:42:22+02:00",
+          "collected_at": "2026-10-08T14:31:36.882827+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "CEF",
+            "TEN-T",
+            "交通基础设施融资"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "5f31e840ef9ff5a55d17fae9c7b6af4b",
+          "event_id": "d5ff60e274563bb0",
+          "related_sources": [],
+          "content_evidence": "CINEA received 246 applications requesting almost €3 billion in co-funding from the Connecting Europe Facility (CEF) Transport by the 6 October 2026 call deadline. This represents nearly 2.69 times the €1.1 billion budget available under the 2026 CEF Transport calls for proposals. CINEA will now check the admissibility and eligibility of the proposals. Eligible proposals will then be evaluated by independent external experts, the European Commission and CINEA. Applicants will be informed of the evaluation results in March 2027, with grant agreements for successful projects expected to be signed by June 2027. The selected projects will help build and modernise transport infrastructure in the European Union and beyond. They will contribute to the development of the trans-European transport network (TEN-T), including by supporting military mobility. Background CEF Transport is the key EU funding instrument for the completion and modernisation of the trans-European transport network. CEF-f",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [],
+          "powertrain_scope": [],
+          "effective_at": null,
+          "evidence_quotes": [
+            "CINEA received 246 applications requesting almost €3 billion in co-funding from the Connecting Europe Facility (CEF) Transport by the 6 October 2026 call deadline.",
+            "The selected projects will help build and modernise transport infrastructure in the European Union and beyond.",
+            "They will contribute to the development of the trans-European transport network (TEN-T), including by supporting military mobility."
+          ]
+        },
+        {
+          "id": "404b972563f87d06",
+          "title_zh": "美国NHTSA受理13家客车制造商侧向座椅安全带临时豁免续期申请",
+          "title_original": "Receipt of Petitions for Renewal of Temporary Exemptions From Shoulder Belt Requirement for Side-Facing Seats on Motorcoaches",
+          "summary_zh": "美国NHTSA发布通知，已收到13家“娱乐型长途客车”最终阶段制造商提交的相同申请，请求续期FMVSS第208号标准中侧向座椅肩带要求的临时豁免，允许其继续在侧向座椅位置安装仅腰带式（Type 1）安全带，而非标准要求的腰带加肩带（Type 2）。申请人依据49 CFR 555.6(d)，主张若不豁免将无法销售整体安全水平不低于非豁免车辆的车型，每12个月销量不超过2500辆。因申请在豁免终止前60天期限内提交，现行豁免在NHTSA作出决定前继续有效。公众评论截止日期为2026年11月6日。",
+          "source_name": "美国Federal Register",
+          "source_type": "政府",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20496/receipt-of-petitions-for-renewal-of-temporary-exemptions-from-shoulder-belt-requirement-for",
+          "published_at": "2026-10-07T00:00:00+08:00",
+          "collected_at": "2026-10-07T14:20:17.679559+08:00",
+          "region": "美国",
+          "primary_category": "法规",
+          "tags": [
+            "FMVSS 208",
+            "安全带豁免",
+            "客车"
+          ],
+          "importance_score": 73,
+          "is_highlight": false,
+          "content_hash": "96fce1f0f6710f7011bcc0220564183b",
+          "event_id": "eae604a7f08545db",
+          "related_sources": [],
+          "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration [Docket No. NHTSA-2026-1816] Receipt of Petitions for Renewal of Temporary Exemptions From Shoulder Belt Requirement for Side-Facing Seats on Motorcoaches AGENCY: National Highway Traffic Safety Administration (NHTSA), Department of Transportation (DOT). ACTION: Notice of receipt of petitions for renewal of temporary exemptions; request for comment. SUMMARY: NHTSA has received identical petitions from 13 final-stage manufacturers of “entertainer-type motorcoaches,” seeking renewal of temporary exemptions from a shoulder belt requirement of Federal Motor Vehicle Safety Standard (FMVSS) No. 208, “Occupant crash protection,” for side-facing seats on motorcoaches. The petitioners seek to renew their exemptions that allow them to install Type 1 seat belts (lap belt only) at side-facing seating positions, instead of Type 2 seat belts (lap and shoulder belts) required by FMVSS No. 208. Each petitioner states that, abs",
+          "language": "en",
+          "authority": 100,
+          "source_id": "us_federal_register_vehicle",
+          "document_id": "2026-20496",
+          "document_type": "Notice",
+          "lifecycle_stage": "pre_notice",
+          "relevance_level": "probable",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "M2",
+            "M3",
+            "motorcoach",
+            "over-the-road bus"
+          ],
+          "powertrain_scope": [
+            "not_powertrain_specific"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "NHTSA has received identical petitions from 13 final-stage manufacturers of “entertainer-type motorcoaches,” seeking renewal of temporary exemptions from a shoulder belt requirement of Federal Motor Vehicle Safety Standard (FMVSS) No. 208",
+            "The petitioners seek to renew their exemptions that allow them to install Type 1 seat belts (lap belt only) at side-facing seating positions, instead of Type 2 seat belts (lap and shoulder belts) required by FMVSS No. 208.",
+            "you should submit your comment not later than November 6, 2026"
+          ]
+        }
+      ]
     },
     {
       "report_type": "weekly",
