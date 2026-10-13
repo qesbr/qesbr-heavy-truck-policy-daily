@@ -1,0 +1,42 @@
+[
+  {
+    "id": "9b62bfa93b2fed5a",
+    "title_zh": "团结通道：最新数据——2026年8月",
+    "title_original": "Solidarity Lanes: Latest figures – August 2026",
+    "summary_zh": "欧盟委员会交通与运输总司发布2026年8月团结通道最新数据。自2022年5月启动以来，该通道通过铁路、公路和内河航运维持乌克兰进出口。2026年8月，通道承担乌近100%进口、约95%非农产品出口和约90%粮食油籽出口。累计出口约2.35亿吨货物，进口约1.13亿吨，贸易总额约3140亿欧元。文件强调改善交通管理、简化边境手续及基础设施投资，为乌克兰重建和融入欧盟单一市场奠定基础。",
+    "source_name": "欧盟委员会交通与运输总司",
+    "source_type": "政府",
+    "source_url": "https://transport.ec.europa.eu/news-events/news/solidarity-lanes-latest-figures-august-2026-2026-10-12_en",
+    "published_at": "2026-10-12T15:04:56+02:00",
+    "collected_at": "2026-10-13T15:00:38.216279+08:00",
+    "region": "欧盟",
+    "primary_category": "政策",
+    "tags": [
+      "团结通道",
+      "乌克兰",
+      "货运物流"
+    ],
+    "importance_score": 86,
+    "is_highlight": true,
+    "content_hash": "9a0eea63f9179a273f12f2d869e79331",
+    "event_id": "77223d463837fb08",
+    "related_sources": [],
+    "content_evidence": "In the face of Russia’s war of aggression against Ukraine, the EU, together with Ukraine and Moldova launched the EU-Ukraine Solidarity Lanes in May 2022, establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways. Today, the EU-Ukraine Solidarity Lanes have become a lifeline for Ukraine’s economy. In August 2026 the Solidarity Lanes allowed: - Nearly 100% of Ukrainian imports - Around 95% of Ukrainian exports of non-agricultural products (in comparison to around 5% through the Black Sea) - Around 90% of Ukrainian exports of grain, oilseeds and related products (in comparison to around 10% through the Black Sea) Ukrainian exports Since May 2022, the Solidarity Lanes have allowed Ukraine to export ca. 235 million tonnes (Mt) of goods, according to data from the Ukrainian customs registers. Within this amount, it can be estimated that the Solidarity Lanes enabled exports of around 105 million tonnes of Ukrainian agricultural produc",
+    "language": "en",
+    "authority": 100,
+    "source_id": "eu_transport",
+    "document_id": "",
+    "document_type": "政策, 征求意见, 实施公告",
+    "lifecycle_stage": "published",
+    "relevance_level": "probable",
+    "evidence_level": "A",
+    "vehicle_classes": [],
+    "powertrain_scope": [],
+    "effective_at": null,
+    "evidence_quotes": [
+      "establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways",
+      "This includes measures to improve traffic management and streamlining of border procedures and checks, as well as investments in infrastructure or logistics equipment.",
+      "they have allowed Ukraine to import ca. 113 Mt of goods, such as fuel, vehicles, fertilisers as well as military and humanitarian assistance"
+    ]
+  }
+]
