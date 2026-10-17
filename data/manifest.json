@@ -1,6 +1,69 @@
 {
-  "generated_at": "2026-10-16T04:51:44.975223+00:00",
+  "generated_at": "2026-10-17T04:53:02.165257+00:00",
   "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-10-17",
+      "title": "政策法规日报 · 2026-10-17",
+      "period_start": "2026-10-16T12:52:38.495695+08:00",
+      "period_end": "2026-10-17T12:52:38.495695+08:00",
+      "generated_at": "2026-10-17T12:53:02.160384+08:00",
+      "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "a7f2ba706f73472a",
+          "title_zh": "印度发布商用车BS-VII排放标准草案",
+          "title_original": "India releases draft BS-VII emission standards for commercial vehicles",
+          "summary_zh": "印度道路运输与公路部拟修订1989年中央机动车规则第115条，纳入商用车BS-VII排放标准，限值与欧7/欧7一致并含PN10。轻型商用车N1自2030年4月1日起分三阶段实施（2030、2032、2035年），卡车和客车N2、N3、M2、M3自2031年4月1日起分三阶段实施（2031、2033、2035年）。第一阶段要求型式认证RDE测试及OBD端口读取OBD、OBM、OBFCM数据；纯电与混动须满足电池能量保持要求。第二阶段引入制动颗粒物限值及电池耐久最低性能要求，第三阶段统一制动颗粒物限值并加严轮胎磨损。",
+          "source_name": "DieselNet",
+          "source_type": "专业媒体",
+          "source_url": "https://dieselnet.com/news/2026/10in-bs-vii.php",
+          "published_at": "2026-10-17T00:00:00+08:00",
+          "collected_at": "2026-10-17T12:52:38.495695+08:00",
+          "region": "印度",
+          "primary_category": "法规",
+          "tags": [
+            "BS-VII",
+            "排放标准",
+            "商用车"
+          ],
+          "importance_score": 76,
+          "is_highlight": true,
+          "content_hash": "191033b8d9b752c75fe935f42a557032",
+          "event_id": "2fb9ac7a52076f35",
+          "related_sources": [],
+          "content_evidence": "news: India releases draft BS-VII emission standards for commercial vehicles India releases draft BS-VII emission standards for commercial vehicles 15 October 2026 India’s Ministry of Road Transport and Highways (MoRTH) has proposed amendments to Rule 115 of the Central Motor Vehicles Rules, 1989 to include Bharat Stage VII (BS-VII) emission standards for commercial vehicles. Emission limits for these standards are consistent with Euro 7/VII including PN10. Standards for light commercial vehicles would apply April 1, 2030, and those for trucks and buses April 1, 2031. Requirements for all vehicles are introduced over three phases. Please log in to view the full version of this article ( subscription required). Light Commercial Vehicles For all N1 vehicles manufactured on or after April 1, 2030, the three phases start April 1, 2030, April 1, 2032, and April 1, 2035. For Phase-I effective April 1, 2030, RDE testing applies at type approval and OBD , OBM and OBFCM data is to be available",
+          "language": "en",
+          "authority": 82,
+          "source_id": "dieselnet_news",
+          "document_id": "",
+          "document_type": "法规动态, 排放标准, 行业新闻",
+          "lifecycle_stage": "draft",
+          "relevance_level": "direct",
+          "evidence_level": "B",
+          "vehicle_classes": [
+            "N1",
+            "N2",
+            "N3",
+            "M2",
+            "M3"
+          ],
+          "powertrain_scope": [
+            "ICE",
+            "HEV",
+            "BEV",
+            "FCEV"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "India’s Ministry of Road Transport and Highways (MoRTH) has proposed amendments to Rule 115 of the Central Motor Vehicles Rules, 1989 to include Bharat Stage VII (BS-VII) emission standards for commercial vehicles.",
+            "Standards for light commercial vehicles would apply April 1, 2030, and those for trucks and buses April 1, 2031.",
+            "For all N2, N3, M2 and M3, vehicles manufactured on or after April 1, 2031, the three phases start April 1, 2031, April 1, 2033, and April 1, 2035."
+          ]
+        }
+      ]
+    },
     {
       "report_type": "daily",
       "report_id": "daily-2026-10-16",
