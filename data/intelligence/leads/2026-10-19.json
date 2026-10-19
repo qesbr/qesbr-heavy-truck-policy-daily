@@ -1,0 +1,24 @@
+[
+  {
+    "id": "2f206cbdd015422a",
+    "title": "美国PHMSA危险品新特殊许可申请公告",
+    "source_name": "美国Federal Register",
+    "source_url": "https://www.federalregister.gov/documents/2026/10/19/2026-21306/hazardous-materials-notice-of-applications-for-new-special-permits",
+    "published_at": "2026-10-19T00:00:00+08:00",
+    "collected_at": "2026-10-19T13:07:23.849561+08:00",
+    "reason": "相关等级=indirect，证据等级=S",
+    "evidence_level": "S",
+    "status": "pending"
+  },
+  {
+    "id": "1bab6a8ff947f0e4",
+    "title": "美国EPA拟批准亚利桑那州West Pinal PM10达标实施计划及机动车排放预算",
+    "source_name": "美国Federal Register",
+    "source_url": "https://www.federalregister.gov/documents/2026/10/19/2026-21288/approval-and-promulgation-of-implementation-plans-pinal-county-part-west-pinal-az-pm10-nonattainment",
+    "published_at": "2026-10-19T00:00:00+08:00",
+    "collected_at": "2026-10-19T13:07:23.849561+08:00",
+    "reason": "相关等级=indirect，证据等级=S",
+    "evidence_level": "S",
+    "status": "pending"
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "18444890598e5d91",
+    "title_zh": "空气质量计划；亚利桑那州；皮纳尔县空气质量控制区；西皮纳尔县PM10未达标区；无组织扬尘规则",
+    "title_original": "Air Quality Plan; Arizona; Pinal County Air Quality Control District; West Pinal County PM10 Nonattainment Area; Fugitive Dust Rules",
+    "summary_zh": "美国环保署拟批准亚利桑那州提交的州实施计划修订，涉及皮纳尔县空气质量控制区西皮纳尔PM10未达标区的无组织扬尘规则，涵盖空地/闲置地块、未铺装道路、铺装公共道路及施工场地等扬尘源，并新增未铺装路肩与中央隔离带稳定化测试方法。该提案于2026年11月18日前公开征求意见，若最终通过将纳入联邦可执行范围。规则针对道路及场地扬尘，与货运车辆在未铺装道路和施工区域运行相关，但未直接规定车辆排放标准。",
+    "source_name": "美国Federal Register",
+    "source_type": "政府",
+    "source_url": "https://www.federalregister.gov/documents/2026/10/19/2026-21287/air-quality-plan-arizona-pinal-county-air-quality-control-district-west-pinal-county-pm10",
+    "published_at": "2026-10-19T00:00:00+08:00",
+    "collected_at": "2026-10-19T13:07:23.849561+08:00",
+    "region": "美国亚利桑那州",
+    "primary_category": "法规",
+    "tags": [
+      "PM10",
+      "扬尘",
+      "州实施计划"
+    ],
+    "importance_score": 81,
+    "is_highlight": true,
+    "content_hash": "b6858b87e82483304f4a5deefeb932e6",
+    "event_id": "81dcce1678dbf104",
+    "related_sources": [],
+    "content_evidence": "ENVIRONMENTAL PROTECTION AGENCY 40 CFR Part 52 [EPA-R09-OAR-2026-5581; FRL-13513-01-R9] Air Quality Plan; Arizona; Pinal County Air Quality Control District; West Pinal County PM 10 Nonattainment Area; Fugitive Dust Rules AGENCY: U.S. Environmental Protection Agency (EPA). ACTION: Proposed rule. SUMMARY: The U.S. Environmental Protection Agency (EPA) is proposing to approve revisions to the Pinal County Air Quality Control District (PCAQCD or “District”) portion of the Arizona State Implementation Plan (SIP). These revisions concern emissions of particulate matter (PM) that is 10 micrometers or smaller in diameter (PM 10 ) from fugitive dust sources, including open areas/vacant lots, unpaved lots, unpaved roads, paved public roadways, and construction sites. We are proposing to approve local rules to regulate these emission sources under the Clean Air Act (CAA or “Act”). DATES: Comments must be received on or before November 18, 2026. ADDRESSES: Submit your comments, identified by Dock",
+    "language": "en",
+    "authority": 100,
+    "source_id": "us_federal_register_vehicle",
+    "document_id": "2026-21287",
+    "document_type": "Proposed Rule",
+    "lifecycle_stage": "draft",
+    "relevance_level": "probable",
+    "evidence_level": "S",
+    "vehicle_classes": [
+      "N2",
+      "N3",
+      "HDV"
+    ],
+    "powertrain_scope": [
+      "all"
+    ],
+    "effective_at": null,
+    "evidence_quotes": [
+      "These revisions concern emissions of particulate matter (PM) that is 10 micrometers or smaller in diameter (PM 10 ) from fugitive dust sources, including open areas/vacant lots, unpaved lots, unpaved roads, paved public roadways, and constr",
+      "regulate PM and PM 10 emissions from “non-traditional” sources of fugitive dust: open areas/vacant lots, vehicle use in open areas/vacant lots, weed abatement, unpaved lots, unpaved roads, and paved public roadways.",
+      "Comments must be received on or before November 18, 2026."
+    ]
+  }
+]
