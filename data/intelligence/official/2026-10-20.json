@@ -1,0 +1,47 @@
+[
+  {
+    "id": "006def0c584616b0",
+    "title_zh": "欧盟-乌克兰团结通道最新数据（2026年9月）",
+    "title_original": "Solidarity Lanes: Latest figures – September 2026",
+    "summary_zh": "欧盟委员会交通与运输总司发布团结通道最新统计：2026年8月，该通道承担乌克兰近100%进口、约90%非农产品出口及约90%粮食油料出口。自2022年5月启动以来，累计出口约2.4亿吨货物，其中农产品约1.08亿吨，进口约1.16亿吨，贸易总值约3240亿欧元。通道依托铁路、公路和内河航运，重点改善交通管理与边境手续、投资基础设施和物流设备。文件于2026年10月19日发布，属实施进展公告，未提出新法规义务。",
+    "source_name": "欧盟委员会交通与运输总司",
+    "source_type": "政府",
+    "source_url": "https://transport.ec.europa.eu/news-events/news/solidarity-lanes-latest-figures-september-2026-2026-10-19_en",
+    "published_at": "2026-10-19T14:02:55+02:00",
+    "collected_at": "2026-10-20T13:08:45.337171+08:00",
+    "region": "欧盟",
+    "primary_category": "政策",
+    "tags": [
+      "团结通道",
+      "乌克兰",
+      "货运物流"
+    ],
+    "importance_score": 86,
+    "is_highlight": true,
+    "content_hash": "4777215b450a25c03fb65d9f027fdc6c",
+    "event_id": "afe25fecba757d00",
+    "related_sources": [],
+    "content_evidence": "In the face of Russia’s war of aggression against Ukraine, the EU, together with Ukraine and Moldova launched the EU-Ukraine Solidarity Lanes in May 2022, establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways. Today, the EU-Ukraine Solidarity Lanes have become a lifeline for Ukraine’s economy. In August 2026 the Solidarity Lanes allowed: - Nearly 100% of Ukrainian imports - Around 90% of Ukrainian exports of non-agricultural products (in comparison to around 5% through the Black Sea) - Around 90% of Ukrainian exports of grain, oilseeds and related products (in comparison to around 10% through the Black Sea) Ukrainian exports Since May 2022, the Solidarity Lanes have allowed Ukraine to export ca. 240 million tonnes (Mt) of goods, according to data from the Ukrainian customs registers. Within this amount, it can be estimated that the Solidarity Lanes enabled exports of around 108 million tonnes of Ukrainian agricultural produc",
+    "language": "en",
+    "authority": 100,
+    "source_id": "eu_transport",
+    "document_id": "",
+    "document_type": "政策, 征求意见, 实施公告",
+    "lifecycle_stage": "published",
+    "relevance_level": "probable",
+    "evidence_level": "A",
+    "vehicle_classes": [
+      "N2",
+      "N3"
+    ],
+    "powertrain_scope": [
+      "all"
+    ],
+    "effective_at": null,
+    "evidence_quotes": [
+      "establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways",
+      "The Solidarity Lanes cover trade across all sectors",
+      "This includes measures to improve traffic management and streamlining of border procedures and checks, as well as investments in infrastructure or logistics equipment"
+    ]
+  }
+]
