@@ -1,0 +1,110 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-10-26",
+  "title": "政策法规日报 · 2026-10-26",
+  "period_start": "2026-10-25T13:10:12.790161+08:00",
+  "period_end": "2026-10-26T13:10:12.790161+08:00",
+  "generated_at": "2026-10-26T13:10:39.771105+08:00",
+  "summary": "本期共收录2条经正文与发布时间核验的信息，其中今日重点2条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "93a036e358d945d8",
+      "title_zh": "欧盟委员会实施条例(EU) 2024/2215：含氟温室气体设备人员认证最低要求",
+      "title_original": "Commission Implementing Regulation (EU) 2024/2215 of 6 September 2024 establishing, pursuant to Regulation (EU) 2024/573 of the European Parliament and of the Council, minimum requirements for the issuance of certificates to natural and legal persons and the conditions for the mutual recognition of such certificates, as regards stationary refrigeration, air conditioning and heat pump equipment, organic Rankine cycles and refrigeration units of refrigerated trucks, refrigerated trailers, refrigerated light-duty vehicles, intermodal containers and train wagons containing fluorinated greenhouse gases or their alternatives, and repealing Commission Implementing Regulation (EU) 2015/2067 (Text with EEA relevance)",
+      "summary_zh": "该条例依据(EU) 2024/573制定，规定从事含氟温室气体及其替代物（氨、二氧化碳、碳氢化合物）设备泄漏检查、安装、维修维护、退役及制冷剂回收的自然人和法人认证最低要求与互认条件，覆盖固定式制冷、空调热泵、有机朗肯循环，以及冷藏卡车、冷藏挂车、冷藏轻型车、多式联运集装箱和铁路车厢的制冷机组。条例于2024年9月6日通过、9月9日公布，并废止(EU) 2015/2067；2026年10月5日经(EU) 2026/2214修订，合并文本标注2026年10月26日。",
+      "source_name": "EUR-Lex",
+      "source_type": "法规组织",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A02024R2215-20261026",
+      "published_at": "2026-10-26T00:00:00+08:00",
+      "collected_at": "2026-10-26T13:10:12.790161+08:00",
+      "region": "欧盟",
+      "primary_category": "法规",
+      "tags": [
+        "含氟温室气体",
+        "人员认证",
+        "冷藏运输机组"
+      ],
+      "importance_score": 88,
+      "is_highlight": true,
+      "content_hash": "c44069d767ab88ce18adeb1b71075a52",
+      "event_id": "399f87c8e731071a",
+      "related_sources": [],
+      "content_evidence": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the relevant acts, including their preambles, are those published in the Official Journal of the European Union and available in EUR-Lex. Those official texts are directly accessible through the links embedded in this document ►B COMMISSION IMPLEMENTING REGULATION (EU) 2024/2215 of 6 September 2024 establishing, pursuant to Regulation (EU) 2024/573 of the European Parliament and of the Council, minimum requirements for the issuance of certificates to natural and legal persons and the conditions for the mutual recognition of such certificates, as regards stationary refrigeration, air conditioning and heat pump equipment, organic Rankine cycles and refrigeration units of refrigerated trucks, refrigerated trailers, refrigerated light-duty vehicles, intermodal containers and train wagons containing fluorinated greenhouse",
+      "language": "en",
+      "authority": 100,
+      "source_id": "eurlex_oj",
+      "document_id": "02024R2215-20261026",
+      "document_type": "EU legal act",
+      "lifecycle_stage": "amended",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "冷藏卡车",
+        "冷藏挂车",
+        "冷藏轻型车",
+        "多式联运集装箱",
+        "铁路车厢"
+      ],
+      "powertrain_scope": [
+        "制冷机组",
+        "非动力总成辅助设备"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "refrigeration units of refrigerated trucks, refrigerated trailers, refrigerated light-duty vehicles, intermodal containers and train wagons containing fluorinated greenhouse gases or their alternatives",
+        "(d) refrigeration units of refrigerated trucks and refrigerated trailers,",
+        "(e) refrigeration units of refrigerated light-duty vehicles, in termodal containers and train wagons."
+      ]
+    },
+    {
+      "id": "fa714b532862c675",
+      "title_zh": "美国FMVSS第108号标准现代化修订提案：适配自动驾驶系统车辆",
+      "title_original": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles",
+      "summary_zh": "美国NHTSA发布拟议规则，修订FMVSS第108号灯具标准，适用于乘用车、多用途车、卡车、客车、挂车及摩托车。主要变化包括：取消整体式前照灯测试电压规定、删除前照灯垂直布置要求、将转向灯/危险警示灯/远近光切换的手动操作要求及指示灯要求限定于带手动驾驶控制装置的车辆、允许ADS车辆选装青色ADS标识灯。评论截止日期为2026年11月25日。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/10/26/2026-21794/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped",
+      "published_at": "2026-10-26T00:00:00+08:00",
+      "collected_at": "2026-10-26T13:10:12.790161+08:00",
+      "region": "美国",
+      "primary_category": "法规",
+      "tags": [
+        "FMVSS 108",
+        "自动驾驶",
+        "灯具标准"
+      ],
+      "importance_score": 81,
+      "is_highlight": true,
+      "content_hash": "26244ed304fb5f0294b212e93c9089cc",
+      "event_id": "e4568bd24a684a71",
+      "related_sources": [],
+      "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration 49 CFR Part 571 [Docket No. NHTSA-2026-1519] RIN 2127-AM70 Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles AGENCY: National Highway Traffic Safety Administration (NHTSA), U.S. Department of Transportation (DOT). ACTION: Notice of proposed rulemaking. SUMMARY: NHTSA is proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 108, “Lamps, reflective devices, and associated equipment.” The proposed updates to the standard are intended to remove unnecessary requirements and to provide design flexibility without impact on vehicle safety. The first two proposed changes would amend the test voltage specification for integral beam type headlamps and remove requirements that apply to vertical headlamp arrangements. Further proposed changes address vehicles equipped with Automated Driving Systems (ADS) that do not have manually operated driving contr",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-21794",
+      "document_type": "Proposed Rule",
+      "lifecycle_stage": "draft",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "passenger cars",
+        "multipurpose passenger vehicles",
+        "trucks",
+        "buses",
+        "trailers",
+        "motorcycles"
+      ],
+      "powertrain_scope": [
+        "all"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "FMVSS No. 108 applies to passenger cars, multipurpose passenger vehicles, trucks, buses, trailers (except pole trailers and trailer converter dollies), and motorcycles",
+        "Those modifications would limit the application of certain requirements for manually operated turn signal, hazard warning signal, and beam switching controls to vehicles with manually operated driving controls",
+        "a proposed addition to the standard would allow cyan-colored ADS marker lamps as optional motor vehicle lighting equipment in ADS-equipped vehicles"
+      ]
+    }
+  ]
+}
