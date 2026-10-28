@@ -1,6 +1,64 @@
 {
-  "generated_at": "2026-10-27T05:26:44.918960+00:00",
+  "generated_at": "2026-10-28T06:07:21.612321+00:00",
   "reports": [
+    {
+      "report_type": "daily",
+      "report_id": "daily-2026-10-28",
+      "title": "政策法规日报 · 2026-10-28",
+      "period_start": "2026-10-27T14:06:52.687382+08:00",
+      "period_end": "2026-10-28T14:06:52.687382+08:00",
+      "generated_at": "2026-10-28T14:07:21.608196+08:00",
+      "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "7017755ba33d6c58",
+          "title_zh": "2025年欧盟道路安全统计确认道路死亡人数下降",
+          "title_original": "Road safety statistics for 2025 confirm drop in EU road deaths",
+          "summary_zh": "欧盟委员会发布2025年道路死亡最终统计，全年死亡19350人，较2024年下降3%、较2019年下降15%。报告指出乘用车及行人、骑行者、摩托车使用者风险最高，多数死亡发生在城市外乡村道路；仅比利时、保加利亚、丹麦、波兰、罗马尼亚五国有望实现2030年减半目标。文件同时提及欧盟在车辆安全规则、驾驶执照要求、跨境执法及车辆适航性提案方面的举措，并预告2026年11月23日召开欧盟道路安全会议。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://transport.ec.europa.eu/news-events/news/road-safety-statistics-2025-confirm-drop-eu-road-deaths-2026-10-27_en",
+          "published_at": "2026-10-27T11:30:28+01:00",
+          "collected_at": "2026-10-28T14:06:52.687382+08:00",
+          "region": "EU",
+          "primary_category": "政策",
+          "tags": [
+            "道路安全",
+            "事故统计",
+            "2030减半目标"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "34270dd32bcfbae15f590f75eaded828",
+          "event_id": "4a7153dd09adf22d",
+          "related_sources": [],
+          "content_evidence": "Today, the European Commission released the final figures on road fatalities for 2025, reporting 19,350 deaths due to road crashes. This represents a 3% decrease from 2024 and a 15% decrease from 2019, equivalent to 580 fewer deaths on European roads compared to 2024, and 3,400 fewer deaths compared to 2019. While this significant achievement reaffirms the EU's position as one of the world's safest regions for road travel, the majority of Member States are not yet on track to meet the EU target of halving road deaths and serious injuries by 2030. Results confirm that only five countries are on course to meet the 50% reduction target in road deaths by 2030: Belgium, Bulgaria, Denmark, Poland and Romania. Despite their progress since 2019, Bulgaria and Romania, alongside Croatia, continue to have the highest fatality rates in the EU when measuring deaths per million inhabitants (71, 68 and 65 deaths per million). On the opposite end of the ranking, Sweden and Denmark report the lowest fa",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [
+            "passenger cars",
+            "motorcycles",
+            "heavy goods vehicles"
+          ],
+          "powertrain_scope": [
+            "all"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "passenger cars and vulnerable road users such as pedestrians, cyclists and motorcycle users and are the most exposed to road casualties",
+            "the EU contributes with safety rules for infrastructure and vehicles and for driving testing and licencing",
+            "a proposal to enhance the roadworthiness of vehicles"
+          ]
+        }
+      ]
+    },
     {
       "report_type": "daily",
       "report_id": "daily-2026-10-27",
