@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T06:09:45.004662+00:00",
+  "generated_at": "2026-11-01T06:32:51.742539+00:00",
   "reports": [
     {
       "report_type": "daily",
@@ -3427,6 +3427,661 @@
       "summary": "暂无重要更新。",
       "empty": true,
       "articles": []
+    },
+    {
+      "report_type": "monthly",
+      "report_id": "monthly-2026-10-31",
+      "title": "政策法规月报 · 2026-10-31",
+      "period_start": "2026-10-01T00:00:00+08:00",
+      "period_end": "2026-10-31T23:59:59+08:00",
+      "generated_at": "2026-11-01T14:32:51.734256+08:00",
+      "summary": "本期共收录14条经正文与发布时间核验的信息，其中今日重点12条。",
+      "empty": false,
+      "articles": [
+        {
+          "id": "7017755ba33d6c58",
+          "title_zh": "2025年欧盟道路安全统计确认道路死亡人数下降",
+          "title_original": "Road safety statistics for 2025 confirm drop in EU road deaths",
+          "summary_zh": "欧盟委员会发布2025年道路死亡最终统计，全年死亡19350人，较2024年下降3%、较2019年下降15%。报告指出乘用车及行人、骑行者、摩托车使用者风险最高，多数死亡发生在城市外乡村道路；仅比利时、保加利亚、丹麦、波兰、罗马尼亚五国有望实现2030年减半目标。文件同时提及欧盟在车辆安全规则、驾驶执照要求、跨境执法及车辆适航性提案方面的举措，并预告2026年11月23日召开欧盟道路安全会议。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://transport.ec.europa.eu/news-events/news/road-safety-statistics-2025-confirm-drop-eu-road-deaths-2026-10-27_en",
+          "published_at": "2026-10-27T11:30:28+01:00",
+          "collected_at": "2026-10-28T14:06:52.687382+08:00",
+          "region": "EU",
+          "primary_category": "政策",
+          "tags": [
+            "道路安全",
+            "事故统计",
+            "2030减半目标"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "34270dd32bcfbae15f590f75eaded828",
+          "event_id": "4a7153dd09adf22d",
+          "related_sources": [],
+          "content_evidence": "Today, the European Commission released the final figures on road fatalities for 2025, reporting 19,350 deaths due to road crashes. This represents a 3% decrease from 2024 and a 15% decrease from 2019, equivalent to 580 fewer deaths on European roads compared to 2024, and 3,400 fewer deaths compared to 2019. While this significant achievement reaffirms the EU's position as one of the world's safest regions for road travel, the majority of Member States are not yet on track to meet the EU target of halving road deaths and serious injuries by 2030. Results confirm that only five countries are on course to meet the 50% reduction target in road deaths by 2030: Belgium, Bulgaria, Denmark, Poland and Romania. Despite their progress since 2019, Bulgaria and Romania, alongside Croatia, continue to have the highest fatality rates in the EU when measuring deaths per million inhabitants (71, 68 and 65 deaths per million). On the opposite end of the ranking, Sweden and Denmark report the lowest fa",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [
+            "passenger cars",
+            "motorcycles",
+            "heavy goods vehicles"
+          ],
+          "powertrain_scope": [
+            "all"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "passenger cars and vulnerable road users such as pedestrians, cyclists and motorcycle users and are the most exposed to road casualties",
+            "the EU contributes with safety rules for infrastructure and vehicles and for driving testing and licencing",
+            "a proposal to enhance the roadworthiness of vehicles"
+          ]
+        },
+        {
+          "id": "006def0c584616b0",
+          "title_zh": "欧盟-乌克兰团结通道最新数据（2026年9月）",
+          "title_original": "Solidarity Lanes: Latest figures – September 2026",
+          "summary_zh": "欧盟委员会交通与运输总司发布团结通道最新统计：2026年8月，该通道承担乌克兰近100%进口、约90%非农产品出口及约90%粮食油料出口。自2022年5月启动以来，累计出口约2.4亿吨货物，其中农产品约1.08亿吨，进口约1.16亿吨，贸易总值约3240亿欧元。通道依托铁路、公路和内河航运，重点改善交通管理与边境手续、投资基础设施和物流设备。文件于2026年10月19日发布，属实施进展公告，未提出新法规义务。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://transport.ec.europa.eu/news-events/news/solidarity-lanes-latest-figures-september-2026-2026-10-19_en",
+          "published_at": "2026-10-19T14:02:55+02:00",
+          "collected_at": "2026-10-20T13:08:45.337171+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "团结通道",
+            "乌克兰",
+            "货运物流"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "4777215b450a25c03fb65d9f027fdc6c",
+          "event_id": "afe25fecba757d00",
+          "related_sources": [],
+          "content_evidence": "In the face of Russia’s war of aggression against Ukraine, the EU, together with Ukraine and Moldova launched the EU-Ukraine Solidarity Lanes in May 2022, establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways. Today, the EU-Ukraine Solidarity Lanes have become a lifeline for Ukraine’s economy. In August 2026 the Solidarity Lanes allowed: - Nearly 100% of Ukrainian imports - Around 90% of Ukrainian exports of non-agricultural products (in comparison to around 5% through the Black Sea) - Around 90% of Ukrainian exports of grain, oilseeds and related products (in comparison to around 10% through the Black Sea) Ukrainian exports Since May 2022, the Solidarity Lanes have allowed Ukraine to export ca. 240 million tonnes (Mt) of goods, according to data from the Ukrainian customs registers. Within this amount, it can be estimated that the Solidarity Lanes enabled exports of around 108 million tonnes of Ukrainian agricultural produc",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [
+            "N2",
+            "N3"
+          ],
+          "powertrain_scope": [
+            "all"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways",
+            "The Solidarity Lanes cover trade across all sectors",
+            "This includes measures to improve traffic management and streamlining of border procedures and checks, as well as investments in infrastructure or logistics equipment"
+          ]
+        },
+        {
+          "id": "9b62bfa93b2fed5a",
+          "title_zh": "团结通道：最新数据——2026年8月",
+          "title_original": "Solidarity Lanes: Latest figures – August 2026",
+          "summary_zh": "欧盟委员会交通与运输总司发布2026年8月团结通道最新数据。自2022年5月启动以来，该通道通过铁路、公路和内河航运维持乌克兰进出口。2026年8月，通道承担乌近100%进口、约95%非农产品出口和约90%粮食油籽出口。累计出口约2.35亿吨货物，进口约1.13亿吨，贸易总额约3140亿欧元。文件强调改善交通管理、简化边境手续及基础设施投资，为乌克兰重建和融入欧盟单一市场奠定基础。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://transport.ec.europa.eu/news-events/news/solidarity-lanes-latest-figures-august-2026-2026-10-12_en",
+          "published_at": "2026-10-12T15:04:56+02:00",
+          "collected_at": "2026-10-13T15:00:38.216279+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "团结通道",
+            "乌克兰",
+            "货运物流"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "9a0eea63f9179a273f12f2d869e79331",
+          "event_id": "77223d463837fb08",
+          "related_sources": [],
+          "content_evidence": "In the face of Russia’s war of aggression against Ukraine, the EU, together with Ukraine and Moldova launched the EU-Ukraine Solidarity Lanes in May 2022, establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways. Today, the EU-Ukraine Solidarity Lanes have become a lifeline for Ukraine’s economy. In August 2026 the Solidarity Lanes allowed: - Nearly 100% of Ukrainian imports - Around 95% of Ukrainian exports of non-agricultural products (in comparison to around 5% through the Black Sea) - Around 90% of Ukrainian exports of grain, oilseeds and related products (in comparison to around 10% through the Black Sea) Ukrainian exports Since May 2022, the Solidarity Lanes have allowed Ukraine to export ca. 235 million tonnes (Mt) of goods, according to data from the Ukrainian customs registers. Within this amount, it can be estimated that the Solidarity Lanes enabled exports of around 105 million tonnes of Ukrainian agricultural produc",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [],
+          "powertrain_scope": [],
+          "effective_at": null,
+          "evidence_quotes": [
+            "establishing new transport routes to keep Ukraine’s imports and exports flowing via rail, road and inland waterways",
+            "This includes measures to improve traffic management and streamlining of border procedures and checks, as well as investments in infrastructure or logistics equipment.",
+            "they have allowed Ukraine to import ca. 113 Mt of goods, such as fuel, vehicles, fertilisers as well as military and humanitarian assistance"
+          ]
+        },
+        {
+          "id": "7e616ada760a2add",
+          "title_zh": "保加利亚、希腊和罗马尼亚签署联合行动计划加快战略交通连接建设",
+          "title_original": "Bulgaria, Greece and Romania step up delivery of strategic transport links",
+          "summary_zh": "2026年10月9日，保加利亚、希腊和罗马尼亚在布鲁塞尔“连接欧洲日2026”期间签署联合行动计划，将2025年12月的政治承诺转化为具体行动，加快东南欧跨境交通项目落地。计划聚焦三国间优先交通轴线，包括铁路和公路连接、多瑙河跨河通道及港口与多式联运码头衔接。重点项目涵盖希腊亚历山德鲁波利斯港至保加利亚斯维伦格勒的跨境铁路、久尔久-鲁塞铁路桥现代化改造、新建久尔久-鲁塞公铁两用桥前期准备，以及三国间其他关键铁路和公路改善工程。同日还启动了“东南欧之友”倡议以支持区域互联互通合作。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://transport.ec.europa.eu/news-events/news/bulgaria-greece-and-romania-step-delivery-strategic-transport-links-2026-10-09_en",
+          "published_at": "2026-10-09T12:44:01+02:00",
+          "collected_at": "2026-10-10T14:15:31.969267+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "跨境交通",
+            "基础设施",
+            "东南欧"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "21952980a1d68d4046a88291a008ff42",
+          "event_id": "b6df7a2429dd8233",
+          "related_sources": [],
+          "content_evidence": "Bulgaria, Greece and Romania today signed a joint Action Plan to accelerate strategic cross-border transport projects in South-East Europe. The signing ceremony took place in the margins of Connecting Europe Days 2026 in Brussels, hosted by Apostolos Tzitzikostas, European Commissioner for Sustainable Transport and Tourism. The Action Plan turns the political commitments made by the three countries in December 2025 into concrete actions, supporting the faster delivery of key infrastructure projects, stronger connectivity and greater resilience across the region. The Action Plan will strengthen coordination on project preparation, financing and implementation, helping to remove cross-border bottlenecks and accelerate improvements to rail, road and multimodal connections across the region. At the same event, Member of the European Parliament Andrey Novakov, with the support of European Corridor Coordinators Maria Mauro and Margarida Marques, launched the Friends of South-East Europe (FoS",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [],
+          "powertrain_scope": [],
+          "effective_at": null,
+          "evidence_quotes": [
+            "Bulgaria, Greece and Romania today signed a joint Action Plan to accelerate strategic cross-border transport projects in South-East Europe.",
+            "The Action Plan will strengthen coordination on project preparation, financing and implementation, helping to remove cross-border bottlenecks and accelerate improvements to rail, road and multimodal connections across the region.",
+            "Priority projects include the strategic cross-border rail link between the Port of Alexandroupoli in Greece and Svilengrad in Bulgaria"
+          ]
+        },
+        {
+          "id": "e6a7458ec0387149",
+          "title_zh": "CEF交通基金2026年征集收到近30亿欧元申请",
+          "title_original": "CEF Transport: Almost €3 billion requested for transport infrastructure projects",
+          "summary_zh": "欧盟连接欧洲基金（CEF）交通项目2026年征集于2026年10月6日截止，CINEA共收到246份申请，申请共同融资总额近30亿欧元，约为2026年CEF交通征集可用预算11亿欧元的2.69倍。CINEA将先核查申请的受理资格与合规性，合格申请随后由独立外部专家、欧盟委员会和CINEA评估。申请人将于2027年3月获知评估结果，成功项目的赠款协议预计在2027年6月前签署。入选项目将用于建设和现代化欧盟及周边交通基础设施，支持跨欧洲交通网络（TEN-T）发展，包括军事机动性。CEF是欧盟完成和现代化TEN-T的关键融资工具，2021至2027年计划投入258亿欧元。",
+          "source_name": "欧盟委员会交通与运输总司",
+          "source_type": "政府",
+          "source_url": "https://cinea.ec.europa.eu/news-events/news/cef-transport-almost-eur3-billion-requested-transport-infrastructure-projects-2026-10-07_en",
+          "published_at": "2026-10-07T15:42:22+02:00",
+          "collected_at": "2026-10-08T14:31:36.882827+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "CEF",
+            "TEN-T",
+            "交通基础设施融资"
+          ],
+          "importance_score": 86,
+          "is_highlight": true,
+          "content_hash": "5f31e840ef9ff5a55d17fae9c7b6af4b",
+          "event_id": "d5ff60e274563bb0",
+          "related_sources": [],
+          "content_evidence": "CINEA received 246 applications requesting almost €3 billion in co-funding from the Connecting Europe Facility (CEF) Transport by the 6 October 2026 call deadline. This represents nearly 2.69 times the €1.1 billion budget available under the 2026 CEF Transport calls for proposals. CINEA will now check the admissibility and eligibility of the proposals. Eligible proposals will then be evaluated by independent external experts, the European Commission and CINEA. Applicants will be informed of the evaluation results in March 2027, with grant agreements for successful projects expected to be signed by June 2027. The selected projects will help build and modernise transport infrastructure in the European Union and beyond. They will contribute to the development of the trans-European transport network (TEN-T), including by supporting military mobility. Background CEF Transport is the key EU funding instrument for the completion and modernisation of the trans-European transport network. CEF-f",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eu_transport",
+          "document_id": "",
+          "document_type": "政策, 征求意见, 实施公告",
+          "lifecycle_stage": "published",
+          "relevance_level": "probable",
+          "evidence_level": "A",
+          "vehicle_classes": [],
+          "powertrain_scope": [],
+          "effective_at": null,
+          "evidence_quotes": [
+            "CINEA received 246 applications requesting almost €3 billion in co-funding from the Connecting Europe Facility (CEF) Transport by the 6 October 2026 call deadline.",
+            "The selected projects will help build and modernise transport infrastructure in the European Union and beyond.",
+            "They will contribute to the development of the trans-European transport network (TEN-T), including by supporting military mobility."
+          ]
+        },
+        {
+          "id": "6f8582e2ba258716",
+          "title_zh": "欧盟卡车制造商呼吁推迟CO2排放标准",
+          "title_original": "EU truck makers call for a delay to CO 2 emission standards",
+          "summary_zh": "2026年9月14日，在汉诺威IAA交通运输展上，欧洲七家主要卡车和客车制造商（DAF、戴姆勒卡车、福特Otosan、依维柯、曼恩、斯堪尼亚、沃尔沃）的CEO警告，欧洲向零排放重型车转型因配套条件“严重滞后”而受阻，呼吁欧盟及各国政策制定者紧急弥补差距，并将2030年CO2合规时间表推迟三年。目前欧洲新注册重型卡车中仅2.4%为零排放，波兰、西班牙、意大利低于1%，德法分别为4.3%和2.4%。制造商须在2030、2035、2040年分别减排43%、64%、90%，否则面临每克CO2每车4.250欧元罚款；仅2030年目标差三个百分点即约22亿欧元罚款。",
+          "source_name": "DieselNet",
+          "source_type": "专业媒体",
+          "source_url": "https://dieselnet.com/news/2026/09acea.php",
+          "published_at": "2026-10-02T00:00:00+08:00",
+          "collected_at": "2026-10-02T14:02:20.838275+08:00",
+          "region": "欧盟",
+          "primary_category": "政策",
+          "tags": [
+            "CO2排放标准",
+            "重型车",
+            "零排放转型"
+          ],
+          "importance_score": 83,
+          "is_highlight": true,
+          "content_hash": "f8953e10dc1c13985332dde9e0cdda4d",
+          "event_id": "30e6fad13366910c",
+          "related_sources": [],
+          "content_evidence": "news: EU truck makers call for a delay to CO2 emission standards EU truck makers call for a delay to CO 2 emission standards 14 September 2026 At the IAA Transportation in Hanover, the CEOs of Europe’s seven leading truck and bus manufacturers warned that Europe’s shift to zero-emission heavy-duty vehicles is held back by an “alarming delay” in the conditions that are needed to drive market uptake. They called on European and national policymakers to urgently close the gap and to delay the 2030 CO 2 compliance timeline by three years. While European truck and bus manufacturers have launched several zero-emission vehicle models, the conditions that transport operators need to adopt these vehicles at scale and operate them competitively are not developing fast enough, according to the CEOs. The executives participating in the event represented DAF Trucks, Daimler Truck, Ford Otosan, Iveco Group, MAN Truck &amp; Bus, Scania Group, and Volvo Group. Just 2.4% of new heavy-duty truck registr",
+          "language": "en",
+          "authority": 82,
+          "source_id": "dieselnet_news",
+          "document_id": "",
+          "document_type": "法规动态, 排放标准, 行业新闻",
+          "lifecycle_stage": "amended",
+          "relevance_level": "direct",
+          "evidence_level": "B",
+          "vehicle_classes": [
+            "N2",
+            "N3",
+            "HDV",
+            "bus"
+          ],
+          "powertrain_scope": [
+            "zero_emission",
+            "battery_electric",
+            "hydrogen"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "They called on European and national policymakers to urgently close the gap and to delay the 2030 CO 2 compliance timeline by three years.",
+            "Manufacturers have to reduce the CO 2 emissions of new vehicles by -43% (2030), -64% (2035) and -90% (2040).",
+            "Just 2.4% of new heavy-duty truck registrations in Europe are zero-emission today, according to ACEA ."
+          ]
+        },
+        {
+          "id": "93a036e358d945d8",
+          "title_zh": "欧盟委员会实施条例(EU) 2024/2215：含氟温室气体设备人员认证最低要求",
+          "title_original": "Commission Implementing Regulation (EU) 2024/2215 of 6 September 2024 establishing, pursuant to Regulation (EU) 2024/573 of the European Parliament and of the Council, minimum requirements for the issuance of certificates to natural and legal persons and the conditions for the mutual recognition of such certificates, as regards stationary refrigeration, air conditioning and heat pump equipment, organic Rankine cycles and refrigeration units of refrigerated trucks, refrigerated trailers, refrigerated light-duty vehicles, intermodal containers and train wagons containing fluorinated greenhouse gases or their alternatives, and repealing Commission Implementing Regulation (EU) 2015/2067 (Text with EEA relevance)",
+          "summary_zh": "该条例依据(EU) 2024/573制定，规定从事含氟温室气体及其替代物（氨、二氧化碳、碳氢化合物）设备泄漏检查、安装、维修维护、退役及制冷剂回收的自然人和法人认证最低要求与互认条件，覆盖固定式制冷、空调热泵、有机朗肯循环，以及冷藏卡车、冷藏挂车、冷藏轻型车、多式联运集装箱和铁路车厢的制冷机组。条例于2024年9月6日通过、9月9日公布，并废止(EU) 2015/2067；2026年10月5日经(EU) 2026/2214修订，合并文本标注2026年10月26日。",
+          "source_name": "EUR-Lex",
+          "source_type": "法规组织",
+          "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT?uri=CELEX%3A02024R2215-20261026",
+          "published_at": "2026-10-26T00:00:00+08:00",
+          "collected_at": "2026-10-26T13:10:12.790161+08:00",
+          "region": "欧盟",
+          "primary_category": "法规",
+          "tags": [
+            "含氟温室气体",
+            "人员认证",
+            "冷藏运输机组"
+          ],
+          "importance_score": 88,
+          "is_highlight": true,
+          "content_hash": "c44069d767ab88ce18adeb1b71075a52",
+          "event_id": "399f87c8e731071a",
+          "related_sources": [],
+          "content_evidence": "This text is meant purely as a documentation tool and has no legal effect. The Union's institutions do not assume any liability for its contents. The authentic versions of the relevant acts, including their preambles, are those published in the Official Journal of the European Union and available in EUR-Lex. Those official texts are directly accessible through the links embedded in this document ►B COMMISSION IMPLEMENTING REGULATION (EU) 2024/2215 of 6 September 2024 establishing, pursuant to Regulation (EU) 2024/573 of the European Parliament and of the Council, minimum requirements for the issuance of certificates to natural and legal persons and the conditions for the mutual recognition of such certificates, as regards stationary refrigeration, air conditioning and heat pump equipment, organic Rankine cycles and refrigeration units of refrigerated trucks, refrigerated trailers, refrigerated light-duty vehicles, intermodal containers and train wagons containing fluorinated greenhouse",
+          "language": "en",
+          "authority": 100,
+          "source_id": "eurlex_oj",
+          "document_id": "02024R2215-20261026",
+          "document_type": "EU legal act",
+          "lifecycle_stage": "amended",
+          "relevance_level": "probable",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "冷藏卡车",
+            "冷藏挂车",
+            "冷藏轻型车",
+            "多式联运集装箱",
+            "铁路车厢"
+          ],
+          "powertrain_scope": [
+            "制冷机组",
+            "非动力总成辅助设备"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "refrigeration units of refrigerated trucks, refrigerated trailers, refrigerated light-duty vehicles, intermodal containers and train wagons containing fluorinated greenhouse gases or their alternatives",
+            "(d) refrigeration units of refrigerated trucks and refrigerated trailers,",
+            "(e) refrigeration units of refrigerated light-duty vehicles, in termodal containers and train wagons."
+          ]
+        },
+        {
+          "id": "fa714b532862c675",
+          "title_zh": "美国FMVSS第108号标准现代化修订提案：适配自动驾驶系统车辆",
+          "title_original": "Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles",
+          "summary_zh": "美国NHTSA发布拟议规则，修订FMVSS第108号灯具标准，适用于乘用车、多用途车、卡车、客车、挂车及摩托车。主要变化包括：取消整体式前照灯测试电压规定、删除前照灯垂直布置要求、将转向灯/危险警示灯/远近光切换的手动操作要求及指示灯要求限定于带手动驾驶控制装置的车辆、允许ADS车辆选装青色ADS标识灯。评论截止日期为2026年11月25日。",
+          "source_name": "美国Federal Register",
+          "source_type": "政府",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/26/2026-21794/federal-motor-vehicle-safety-standards-modernization-of-fmvss-no-108-to-accommodate-ads-equipped",
+          "published_at": "2026-10-26T00:00:00+08:00",
+          "collected_at": "2026-10-26T13:10:12.790161+08:00",
+          "region": "美国",
+          "primary_category": "法规",
+          "tags": [
+            "FMVSS 108",
+            "自动驾驶",
+            "灯具标准"
+          ],
+          "importance_score": 81,
+          "is_highlight": true,
+          "content_hash": "26244ed304fb5f0294b212e93c9089cc",
+          "event_id": "e4568bd24a684a71",
+          "related_sources": [],
+          "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration 49 CFR Part 571 [Docket No. NHTSA-2026-1519] RIN 2127-AM70 Federal Motor Vehicle Safety Standards; Modernization of FMVSS No. 108 To Accommodate ADS-Equipped Vehicles AGENCY: National Highway Traffic Safety Administration (NHTSA), U.S. Department of Transportation (DOT). ACTION: Notice of proposed rulemaking. SUMMARY: NHTSA is proposing to amend Federal Motor Vehicle Safety Standard (FMVSS) No. 108, “Lamps, reflective devices, and associated equipment.” The proposed updates to the standard are intended to remove unnecessary requirements and to provide design flexibility without impact on vehicle safety. The first two proposed changes would amend the test voltage specification for integral beam type headlamps and remove requirements that apply to vertical headlamp arrangements. Further proposed changes address vehicles equipped with Automated Driving Systems (ADS) that do not have manually operated driving contr",
+          "language": "en",
+          "authority": 100,
+          "source_id": "us_federal_register_vehicle",
+          "document_id": "2026-21794",
+          "document_type": "Proposed Rule",
+          "lifecycle_stage": "draft",
+          "relevance_level": "probable",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "passenger cars",
+            "multipurpose passenger vehicles",
+            "trucks",
+            "buses",
+            "trailers",
+            "motorcycles"
+          ],
+          "powertrain_scope": [
+            "all"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "FMVSS No. 108 applies to passenger cars, multipurpose passenger vehicles, trucks, buses, trailers (except pole trailers and trailer converter dollies), and motorcycles",
+            "Those modifications would limit the application of certain requirements for manually operated turn signal, hazard warning signal, and beam switching controls to vehicles with manually operated driving controls",
+            "a proposed addition to the standard would allow cyan-colored ADS marker lamps as optional motor vehicle lighting equipment in ADS-equipped vehicles"
+          ]
+        },
+        {
+          "id": "18444890598e5d91",
+          "title_zh": "空气质量计划；亚利桑那州；皮纳尔县空气质量控制区；西皮纳尔县PM10未达标区；无组织扬尘规则",
+          "title_original": "Air Quality Plan; Arizona; Pinal County Air Quality Control District; West Pinal County PM10 Nonattainment Area; Fugitive Dust Rules",
+          "summary_zh": "美国环保署拟批准亚利桑那州提交的州实施计划修订，涉及皮纳尔县空气质量控制区西皮纳尔PM10未达标区的无组织扬尘规则，涵盖空地/闲置地块、未铺装道路、铺装公共道路及施工场地等扬尘源，并新增未铺装路肩与中央隔离带稳定化测试方法。该提案于2026年11月18日前公开征求意见，若最终通过将纳入联邦可执行范围。规则针对道路及场地扬尘，与货运车辆在未铺装道路和施工区域运行相关，但未直接规定车辆排放标准。",
+          "source_name": "美国Federal Register",
+          "source_type": "政府",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/19/2026-21287/air-quality-plan-arizona-pinal-county-air-quality-control-district-west-pinal-county-pm10",
+          "published_at": "2026-10-19T00:00:00+08:00",
+          "collected_at": "2026-10-19T13:07:23.849561+08:00",
+          "region": "美国亚利桑那州",
+          "primary_category": "法规",
+          "tags": [
+            "PM10",
+            "扬尘",
+            "州实施计划"
+          ],
+          "importance_score": 81,
+          "is_highlight": true,
+          "content_hash": "b6858b87e82483304f4a5deefeb932e6",
+          "event_id": "81dcce1678dbf104",
+          "related_sources": [],
+          "content_evidence": "ENVIRONMENTAL PROTECTION AGENCY 40 CFR Part 52 [EPA-R09-OAR-2026-5581; FRL-13513-01-R9] Air Quality Plan; Arizona; Pinal County Air Quality Control District; West Pinal County PM 10 Nonattainment Area; Fugitive Dust Rules AGENCY: U.S. Environmental Protection Agency (EPA). ACTION: Proposed rule. SUMMARY: The U.S. Environmental Protection Agency (EPA) is proposing to approve revisions to the Pinal County Air Quality Control District (PCAQCD or “District”) portion of the Arizona State Implementation Plan (SIP). These revisions concern emissions of particulate matter (PM) that is 10 micrometers or smaller in diameter (PM 10 ) from fugitive dust sources, including open areas/vacant lots, unpaved lots, unpaved roads, paved public roadways, and construction sites. We are proposing to approve local rules to regulate these emission sources under the Clean Air Act (CAA or “Act”). DATES: Comments must be received on or before November 18, 2026. ADDRESSES: Submit your comments, identified by Dock",
+          "language": "en",
+          "authority": 100,
+          "source_id": "us_federal_register_vehicle",
+          "document_id": "2026-21287",
+          "document_type": "Proposed Rule",
+          "lifecycle_stage": "draft",
+          "relevance_level": "probable",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "N2",
+            "N3",
+            "HDV"
+          ],
+          "powertrain_scope": [
+            "all"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "These revisions concern emissions of particulate matter (PM) that is 10 micrometers or smaller in diameter (PM 10 ) from fugitive dust sources, including open areas/vacant lots, unpaved lots, unpaved roads, paved public roadways, and constr",
+            "regulate PM and PM 10 emissions from “non-traditional” sources of fugitive dust: open areas/vacant lots, vehicle use in open areas/vacant lots, weed abatement, unpaved lots, unpaved roads, and paved public roadways.",
+            "Comments must be received on or before November 18, 2026."
+          ]
+        },
+        {
+          "id": "a7f2ba706f73472a",
+          "title_zh": "印度发布商用车BS-VII排放标准草案",
+          "title_original": "India releases draft BS-VII emission standards for commercial vehicles",
+          "summary_zh": "印度公路运输与公路部（MoRTH）提出修订1989年中央机动车规则第115条，纳入商用车Bharat Stage VII（BS-VII）排放标准，限值与Euro 7/VII一致并包含PN10。轻型商用车（N1）自2030年4月1日起适用，卡车和客车（N2、N3、M2、M3）自2031年4月1日起适用，均分三阶段实施：轻型车为2030、2032、2035年4月1日，重型车为2031、2033、2035年4月1日。各阶段逐步引入RDE、OBD、OBM、OBFCM、制动颗粒、电池耐久及轮胎磨损等要求。",
+          "source_name": "DieselNet",
+          "source_type": "专业媒体",
+          "source_url": "https://dieselnet.com/news/2026/10in-bs-vii.php",
+          "published_at": "2026-10-16T00:00:00+08:00",
+          "collected_at": "2026-10-16T12:51:24.247569+08:00",
+          "region": "印度",
+          "primary_category": "法规",
+          "tags": [
+            "BS-VII",
+            "排放标准",
+            "商用车"
+          ],
+          "importance_score": 76,
+          "is_highlight": true,
+          "content_hash": "191033b8d9b752c75fe935f42a557032",
+          "event_id": "d506d70453f717c5",
+          "related_sources": [],
+          "content_evidence": "news: India releases draft BS-VII emission standards for commercial vehicles India releases draft BS-VII emission standards for commercial vehicles 15 October 2026 India’s Ministry of Road Transport and Highways (MoRTH) has proposed amendments to Rule 115 of the Central Motor Vehicles Rules, 1989 to include Bharat Stage VII (BS-VII) emission standards for commercial vehicles. Emission limits for these standards are consistent with Euro 7/VII including PN10. Standards for light commercial vehicles would apply April 1, 2030, and those for trucks and buses April 1, 2031. Requirements for all vehicles are introduced over three phases. Please log in to view the full version of this article ( subscription required). Light Commercial Vehicles For all N1 vehicles manufactured on or after April 1, 2030, the three phases start April 1, 2030, April 1, 2032, and April 1, 2035. For Phase-I effective April 1, 2030, RDE testing applies at type approval and OBD , OBM and OBFCM data is to be available",
+          "language": "en",
+          "authority": 82,
+          "source_id": "dieselnet_news",
+          "document_id": "",
+          "document_type": "法规动态, 排放标准, 行业新闻",
+          "lifecycle_stage": "draft",
+          "relevance_level": "direct",
+          "evidence_level": "B",
+          "vehicle_classes": [
+            "N1",
+            "N2",
+            "N3",
+            "M2",
+            "M3"
+          ],
+          "powertrain_scope": [
+            "ICE",
+            "HEV",
+            "BEV",
+            "FCEV"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "India’s Ministry of Road Transport and Highways (MoRTH) has proposed amendments to Rule 115 of the Central Motor Vehicles Rules, 1989 to include Bharat Stage VII (BS-VII) emission standards for commercial vehicles.",
+            "Standards for light commercial vehicles would apply April 1, 2030, and those for trucks and buses April 1, 2031.",
+            "For all N2, N3, M2 and M3, vehicles manufactured on or after April 1, 2031, the three phases start April 1, 2031, April 1, 2033, and April 1, 2035."
+          ]
+        },
+        {
+          "id": "b985bb7045451c68",
+          "title_zh": "紧急豁免适用性澄清；对复议请愿的回应",
+          "title_original": "Clarification to the Applicability of Emergency Exemptions; Response to Petitions for Reconsideration",
+          "summary_zh": "美国联邦汽车运输安全管理局（FMCSA）发布最终规则，修订49 CFR 390.23(b)，将州长、其授权代表或FMCSA宣布地区紧急状态后自动触发的紧急豁免期限从14天恢复为30天。该规则回应2023年10月最终规则后的多份复议请愿，旨在减轻行政负担，同时确保紧急期间安全运营。豁免仅适用于直接响应已宣布紧急状态、参与直接援助的商用机动车，使其免于49 CFR 395.3和395.5的小时服务规定。规则自2026年10月5日起生效，复议请愿须在2026年11月4日前提交。",
+          "source_name": "美国Federal Register",
+          "source_type": "政府",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/05/2026-20325/clarification-to-the-applicability-of-emergency-exemptions-response-to-petitions-for-reconsideration",
+          "published_at": "2026-10-05T00:00:00+08:00",
+          "collected_at": "2026-10-05T14:05:09.026628+08:00",
+          "region": "美国",
+          "primary_category": "法规",
+          "tags": [
+            "紧急豁免",
+            "商用车",
+            "小时服务"
+          ],
+          "importance_score": 95,
+          "is_highlight": true,
+          "content_hash": "0e5d2247a8e7415a2d2b908328916665",
+          "event_id": "7e08d031d3b7ea96",
+          "related_sources": [],
+          "content_evidence": "DEPARTMENT OF TRANSPORTATION Federal Motor Carrier Safety Administration 49 CFR Part 390 [Docket No. FMCSA-2025-0124] RIN 2126-AC77 Clarification to the Applicability of Emergency Exemptions; Response to Petitions for Reconsideration AGENCY: Federal Motor Carrier Safety Administration (FMCSA), Department of Transportation (DOT). ACTION: Final rule. SUMMARY: FMCSA amends its emergency declaration regulations to revise from 14 days to 30 days the length of the relief automatically triggered subsequent to a regional declaration of emergency by a Governor of a State, the Governor's authorized representative, or FMCSA. This action is in response to several petitions for reconsideration received after publication of a final rule in October 2023. DATES: Effective October 5, 2026. Petitions for reconsideration of this final rule must be submitted to the FMCSA Administrator no later than November 4, 2026. FOR FURTHER INFORMATION CONTACT: Ms. Kathryn Sinniger, Regulatory and Legislative Affairs",
+          "language": "en",
+          "authority": 100,
+          "source_id": "us_federal_register_vehicle",
+          "document_id": "2026-20325",
+          "document_type": "Rule",
+          "lifecycle_stage": "effective",
+          "relevance_level": "direct",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "商用机动车",
+            "重型卡车",
+            "N2",
+            "N3"
+          ],
+          "powertrain_scope": [
+            "全部动力类型"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "FMCSA amends its emergency declaration regulations to revise from 14 days to 30 days the length of the relief automatically triggered subsequent to a regional declaration of emergency",
+            "Effective October 5, 2026",
+            "exempting only those commercial motor vehicles that are acting in direct assistance in response to a declared emergency from the HOS regulations found in 49 CFR 395.3 and 395.5"
+          ]
+        },
+        {
+          "id": "92b99eb44005b718",
+          "title_zh": "欧盟放宽重型车辆二氧化碳积分规则",
+          "title_original": "EU eases CO 2 credit rules for heavy-duty vehicles",
+          "summary_zh": "2026年3月18日，欧洲议会通过针对重型车辆二氧化碳排放标准（欧盟2019/1242号法规）的定向修订，作为2025年12月汽车一揽子计划的一部分，欧盟理事会已于2026年2月批准。修订允许制造商在2025至2029报告期内，只要二氧化碳排放低于年度排放目标即可获得积分，而原法规要求低于线性减排轨迹才能获得积分，从而增加积分获取灵活性。修订不改变2030年、2035年和2040年分别较2019/2021年减排43%、64%和90%的目标。适用对象为大多数重型卡车。",
+          "source_name": "DieselNet",
+          "source_type": "专业媒体",
+          "source_url": "https://dieselnet.com/news/2026/03eu.php",
+          "published_at": "2026-10-02T00:00:00+08:00",
+          "collected_at": "2026-10-02T14:02:20.838275+08:00",
+          "region": "欧盟",
+          "primary_category": "法规",
+          "tags": [
+            "重型货车",
+            "二氧化碳积分",
+            "排放标准"
+          ],
+          "importance_score": 83,
+          "is_highlight": true,
+          "content_hash": "aee048cb836fec58689a2ca33d540555",
+          "event_id": "c9f621281fcf2eb0",
+          "related_sources": [],
+          "content_evidence": "news: EU eases CO2 credit rules for heavy-duty vehicles EU eases CO 2 credit rules for heavy-duty vehicles 18 March 2026 The European Parliament approved a targeted amendment to the existing CO 2 emission standards for heavy-duty vehicles (Regulation (EU) 2019/1242) to provide manufacturers with more flexibility to ease the compliance with their applicable 2030 CO 2 emission targets. The measure was proposed as part of the Automotive Package released in December 2025. The EU Council already approved the Commission’s proposal in February. The adopted amendments allow manufacturers to collect more emission credits for the 2025–2029 reporting periods than in the original Regulation. While Regulation (EU) 2019/1242 originally allowed manufacturers to receive credits only when their CO 2 emissions were below a linear emissions reduction trajectory, with the adopted amendments they will be able to generate credits as soon as their CO 2 emissions are below their annual emission target. The am",
+          "language": "en",
+          "authority": 82,
+          "source_id": "dieselnet_news",
+          "document_id": "",
+          "document_type": "法规动态, 排放标准, 行业新闻",
+          "lifecycle_stage": "amended",
+          "relevance_level": "direct",
+          "evidence_level": "B",
+          "vehicle_classes": [
+            "N2",
+            "N3",
+            "HDV"
+          ],
+          "powertrain_scope": [
+            "内燃机",
+            "纯电动",
+            "氢燃料电池"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "The European Parliament approved a targeted amendment to the existing CO 2 emission standards for heavy-duty vehicles (Regulation (EU) 2019/1242) to provide manufacturers with more flexibility to ease the compliance with their applicable 20",
+            "The adopted amendments allow manufacturers to collect more emission credits for the 2025–2029 reporting periods than in the original Regulation.",
+            "EU Regulation 2019/1242, as amended in 2024, requires most trucks to reduce tailpipe CO 2 emissions by 43% by 2030, by y64% by 2035, and by 90% by 2040, relative to 2019/2021."
+          ]
+        },
+        {
+          "id": "404b972563f87d06",
+          "title_zh": "美国NHTSA受理13家客车制造商侧向座椅安全带临时豁免续期申请",
+          "title_original": "Receipt of Petitions for Renewal of Temporary Exemptions From Shoulder Belt Requirement for Side-Facing Seats on Motorcoaches",
+          "summary_zh": "美国NHTSA发布通知，已收到13家“娱乐型长途客车”最终阶段制造商提交的相同申请，请求续期FMVSS第208号标准中侧向座椅肩带要求的临时豁免，允许其继续在侧向座椅位置安装仅腰带式（Type 1）安全带，而非标准要求的腰带加肩带（Type 2）。申请人依据49 CFR 555.6(d)，主张若不豁免将无法销售整体安全水平不低于非豁免车辆的车型，每12个月销量不超过2500辆。因申请在豁免终止前60天期限内提交，现行豁免在NHTSA作出决定前继续有效。公众评论截止日期为2026年11月6日。",
+          "source_name": "美国Federal Register",
+          "source_type": "政府",
+          "source_url": "https://www.federalregister.gov/documents/2026/10/07/2026-20496/receipt-of-petitions-for-renewal-of-temporary-exemptions-from-shoulder-belt-requirement-for",
+          "published_at": "2026-10-07T00:00:00+08:00",
+          "collected_at": "2026-10-07T14:20:17.679559+08:00",
+          "region": "美国",
+          "primary_category": "法规",
+          "tags": [
+            "FMVSS 208",
+            "安全带豁免",
+            "客车"
+          ],
+          "importance_score": 73,
+          "is_highlight": false,
+          "content_hash": "96fce1f0f6710f7011bcc0220564183b",
+          "event_id": "eae604a7f08545db",
+          "related_sources": [],
+          "content_evidence": "DEPARTMENT OF TRANSPORTATION National Highway Traffic Safety Administration [Docket No. NHTSA-2026-1816] Receipt of Petitions for Renewal of Temporary Exemptions From Shoulder Belt Requirement for Side-Facing Seats on Motorcoaches AGENCY: National Highway Traffic Safety Administration (NHTSA), Department of Transportation (DOT). ACTION: Notice of receipt of petitions for renewal of temporary exemptions; request for comment. SUMMARY: NHTSA has received identical petitions from 13 final-stage manufacturers of “entertainer-type motorcoaches,” seeking renewal of temporary exemptions from a shoulder belt requirement of Federal Motor Vehicle Safety Standard (FMVSS) No. 208, “Occupant crash protection,” for side-facing seats on motorcoaches. The petitioners seek to renew their exemptions that allow them to install Type 1 seat belts (lap belt only) at side-facing seating positions, instead of Type 2 seat belts (lap and shoulder belts) required by FMVSS No. 208. Each petitioner states that, abs",
+          "language": "en",
+          "authority": 100,
+          "source_id": "us_federal_register_vehicle",
+          "document_id": "2026-20496",
+          "document_type": "Notice",
+          "lifecycle_stage": "pre_notice",
+          "relevance_level": "probable",
+          "evidence_level": "S",
+          "vehicle_classes": [
+            "M2",
+            "M3",
+            "motorcoach",
+            "over-the-road bus"
+          ],
+          "powertrain_scope": [
+            "not_powertrain_specific"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "NHTSA has received identical petitions from 13 final-stage manufacturers of “entertainer-type motorcoaches,” seeking renewal of temporary exemptions from a shoulder belt requirement of Federal Motor Vehicle Safety Standard (FMVSS) No. 208",
+            "The petitioners seek to renew their exemptions that allow them to install Type 1 seat belts (lap belt only) at side-facing seating positions, instead of Type 2 seat belts (lap and shoulder belts) required by FMVSS No. 208.",
+            "you should submit your comment not later than November 6, 2026"
+          ]
+        },
+        {
+          "id": "8a2661eddbbd0014",
+          "title_zh": "CARB发布非道路发动机Tier 5排放法规草案",
+          "title_original": "CARB releases draft proposed Tier 5 emission regulation for off-road engines",
+          "summary_zh": "2026年2月9日，加州空气资源委员会（CARB）发布非道路压燃式发动机Tier 5排放法规草案。若获通过，标准将于2031至2036年分阶段实施，NOx较EPA Tier 4 Final最多削减90%，PM最多削减75%，将强制使用柴油颗粒捕集器。56至560千瓦非道路发动机适用最终标准，含低负荷循环认证、在用NOx与PM测试、延长耐久与保修等要求；Tier 5中期标准为可选。175马力以下农建发动机不适用。相较2024年9月版本，实施日期推迟且不再含温室气体要求。该提案将于2026年2月27日CARB公开研讨会上讨论。",
+          "source_name": "DieselNet",
+          "source_type": "专业媒体",
+          "source_url": "https://dieselnet.com/news/2026/02carb.php",
+          "published_at": "2026-10-05T00:00:00+08:00",
+          "collected_at": "2026-10-05T14:05:09.026628+08:00",
+          "region": "美国加利福尼亚州",
+          "primary_category": "法规",
+          "tags": [
+            "排放标准",
+            "非道路发动机",
+            "CARB"
+          ],
+          "importance_score": 69,
+          "is_highlight": false,
+          "content_hash": "82b064c821ce4fea89c3067f8eb4347b",
+          "event_id": "88b9d89623e2d08b",
+          "related_sources": [],
+          "content_evidence": "news: CARB releases draft proposed Tier 5 emission regulation for off-road engines CARB releases draft proposed Tier 5 emission regulation for off-road engines 9 February 2026 The California Air Resources Board (CARB) has released the draft potential Tier 5 emission regulations for off-road (a.k.a. nonroad) compression-ignition engines. If adopted, the standards would be phased-in over the period of 2031-2036. Please log in to view the full version of this article ( subscription required). Under the proposed standards, NOx emissions from off-road engines would have to be reduced by up to 90%, compared to the current US EPA Tier 4 final standards, while PM emissions would have to be reduced by up to 75%—forcing the use of diesel particulate filters on all affected off-road engines. As of model year 2020, more than half of all new off-road compression-ignition engine families continue to be certified in California to the Tier 4 Final emission standards without the use of diesel particula",
+          "language": "en",
+          "authority": 82,
+          "source_id": "dieselnet_news",
+          "document_id": "",
+          "document_type": "法规动态, 排放标准, 行业新闻",
+          "lifecycle_stage": "draft",
+          "relevance_level": "probable",
+          "evidence_level": "B",
+          "vehicle_classes": [
+            "非道路压燃式发动机",
+            "Category 1船用柴油机"
+          ],
+          "powertrain_scope": [
+            "柴油",
+            "氢燃料"
+          ],
+          "effective_at": null,
+          "evidence_quotes": [
+            "CARB releases draft proposed Tier 5 emission regulation for off-road engines",
+            "If adopted, the standards would be phased-in over the period of 2031-2036",
+            "The Tier 5 standards would also apply to off-road engines fueled by hydrogen"
+          ]
+        }
+      ]
     },
     {
       "report_type": "monthly",
