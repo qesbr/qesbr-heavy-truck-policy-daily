@@ -1,0 +1,108 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-11-02",
+  "title": "政策法规日报 · 2026-11-02",
+  "period_start": "2026-11-01T14:39:22.122139+08:00",
+  "period_end": "2026-11-02T14:39:22.122139+08:00",
+  "generated_at": "2026-11-02T14:39:49.352054+08:00",
+  "summary": "本期共收录2条经正文与发布时间核验的信息，其中今日重点2条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "6f8582e2ba258716",
+      "title_zh": "欧洲卡车制造商呼吁推迟CO2排放标准",
+      "title_original": "EU truck makers call for a delay to CO 2 emission standards",
+      "summary_zh": "2026年9月14日，在汉诺威IAA Transportation展会上，DAF、戴姆勒卡车、福特Otosan、依维柯、MAN、斯堪尼亚和沃尔沃等七家欧洲主要卡车与客车制造商CEO联合呼吁欧盟及成员国将2030年CO2合规时间表推迟三年，以避免制造商因未达标而受罚。当前欧洲新注册重型卡车中零排放车仅占2.4%，波兰、西班牙、意大利不足1%，德国4.3%、法国2.4%。制造商须在2030、2035、2040年分别减排43%、64%、90%，违规罚款为每克CO2每车4250欧元。业界指出充电与氢能基础设施、电网接入、碳定价及道路收费等配套条件严重滞后。",
+      "source_name": "DieselNet",
+      "source_type": "专业媒体",
+      "source_url": "https://dieselnet.com/news/2026/09acea.php",
+      "published_at": "2026-11-02T00:00:00+08:00",
+      "collected_at": "2026-11-02T14:39:22.122139+08:00",
+      "region": "欧盟",
+      "primary_category": "政策",
+      "tags": [
+        "CO2排放标准",
+        "重型卡车",
+        "零排放转型"
+      ],
+      "importance_score": 83,
+      "is_highlight": true,
+      "content_hash": "f8953e10dc1c13985332dde9e0cdda4d",
+      "event_id": "ae0aca2bd3fe72b0",
+      "related_sources": [],
+      "content_evidence": "news: EU truck makers call for a delay to CO2 emission standards EU truck makers call for a delay to CO 2 emission standards 14 September 2026 At the IAA Transportation in Hanover, the CEOs of Europe’s seven leading truck and bus manufacturers warned that Europe’s shift to zero-emission heavy-duty vehicles is held back by an “alarming delay” in the conditions that are needed to drive market uptake. They called on European and national policymakers to urgently close the gap and to delay the 2030 CO 2 compliance timeline by three years. While European truck and bus manufacturers have launched several zero-emission vehicle models, the conditions that transport operators need to adopt these vehicles at scale and operate them competitively are not developing fast enough, according to the CEOs. The executives participating in the event represented DAF Trucks, Daimler Truck, Ford Otosan, Iveco Group, MAN Truck &amp; Bus, Scania Group, and Volvo Group. Just 2.4% of new heavy-duty truck registr",
+      "language": "en",
+      "authority": 82,
+      "source_id": "dieselnet_news",
+      "document_id": "",
+      "document_type": "法规动态, 排放标准, 行业新闻",
+      "lifecycle_stage": "amended",
+      "relevance_level": "direct",
+      "evidence_level": "B",
+      "vehicle_classes": [
+        "N2",
+        "N3",
+        "HDV",
+        "客车"
+      ],
+      "powertrain_scope": [
+        "纯电动",
+        "氢燃料电池",
+        "零排放"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "They called on European and national policymakers to urgently close the gap and to delay the 2030 CO 2 compliance timeline by three years.",
+        "Manufacturers have to reduce the CO 2 emissions of new vehicles by -43% (2030), -64% (2035) and -90% (2040).",
+        "Just 2.4% of new heavy-duty truck registrations in Europe are zero-emission today, according to ACEA ."
+      ]
+    },
+    {
+      "id": "92b99eb44005b718",
+      "title_zh": "欧盟放宽重型车二氧化碳积分规则",
+      "title_original": "EU eases CO 2 credit rules for heavy-duty vehicles",
+      "summary_zh": "2026年3月18日，欧洲议会通过针对重型车二氧化碳排放标准（欧盟法规2019/1242）的定向修订，给予制造商更大灵活性以缓解2030年合规压力。修订允许制造商在2025至2029报告期内，只要二氧化碳排放低于年度排放目标即可获得积分，而原法规要求低于线性减排轨迹才可获积分。修订不改变减排目标本身：大部分卡车须以2019/2021年为基准，2030年减排43%、2035年减排64%、2040年减排90%。该措施源于2025年12月汽车一揽子计划，欧盟理事会已于2026年2月批准。",
+      "source_name": "DieselNet",
+      "source_type": "专业媒体",
+      "source_url": "https://dieselnet.com/news/2026/03eu.php",
+      "published_at": "2026-11-02T00:00:00+08:00",
+      "collected_at": "2026-11-02T14:39:22.122139+08:00",
+      "region": "欧盟",
+      "primary_category": "法规",
+      "tags": [
+        "重型车",
+        "二氧化碳积分",
+        "排放标准"
+      ],
+      "importance_score": 83,
+      "is_highlight": true,
+      "content_hash": "463050c8e6c38a7eeb06e9fab6bb0c4f",
+      "event_id": "be4a5e005ace17a5",
+      "related_sources": [],
+      "content_evidence": "news: EU eases CO2 credit rules for heavy-duty vehicles EU eases CO 2 credit rules for heavy-duty vehicles 18 March 2026 The European Parliament approved a targeted amendment to the existing CO 2 emission standards for heavy-duty vehicles (Regulation (EU) 2019/1242) to provide manufacturers with more flexibility to ease the compliance with their applicable 2030 CO 2 emission targets. The measure was proposed as part of the Automotive Package released in December 2025. The EU Council already approved the Commission’s proposal in February. The adopted amendments allow manufacturers to collect more emission credits for the 2025–2029 reporting periods than in the original Regulation. While Regulation (EU) 2019/1242 originally allowed manufacturers to receive credits only when their CO 2 emissions were below a linear emissions reduction trajectory, with the adopted amendments they will be able to generate credits as soon as their CO 2 emissions are below their annual emission target. The am",
+      "language": "en",
+      "authority": 82,
+      "source_id": "dieselnet_news",
+      "document_id": "",
+      "document_type": "法规动态, 排放标准, 行业新闻",
+      "lifecycle_stage": "adopted",
+      "relevance_level": "direct",
+      "evidence_level": "B",
+      "vehicle_classes": [
+        "N2",
+        "N3",
+        "HDV"
+      ],
+      "powertrain_scope": [
+        "内燃机",
+        "零排放"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "The European Parliament approved a targeted amendment to the existing CO 2 emission standards for heavy-duty vehicles (Regulation (EU) 2019/1242)",
+        "The adopted amendments allow manufacturers to collect more emission credits for the 2025–2029 reporting periods than in the original Regulation",
+        "The amendment do not alter the CO 2 reduction targets themselves"
+      ]
+    }
+  ]
+}
