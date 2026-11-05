@@ -1,0 +1,35 @@
+[
+  {
+    "id": "e6354ffaf3faf956",
+    "title": "巴西电动汽车本地化生产的经济机遇分析",
+    "source_name": "国际清洁交通委员会 ICCT",
+    "source_url": "https://theicct.org/publication/disentangling-the-economic-opportunities-of-onshoring-ev-production-in-brazil-oct26",
+    "published_at": "2026-11-05T00:00:00+08:00",
+    "collected_at": "2026-11-05T15:12:36.736535+08:00",
+    "reason": "相关等级=indirect，证据等级=B",
+    "evidence_level": "B",
+    "status": "pending"
+  },
+  {
+    "id": "63f78144ed60ad9d",
+    "title": "量化巴西电动汽车生产本地化的经济机遇",
+    "source_name": "国际清洁交通委员会 ICCT",
+    "source_url": "https://theicct.org/publication/quantificando-as-oportunidades-economicas-da-internalizacao-da-producao-de-veiculos-eletricos-no-brasil-nov26",
+    "published_at": "2026-11-05T00:00:00+08:00",
+    "collected_at": "2026-11-05T15:12:36.736535+08:00",
+    "reason": "相关等级=indirect，证据等级=B",
+    "evidence_level": "B",
+    "status": "pending"
+  },
+  {
+    "id": "8a2661eddbbd0014",
+    "title": "CARB发布非道路发动机Tier 5排放法规草案",
+    "source_name": "DieselNet",
+    "source_url": "https://dieselnet.com/news/2026/02carb.php",
+    "published_at": "2026-11-05T00:00:00+08:00",
+    "collected_at": "2026-11-05T15:12:36.736535+08:00",
+    "reason": "相关等级=indirect，证据等级=B",
+    "evidence_level": "B",
+    "status": "pending"
+  }
+]

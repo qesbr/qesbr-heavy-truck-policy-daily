@@ -1,0 +1,150 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-11-05",
+  "title": "政策法规日报 · 2026-11-05",
+  "period_start": "2026-11-04T15:12:36.736535+08:00",
+  "period_end": "2026-11-05T15:12:36.736535+08:00",
+  "generated_at": "2026-11-05T15:13:19.782923+08:00",
+  "summary": "本期共收录3条经正文与发布时间核验的信息，其中今日重点3条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "3883c335f3fd2a66",
+      "title_zh": "EPA拟批准华盛顿特区增强型车辆排放检验与维护计划修订及基本I/M认证",
+      "title_original": "Air Plan Approval; District of Columbia; Enhanced Vehicle Emission Inspection and Maintenance (I/M) Program Revision and Basic I/M Program Certification for Moderate Nonattainment Areas Under the 2015 Ozone NAAQS",
+      "summary_zh": "美国环保署（EPA）拟批准哥伦比亚特区提交的州实施计划（SIP）修订，将特区自1999年上次批准以来对增强型机动车排放检验与维护（I/M）计划的法规更新纳入SIP，并认证现有增强型I/M计划满足2015年臭氧国家环境空气质量标准（NAAQS）下中度非达标区的基本I/M要求。华盛顿特区-马里兰-弗吉尼亚臭氧非达标区于2022年10月由边缘级重分类为中度级，因而须提交基本I/M计划。该规则为拟议规则，书面意见截止2026年12月7日。适用对象为特区受检机动车，涵盖轻型车及重型车排放检验，涉及汽油等内燃机动力车辆。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/11/05/2026-22592/air-plan-approval-district-of-columbia-enhanced-vehicle-emission-inspection-and-maintenance-im",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-05T15:12:36.736535+08:00",
+      "region": "美国-哥伦比亚特区",
+      "primary_category": "法规",
+      "tags": [
+        "排放检验",
+        "I/M计划",
+        "臭氧NAAQS"
+      ],
+      "importance_score": 81,
+      "is_highlight": true,
+      "content_hash": "46566ce6997a257ea002f550f32fec7b",
+      "event_id": "e1cd895f5e80d1ff",
+      "related_sources": [],
+      "content_evidence": "ENVIRONMENTAL PROTECTION AGENCY 40 CFR Part 52 [EPA-R03-OAR-2026-1024; FRL-12072-01-R3] Air Plan Approval; District of Columbia; Enhanced Vehicle Emission Inspection and Maintenance (I/M) Program Revision and Basic I/M Program Certification for Moderate Nonattainment Areas Under the 2015 Ozone NAAQS AGENCY: Environmental Protection Agency (EPA). ACTION: Proposed rule. SUMMARY: The Environmental Protection Agency (EPA) is proposing to approve a State Implementation Plan (SIP) revision submitted by the District of Columbia (DC, or the District). This revision incorporates regulatory updates made to the District's Enhanced motor vehicle emissions inspection and maintenance (I/M) program since the EPA's last SIP approval. The SIP revision also serves to certify that the District's existing Enhanced I/M program meets Clean Air Act (CAA) requirements for a Basic I/M program for the District's portion of the Washington, DC-MD-VA nonattainment area (the Washington nonattainment area) for the 2",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-22592",
+      "document_type": "Proposed Rule",
+      "lifecycle_stage": "draft",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "LDV",
+        "LDT",
+        "MDV",
+        "HDV"
+      ],
+      "powertrain_scope": [
+        "汽油",
+        "柴油",
+        "内燃机"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "I/M is the periodic inspection of the emissions control systems of motor vehicles.",
+        "This revision incorporates regulatory updates made to the District's Enhanced motor vehicle emissions inspection and maintenance (I/M) program",
+        "the District's existing Enhanced I/M program meets Clean Air Act (CAA) requirements for a Basic I/M program"
+      ]
+    },
+    {
+      "id": "25d09aaff35ef34b",
+      "title_zh": "美国环保署拟批准圣华金谷2015年臭氧达标州实施计划及加州消费品法规修订",
+      "title_original": "Air Quality Implementation Plans; California; San Joaquin Valley; 2015 8-Hour Ozone Nonattainment Area Requirements; and California Consumer Products Regulations",
+      "summary_zh": "美国环保署发布拟议规则，拟批准加州提交的圣华金谷2015年8小时臭氧国家环境空气质量标准达标州实施计划（SJV 70 ppb Ozone SIP），涵盖排放清单、合理可用控制措施、达标示范、进展率与合理进一步进展、机动车排放预算及强化监测，并启动2026、2029、2032、2035年里程碑年及2037年达标年VOC和NOx预算的充分性审查。同时拟批准将加州消费品法规及Method 310修订纳入州实施计划，涉及止汗剂、除臭剂、消费品和气溶胶涂料产品的VOC排放。公众评论截止2026年12月7日。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/11/05/2026-22588/air-quality-implementation-plans-california-san-joaquin-valley-2015-8-hour-ozone-nonattainment-area",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-05T15:12:36.736535+08:00",
+      "region": "美国加利福尼亚州圣华金谷",
+      "primary_category": "法规",
+      "tags": [
+        "臭氧达标",
+        "机动车排放预算",
+        "消费品VOC"
+      ],
+      "importance_score": 81,
+      "is_highlight": true,
+      "content_hash": "f7e30c4e05f12b3feb259877cea5eebe",
+      "event_id": "1deba7eea22827ff",
+      "related_sources": [],
+      "content_evidence": "ENVIRONMENTAL PROTECTION AGENCY 40 CFR Part 52 [EPA-R09-OAR-2026-8252; FRL-13635-01-R9] Air Quality Implementation Plans; California; San Joaquin Valley; 2015 8-Hour Ozone Nonattainment Area Requirements; and California Consumer Products Regulations AGENCY: Environmental Protection Agency (EPA). ACTION: Proposed rule. SUMMARY: The U.S. Environmental Protection Agency (EPA) proposes to approve State implementation plan (SIP) revisions submitted by the State of California to meet Clean Air Act (CAA or “Act”) requirements for the 2015 8-hour ozone national ambient air quality standards (NAAQS or “standards”) in the San Joaquin Valley ozone nonattainment area (“San Joaquin Valley” or “SJV”). In this document, the EPA refers to these submissions collectively as the “SJV 70 ppb Ozone SIP.” The EPA proposes to approve the SJV 70 parts per billion (ppb) Ozone SIP as meeting the applicable ozone nonattainment area requirements for emissions inventories, reasonably available control measures, at",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-22588",
+      "document_type": "Proposed Rule",
+      "lifecycle_stage": "draft",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "heavy-duty vehicles",
+        "light-duty vehicles"
+      ],
+      "powertrain_scope": [
+        "all powertrains"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "motor vehicle emissions budgets, and enhanced monitoring",
+        "HD I/M Regulation—Heavy-Duty Vehicle Inspection and Maintenance Regulation",
+        "transportation conformity demonstrations in the San Joaquin Valley would be required to conform to the regional (whole nonattainment area) motor vehicle emissions budgets for VOC and NO X"
+      ]
+    },
+    {
+      "id": "24e67193afdf4f30",
+      "title_zh": "美国环保署批准亚利桑那州马里科帕县空气质量部门新源审查排放削减信用规则",
+      "title_original": "Air Plan Revisions; Arizona; Maricopa County Air Quality Department; New Source Review; Emission Reduction Credits",
+      "summary_zh": "美国环保署（EPA）最终批准亚利桑那州实施计划（SIP）修订，将马里科帕县空气质量部门（MCAQD）第205号规则纳入联邦可执行部分。该规则建立自愿性计划，允许车队所有者或运营者通过改装或替换现有在用道路车辆为低排放车辆，永久削减氮氧化物（NOx）或挥发性有机物（VOC）排放，从而生成移动源排放削减信用（MERC），供主要固定源在新源审查（NNSR）中作为抵消信用使用。规则于2026年12月7日生效，适用于马里科帕县臭氧和PM10未达标区域。",
+      "source_name": "美国Federal Register",
+      "source_type": "政府",
+      "source_url": "https://www.federalregister.gov/documents/2026/11/05/2026-22647/air-plan-revisions-arizona-maricopa-county-air-quality-department-new-source-review-emission",
+      "published_at": "2026-11-05T00:00:00+08:00",
+      "collected_at": "2026-11-05T15:12:36.736535+08:00",
+      "region": "美国亚利桑那州马里科帕县",
+      "primary_category": "法规",
+      "tags": [
+        "排放削减信用",
+        "新源审查",
+        "在用车辆改装"
+      ],
+      "importance_score": 88,
+      "is_highlight": true,
+      "content_hash": "56f4d1a643a3fa7a54a20bde5ed6db50",
+      "event_id": "6a3ca546eeaaacc8",
+      "related_sources": [],
+      "content_evidence": "ENVIRONMENTAL PROTECTION AGENCY 40 CFR Part 52 [EPA-R09-OAR-2026-1684; FRL-13268-02-R9] Air Plan Revisions; Arizona; Maricopa County Air Quality Department; New Source Review; Emission Reduction Credits AGENCY: Environmental Protection Agency (EPA). ACTION: Final rule. SUMMARY: The U.S. Environmental Protection Agency (EPA) is taking final action to approve a revision to the Maricopa County Air Quality Department (MCAQD or “Department”) portion of the Arizona State Implementation Plan (SIP). This revision establishes a federally enforceable program allowing for the generation of emission reduction credits (ERCs) by retrofitting or replacing existing on-road vehicles with lower emitting vehicles while meeting other Clean Air Act (CAA or “Act”) requirements. These ERCs are intended to be used as offsets for major stationary sources under the Department's Nonattainment New Source Review (NNSR) program. The EPA is approving this SIP revision because we find that it meets the applicable CAA",
+      "language": "en",
+      "authority": 100,
+      "source_id": "us_federal_register_vehicle",
+      "document_id": "2026-22647",
+      "document_type": "Rule",
+      "lifecycle_stage": "adopted",
+      "relevance_level": "probable",
+      "evidence_level": "S",
+      "vehicle_classes": [
+        "on-road vehicles"
+      ],
+      "powertrain_scope": [
+        "all"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "This revision establishes a federally enforceable program allowing for the generation of emission reduction credits (ERCs) by retrofitting or replacing existing on-road vehicles with lower emitting vehicles",
+        "Rule 205 allows for the generation of ERCs through voluntary on-road mobile source emissions reductions",
+        "The rule allows on-road mobile source fleet owners/operators that permanently reduce NO X or VOC emissions from their fleets"
+      ]
+    }
+  ]
+}
