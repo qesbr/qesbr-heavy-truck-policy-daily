@@ -1,0 +1,62 @@
+{
+  "report_type": "daily",
+  "report_id": "daily-2026-11-06",
+  "title": "政策法规日报 · 2026-11-06",
+  "period_start": "2026-11-05T15:13:28.532060+08:00",
+  "period_end": "2026-11-06T15:13:28.532060+08:00",
+  "generated_at": "2026-11-06T15:13:53.156656+08:00",
+  "summary": "本期共收录1条经正文与发布时间核验的信息，其中今日重点1条。",
+  "empty": false,
+  "articles": [
+    {
+      "id": "dd4c528f05e08fd8",
+      "title_zh": "零排放竞赛：欧洲重型车市场发展季报（2026年1—9月）",
+      "title_original": "Race to Zero: European heavy-duty vehicle market development quarterly (January–September 2026) - International Council on Clean Transportation",
+      "summary_zh": "ICCT报告显示，2026年前三季度欧盟新注册零排放重型车约2.21万辆。其中3.5吨以上零排放卡车销量占比5.3%，高于2025年同期的4.2%；12吨以上零排放重卡销量5000辆，占比2.5%，高于2025年同期的1.6%。2026年第三季度起进入2026报告期，制造商不能再使用早期积分抵消不合规，须将CO2排放保持在2025年15%减排目标以下，否则面临处罚。3.5至12吨零排放中型卡车和厢式车销量7800辆，占比21.0%。零排放客车销量9200辆，占比27.7%。",
+      "source_name": "国际清洁交通委员会 ICCT",
+      "source_type": "研究机构",
+      "source_url": "https://theicct.org/publication/race-to-zero-eu-hdv-market-development-jan-sept-2026-nov26",
+      "published_at": "2026-11-06T00:00:00+08:00",
+      "collected_at": "2026-11-06T15:13:28.532060+08:00",
+      "region": "欧盟",
+      "primary_category": "市场",
+      "tags": [
+        "零排放重卡",
+        "CO2标准",
+        "市场数据"
+      ],
+      "importance_score": 84,
+      "is_highlight": true,
+      "content_hash": "738928458b8535bdedab586159dbdf73",
+      "event_id": "963e0d1091217061",
+      "related_sources": [],
+      "content_evidence": "Race to Zero: European heavy-duty vehicle market development quarterly (January–June 2026) Market Spotlight Race to Zero: European heavy-duty vehicle market development quarterly (January–September 2026) Summary Approximately 22,100 new zero-emission heavy-duty vehicles (ZE-HDVs) were registered in the European Union (EU) in the first three quarters (Q1–Q3) of 2026. ZE trucks (with a weight above 3.5 tonnes) had a sales share of 5.3% in Q1–Q3 2026, up from 4.2% in Q1–Q3 2025. ZE buses and coaches had a sales share of 27.7% in Q1–Q3 2026, up from 23.1% in Q1–Q3 2025. Sales of ZE heavy trucks (with a weight above 12 tonnes) reached 5,000 units in Q1–Q3 2026 (2.5% of all sales), up from 3,100 in Q1–Q3 2025 (1.6%). Manufacturers faced CO2 targets for heavy trucks over the 2025 reporting period, which ran from July 2025–June 2026; Q3 2026 marked the start of the 2026 reporting period, when manufacturers will no longer be able to use early credits to offset non-compliance with the standards.",
+      "language": "en",
+      "authority": 85,
+      "source_id": "icct_heavy_duty",
+      "document_id": "",
+      "document_type": "研究报告, 政策分析",
+      "lifecycle_stage": "published",
+      "relevance_level": "direct",
+      "evidence_level": "B",
+      "vehicle_classes": [
+        "N2",
+        "N3",
+        "M2",
+        "M3",
+        "HDV"
+      ],
+      "powertrain_scope": [
+        "BEV",
+        "FCEV",
+        "zero-emission"
+      ],
+      "effective_at": null,
+      "evidence_quotes": [
+        "ZE trucks (with a weight above 3.5 tonnes) had a sales share of 5.3% in Q1–Q3 2026, up from 4.2% in Q1–Q3 2025.",
+        "Q3 2026 marked the start of the 2026 reporting period, when manufacturers will no longer be able to use early credits to offset non-compliance with the standards.",
+        "From now on, manufacturers will have to remain below the 2025 CO2 reduction target of 15% to avoid penalties."
+      ]
+    }
+  ]
+}
